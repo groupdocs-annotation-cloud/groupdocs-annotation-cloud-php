@@ -1,0 +1,142 @@
+000010506
+MIME-Version: 1.0
+Content-Disposition: inline; filename="document.html"
+Content-Location: document.html
+Subject: Sender: Vlad
+From: Hello@gmail.com
+To: Email@gmail.com
+Date: Fri, 12 May 2017 13:23:18 +0000
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dutf-8" /><meta http-equiv=3D"Content-Style-Type" content=3D"text/css" />=
+<meta name=3D"generator" content=3D"Aspose=2EWords for =2ENET 17=2E4=2E0=2E0=
+" /><title></title></head><body><div><p style=3D"margin-top:0pt; margin-bot=
+tom:0pt; text-align:center; widows:0; orphans:0; font-size:14pt"><span styl=
+e=3D"font-family:'Times New Roman'">Java auto-porting</span></p><p style=3D"=
+margin-top:0pt; margin-bottom:0pt; text-indent:35=2E45pt; widows:0; orphans=
+:0; font-size:14pt"><span style=3D"font-family:'Times New Roman'">The</span=
+><span style=3D"font-family:'Times New Roman'"> =E2=80=93</span><span style=
+=3D"font-family:'Times New Roman'"> biggest problem of of CsPorter is that =
+it doesn't understand what package is equivalent of C#'s namespace=2E Commo=
+nly it adds to the namespace from using statement =E2=80=9C</span><span sty=
+le=3D"font-family:'Times New Roman'; font-weight:bold">com=2Easpose=2Ems=2E<=
+/span><span style=3D"font-family:'Times New Roman'">=E2=80=9D and in the re=
+sult we have somethig like this: </span><span style=3D"font-family:'Times N=
+ew Roman'; font-weight:bold">import com=2Easpose=2Ems=2E</span><span style=
+=3D"font-family:'Times New Roman'; font-weight:bold">System=2ECollections=
+=2EGeneric </span><span style=3D"font-family:'Times New Roman'">instead of =
+</span><span style=3D"font-family:'Times New Roman'; font-weight:bold">impo=
+rt java=2Eutil=2E*</span><span style=3D"font-family:'Times New Roman'"> for=
+ example=2E</span></p><p style=3D"margin-top:0pt; margin-bottom:0pt; widows=
+:0; orphans:0; font-size:14pt"><span style=3D"width:35=2E45pt; display:inli=
+ne-block">&#xa0;</span><span style=3D"font-family:'Times New Roman'">As for=
+ strings =E2=80=93 there is another problem=2E Porter doesn't understand de=
+fault string operations such as +=3D=2E May be this problem can be solved w=
+ith StringBuilder, But I don't know for sure=2E</span></p><p style=3D"margi=
+n-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:14pt"><span st=
+yle=3D"font-family:'Times New Roman'">CsPorter tries to add a new import ca=
+lled StringExtensions with operations for string, but there is now such pac=
+kage for java as such as for c#=2E</span></p><p style=3D"margin-top:0pt; ma=
+rgin-bottom:0pt; widows:0; orphans:0; font-size:12pt"><span style=3D"width:=
+35=2E45pt; display:inline-block">&#xa0;</span><span style=3D"font-family:'T=
+imes New Roman'">Big advantage of porter is that it can translate c# routin=
+e code such as properties with get and set methods to java=2E Also it can t=
+ranslate usual operations, but as for specific operations with different re=
+lations to other library projects =E2=80=93 there could be problems=2E This=
+ problem rises because CsPorter doesn't port whole project, it ports only f=
+ile which project includes=2E</span></p><table cellspacing=3D"0" cellpaddin=
+g=3D"0" style=3D"border-collapse:collapse"><tr><td style=3D"width:229=2E9pt=
+; border-style:solid; border-width:0=2E75pt; padding-right:5=2E03pt; paddin=
+g-left:5=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bot=
+tom:0pt; widows:0; orphans:0; font-size:9=2E5pt"><span style=3D"font-family=
+:Arial; font-weight:bold">dfdsfdsf</span></p></td><td style=3D"width:229=2E9=
+pt; border-style:solid; border-width:0=2E75pt; padding-right:5=2E03pt; padd=
+ing-left:5=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-b=
+ottom:0pt; widows:0; orphans:0; font-size:9=2E5pt"><span style=3D"font-fami=
+ly:Arial; font-weight:bold">asdasdas</span></p><p style=3D"margin-top:0pt; =
+margin-bottom:0pt; widows:0; orphans:0; font-size:9=2E5pt"><span style=3D"f=
+ont-family:Arial; font-weight:bold">213234234</span></p></td></tr><tr><td s=
+tyle=3D"width:229=2E9pt; border-style:solid; border-width:0=2E75pt; padding=
+-right:5=2E03pt; padding-left:5=2E03pt; vertical-align:top"><p style=3D"mar=
+gin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:9=2E5pt"><sp=
+an style=3D"font-family:Arial; font-weight:bold">&#xa0;</span></p></td><td =
+style=3D"width:229=2E9pt; border-style:solid; border-width:0=2E75pt; paddin=
+g-right:5=2E03pt; padding-left:5=2E03pt; vertical-align:top"><p style=3D"ma=
+rgin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:9=2E5pt"><s=
+pan style=3D"font-family:Arial; font-weight:bold">qwerty</span></p></td></t=
+r></table><p style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orphans:=
+0; font-size:12pt"><span style=3D"font-family:'Times New Roman'">&#xa0;</sp=
+an></p><p style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; =
+font-size:12pt"><span style=3D"width:35=2E45pt; display:inline-block">&#xa0=
+;</span><span style=3D"font-family:'Times New Roman'">While having the port=
+ing process I had no problems with porting interfaces, but porting of porti=
+ng core functions was quite problematic, because of problems shown earlier=
+=2E</span></p><p style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orph=
+ans:0; font-size:12pt"><span style=3D"width:35=2E45pt; display:inline-block=
+">&#xa0;</span><span style=3D"font-family:'Times New Roman'">The process of=
+ porting is unusual=2E At first we have to upload =2Ecsproj file to the pro=
+gram, after that we have to update data from this file, after that we will =
+see full =2Exml file with all classes which are ready to be ported=2E Here =
+we have a small problem=2E CsPorter wants to port Assemblyinfo=2Ecs file=2E =
+To solve this we have to modify created xml file and delete this file from =
+the list of file to port=2E Also we have to specify a folder where we store=
+ ported files=2E And after that we can select option =E2=80=9CConvert=E2=80=
+=9D</span></p><p style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orph=
+ans:0; font-size:12pt"><span style=3D"font-family:'Times New Roman'; font-w=
+eight:bold">Conclusion:</span></p><p style=3D"margin-top:0pt; margin-bottom=
+:0pt; widows:0; orphans:0; font-size:12pt"><span style=3D"font-family:'Time=
+s New Roman'">Porting with CsPorter helps to convert boring part of the cod=
+e such as interfaces and properties with their getting and setting methods=
+=2E But as for functions =E2=80=93 we have to look through all code and rew=
+rite all imports and adapt some C# specific libraries and codestyle to Java=
+ code Style=2E Quantity of changes depends on difficulty of code and quanti=
+ty of platform specific methods=2E As for generics =E2=80=93 I don't k</spa=
+n><span style=3D"font-family:'Times New Roman'">now=2E I have not tested th=
+is yet</span></p><table cellspacing=3D"0" cellpadding=3D"0" style=3D"border=
+-collapse:collapse"><tr><td style=3D"width:149=2E65pt; border-style:solid; =
+border-width:0=2E75pt; padding-right:5=2E03pt; padding-left:5=2E03pt; verti=
+cal-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orp=
+hans:0; font-size:12pt"><span style=3D"font-family:'Times New Roman'">&#xa0=
+;</span></p></td><td style=3D"width:149=2E65pt; border-style:solid; border-=
+width:0=2E75pt; padding-right:5=2E03pt; padding-left:5=2E03pt; vertical-ali=
+gn:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orphans:0;=
+ font-size:12pt"><span style=3D"font-family:'Times New Roman'">&#xa0;</span=
+></p></td><td style=3D"width:149=2E7pt; border-style:solid; border-width:0=
+=2E75pt; padding-right:5=2E03pt; padding-left:5=2E03pt; vertical-align:top"=
+><p style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-s=
+ize:12pt"><span style=3D"font-family:'Times New Roman'">&#xa0;</span></p></=
+td></tr><tr><td style=3D"width:149=2E65pt; border-style:solid; border-width=
+:0=2E75pt; padding-right:5=2E03pt; padding-left:5=2E03pt; vertical-align:to=
+p"><p style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font=
+-size:12pt"><span style=3D"font-family:'Times New Roman'">&#xa0;</span></p>=
+</td><td style=3D"width:149=2E65pt; border-style:solid; border-width:0=2E75=
+pt; padding-right:5=2E03pt; padding-left:5=2E03pt; vertical-align:top"><p s=
+tyle=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:1=
+2pt"><span style=3D"font-family:'Times New Roman'">Cell[1][1]</span></p><p =
+style=3D"margin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:=
+12pt"><span style=3D"font-family:'Times New Roman'">456</span><span style=
+=3D"font-family:'Times New Roman'"> asa wewe wqqwr we</span></p></td><td st=
+yle=3D"width:149=2E7pt; border-style:solid; border-width:0=2E75pt; padding-=
+right:5=2E03pt; padding-left:5=2E03pt; vertical-align:top"><p style=3D"marg=
+in-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:12pt"><span s=
+tyle=3D"font-family:'Times New Roman'">&#xa0;</span></p></td></tr><tr><td s=
+tyle=3D"width:149=2E65pt; border-style:solid; border-width:0=2E75pt; paddin=
+g-right:5=2E03pt; padding-left:5=2E03pt; vertical-align:top"><p style=3D"ma=
+rgin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:12pt"><span=
+ style=3D"font-family:'Times New Roman'">&#xa0;</span></p></td><td style=3D"=
+width:149=2E65pt; border-style:solid; border-width:0=2E75pt; padding-right:=
+5=2E03pt; padding-left:5=2E03pt; vertical-align:top"><p style=3D"margin-top=
+:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:12pt"><span style=
+=3D"font-family:'Times New Roman'">&#xa0;</span></p></td><td style=3D"width=
+:149=2E7pt; border-style:solid; border-width:0=2E75pt; padding-right:5=2E03=
+pt; padding-left:5=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; =
+margin-bottom:0pt; widows:0; orphans:0; font-size:12pt"><span style=3D"font=
+-family:'Times New Roman'">&#xa0;</span></p></td></tr></table><p style=3D"m=
+argin-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:12pt"><spa=
+n style=3D"font-family:'Times New Roman'">&#xa0;</span></p><p style=3D"marg=
+in-top:0pt; margin-bottom:0pt; widows:0; orphans:0; font-size:12pt"><br sty=
+le=3D"page-break-before:always; clear:both" /></p><p style=3D"margin-top:0p=
+t; margin-bottom:0pt; widows:0; orphans:0; font-size:12pt"><span style=3D"f=
+ont-family:'Times New Roman'">sdfsf</span></p></div></body></html>
