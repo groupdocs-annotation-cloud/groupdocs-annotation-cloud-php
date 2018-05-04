@@ -84,8 +84,8 @@ try {
   echo  "Something went wrong: ",  $e->getMessage(), "\n";
   PHP_EOL;
 }
-
 ?>
+```
 
 ## Licensing
 GroupDocs.Annotation for Cloud SDK for PHP is licensed under [MIT License](LICENSE).
