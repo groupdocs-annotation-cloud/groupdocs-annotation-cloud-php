@@ -92,13 +92,10 @@ GroupDocs.Annotation for Cloud SDK for PHP is licensed under [MIT License](LICEN
 
 ## Resources
 + [**Website**](https://www.groupdocs.cloud)
-+ [**Product Home**](https://products.groupdocs.cloud/annotation/cloud)
++ [**Product Home**](https://products.groupdocs.cloud/annotation)
 + [**Documentation**](https://docs.groupdocs.cloud/display/annotationcloud/Home)
 + [**Free Support Forum**](https://forum.groupdocs.cloud/c/annotation)
-+ [**Blog**](https://blog.groupdocs.cloud/category/groupdocs-annotation-cloud-product-family)
++ [**Blog**](https://blog.groupdocs.cloud/category/annotation)
 
 ## Contact Us
 Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://forum.groupdocs.cloud/c/annotation).
-
-
-
