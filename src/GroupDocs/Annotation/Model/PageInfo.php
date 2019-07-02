@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="PageInfo.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,9 +25,6 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * PageInfo
- */
 
 namespace GroupDocs\Annotation\Model;
 
@@ -37,6 +34,7 @@ use \GroupDocs\Annotation\ObjectSerializer;
 /*
  * PageInfo
  *
+ * @description Describes page information
  */
 class PageInfo implements ArrayAccess
 {
@@ -58,7 +56,7 @@ class PageInfo implements ArrayAccess
         'number' => 'int',
         'width' => 'int',
         'height' => 'int',
-        'visible' => 'bool',
+        'isVisible' => 'bool',
         'rows' => '\GroupDocs\Annotation\Model\RowInfo[]'
     ];
 
@@ -71,7 +69,7 @@ class PageInfo implements ArrayAccess
         'number' => 'int32',
         'width' => 'int32',
         'height' => 'int32',
-        'visible' => null,
+        'isVisible' => null,
         'rows' => null
     ];
 
@@ -105,7 +103,7 @@ class PageInfo implements ArrayAccess
         'number' => 'Number',
         'width' => 'Width',
         'height' => 'Height',
-        'visible' => 'Visible',
+        'isVisible' => 'IsVisible',
         'rows' => 'Rows'
     ];
 
@@ -118,7 +116,7 @@ class PageInfo implements ArrayAccess
         'number' => 'setNumber',
         'width' => 'setWidth',
         'height' => 'setHeight',
-        'visible' => 'setVisible',
+        'isVisible' => 'setIsVisible',
         'rows' => 'setRows'
     ];
 
@@ -131,7 +129,7 @@ class PageInfo implements ArrayAccess
         'number' => 'getNumber',
         'width' => 'getWidth',
         'height' => 'getHeight',
-        'visible' => 'getVisible',
+        'isVisible' => 'getIsVisible',
         'rows' => 'getRows'
     ];
 
@@ -198,7 +196,7 @@ class PageInfo implements ArrayAccess
         $this->container['number'] = isset($data['number']) ? $data['number'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['visible'] = isset($data['visible']) ? $data['visible'] : null;
+        $this->container['isVisible'] = isset($data['isVisible']) ? $data['isVisible'] : null;
         $this->container['rows'] = isset($data['rows']) ? $data['rows'] : null;
     }
 
@@ -220,8 +218,8 @@ class PageInfo implements ArrayAccess
         if ($this->container['height'] === null) {
             $invalidProperties[] = "'height' can't be null";
         }
-        if ($this->container['visible'] === null) {
-            $invalidProperties[] = "'visible' can't be null";
+        if ($this->container['isVisible'] === null) {
+            $invalidProperties[] = "'isVisible' can't be null";
         }
         return $invalidProperties;
     }
@@ -244,7 +242,7 @@ class PageInfo implements ArrayAccess
         if ($this->container['height'] === null) {
             return false;
         }
-        if ($this->container['visible'] === null) {
+        if ($this->container['isVisible'] === null) {
             return false;
         }
         return true;
@@ -264,7 +262,7 @@ class PageInfo implements ArrayAccess
     /*
      * Sets number
      *
-     * @param int $number number
+     * @param int $number Gets or sets the page number
      *
      * @return $this
      */
@@ -288,7 +286,7 @@ class PageInfo implements ArrayAccess
     /*
      * Sets width
      *
-     * @param int $width width
+     * @param int $width Gets or sets the page width
      *
      * @return $this
      */
@@ -312,7 +310,7 @@ class PageInfo implements ArrayAccess
     /*
      * Sets height
      *
-     * @param int $height height
+     * @param int $height Gets or sets the page height
      *
      * @return $this
      */
@@ -324,25 +322,25 @@ class PageInfo implements ArrayAccess
     }
 
     /*
-     * Gets visible
+     * Gets isVisible
      *
      * @return bool
      */
-    public function getVisible()
+    public function getIsVisible()
     {
-        return $this->container['visible'];
+        return $this->container['isVisible'];
     }
 
     /*
-     * Sets visible
+     * Sets isVisible
      *
-     * @param bool $visible visible
+     * @param bool $isVisible Indicates whether page is visible or not
      *
      * @return $this
      */
-    public function setVisible($visible)
+    public function setIsVisible($isVisible)
     {
-        $this->container['visible'] = $visible;
+        $this->container['isVisible'] = $isVisible;
 
         return $this;
     }
@@ -360,7 +358,7 @@ class PageInfo implements ArrayAccess
     /*
      * Sets rows
      *
-     * @param \GroupDocs\Annotation\Model\RowInfo[] $rows rows
+     * @param \GroupDocs\Annotation\Model\RowInfo[] $rows Gets or sets the list of text rows
      *
      * @return $this
      */

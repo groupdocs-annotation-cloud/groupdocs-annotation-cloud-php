@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="AnnotationInfo.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,9 +25,6 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * AnnotationInfo
- */
 
 namespace GroupDocs\Annotation\Model;
 
@@ -37,6 +34,7 @@ use \GroupDocs\Annotation\ObjectSerializer;
 /*
  * AnnotationInfo
  *
+ * @description Describes annotation properties
  */
 class AnnotationInfo implements ArrayAccess
 {
@@ -76,7 +74,9 @@ class AnnotationInfo implements ArrayAccess
         'backgroundColor' => 'int',
         'fieldText' => 'string',
         'fontFamily' => 'string',
-        'fontSize' => 'double'
+        'fontSize' => 'double',
+        'opacity' => 'double',
+        'angle' => 'double'
     ];
 
     /*
@@ -106,7 +106,9 @@ class AnnotationInfo implements ArrayAccess
         'backgroundColor' => 'int32',
         'fieldText' => null,
         'fontFamily' => null,
-        'fontSize' => 'double'
+        'fontSize' => 'double',
+        'opacity' => 'double',
+        'angle' => 'double'
     ];
 
     /*
@@ -157,7 +159,9 @@ class AnnotationInfo implements ArrayAccess
         'backgroundColor' => 'BackgroundColor',
         'fieldText' => 'FieldText',
         'fontFamily' => 'FontFamily',
-        'fontSize' => 'FontSize'
+        'fontSize' => 'FontSize',
+        'opacity' => 'Opacity',
+        'angle' => 'Angle'
     ];
 
     /*
@@ -187,7 +191,9 @@ class AnnotationInfo implements ArrayAccess
         'backgroundColor' => 'setBackgroundColor',
         'fieldText' => 'setFieldText',
         'fontFamily' => 'setFontFamily',
-        'fontSize' => 'setFontSize'
+        'fontSize' => 'setFontSize',
+        'opacity' => 'setOpacity',
+        'angle' => 'setAngle'
     ];
 
     /*
@@ -217,7 +223,9 @@ class AnnotationInfo implements ArrayAccess
         'backgroundColor' => 'getBackgroundColor',
         'fieldText' => 'getFieldText',
         'fontFamily' => 'getFontFamily',
-        'fontSize' => 'getFontSize'
+        'fontSize' => 'getFontSize',
+        'opacity' => 'getOpacity',
+        'angle' => 'getAngle'
     ];
 
     /*
@@ -274,6 +282,7 @@ class AnnotationInfo implements ArrayAccess
     const TYPE_RESOURCES_REDACTION = 'ResourcesRedaction';
     const TYPE_TEXT_UNDERLINE = 'TextUnderline';
     const TYPE_DISTANCE = 'Distance';
+    const TYPE_ELLIPSE = 'Ellipse';
     const ACCESS__PUBLIC = 'Public';
     const ACCESS__PRIVATE = 'Private';
     
@@ -300,6 +309,7 @@ class AnnotationInfo implements ArrayAccess
             self::TYPE_RESOURCES_REDACTION,
             self::TYPE_TEXT_UNDERLINE,
             self::TYPE_DISTANCE,
+            self::TYPE_ELLIPSE,
         ];
     }
     
@@ -354,6 +364,8 @@ class AnnotationInfo implements ArrayAccess
         $this->container['fieldText'] = isset($data['fieldText']) ? $data['fieldText'] : null;
         $this->container['fontFamily'] = isset($data['fontFamily']) ? $data['fontFamily'] : null;
         $this->container['fontSize'] = isset($data['fontSize']) ? $data['fontSize'] : null;
+        $this->container['opacity'] = isset($data['opacity']) ? $data['opacity'] : null;
+        $this->container['angle'] = isset($data['angle']) ? $data['angle'] : null;
     }
 
     /*
@@ -393,9 +405,6 @@ class AnnotationInfo implements ArrayAccess
         if ($this->container['createdOn'] === null) {
             $invalidProperties[] = "'createdOn' can't be null";
         }
-        if ($this->container['fontColor'] === null) {
-            $invalidProperties[] = "'fontColor' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -428,9 +437,6 @@ class AnnotationInfo implements ArrayAccess
         if ($this->container['createdOn'] === null) {
             return false;
         }
-        if ($this->container['fontColor'] === null) {
-            return false;
-        }
         return true;
     }
 
@@ -448,7 +454,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets guid
      *
-     * @param string $guid Gets or sets the unique identifier.
+     * @param string $guid Gets or sets the unique identifier
      *
      * @return $this
      */
@@ -472,7 +478,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets documentGuid
      *
-     * @param int $documentGuid Gets or sets the document unique identifier.
+     * @param int $documentGuid Gets or sets the document unique identifier
      *
      * @return $this
      */
@@ -496,7 +502,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets text
      *
-     * @param string $text Gets or sets the text.
+     * @param string $text Gets or sets the annotation text
      *
      * @return $this
      */
@@ -520,7 +526,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets creatorGuid
      *
-     * @param string $creatorGuid Gets or sets the creator unique identifier.
+     * @param string $creatorGuid Gets or sets the creator unique identifier
      *
      * @return $this
      */
@@ -544,7 +550,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets creatorName
      *
-     * @param string $creatorName Gets or sets the name of the creator.
+     * @param string $creatorName Gets or sets the name of the creator
      *
      * @return $this
      */
@@ -568,7 +574,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets creatorEmail
      *
-     * @param string $creatorEmail Gets or sets the creator email.
+     * @param string $creatorEmail Gets or sets the creator's email
      *
      * @return $this
      */
@@ -592,7 +598,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets box
      *
-     * @param \GroupDocs\Annotation\Model\Rectangle $box Gets or sets the box.
+     * @param \GroupDocs\Annotation\Model\Rectangle $box Gets or sets the box where annotation will be placed
      *
      * @return $this
      */
@@ -616,7 +622,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets pageNumber
      *
-     * @param int $pageNumber Gets or sets the page number.
+     * @param int $pageNumber Gets or sets the number of page where annotation will be placed
      *
      * @return $this
      */
@@ -640,7 +646,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets annotationPosition
      *
-     * @param \GroupDocs\Annotation\Model\Point $annotationPosition Gets or sets the annotation position.
+     * @param \GroupDocs\Annotation\Model\Point $annotationPosition Gets or sets the annotation position
      *
      * @return $this
      */
@@ -664,7 +670,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets svgPath
      *
-     * @param string $svgPath Gets or sets the SVG path.
+     * @param string $svgPath Gets or sets the annotation SVG path
      *
      * @return $this
      */
@@ -688,7 +694,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets type
      *
-     * @param string $type Gets or sets the type.
+     * @param string $type Gets or sets the annotation type
      *
      * @return $this
      */
@@ -717,7 +723,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets access
      *
-     * @param string $access Gets or sets the access.
+     * @param string $access Gets or sets the annotation access
      *
      * @return $this
      */
@@ -746,7 +752,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets replies
      *
-     * @param \GroupDocs\Annotation\Model\AnnotationReplyInfo[] $replies Gets or sets the replies.
+     * @param \GroupDocs\Annotation\Model\AnnotationReplyInfo[] $replies Gets or sets the array of annotation replies
      *
      * @return $this
      */
@@ -770,7 +776,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets createdOn
      *
-     * @param \DateTime $createdOn Gets or sets the created on.
+     * @param \DateTime $createdOn Gets or sets the annotation created on date
      *
      * @return $this
      */
@@ -794,7 +800,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets fontColor
      *
-     * @param int $fontColor Gets or sets the color of the font.
+     * @param int $fontColor Gets or sets the annotation's font color
      *
      * @return $this
      */
@@ -818,7 +824,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets penColor
      *
-     * @param int $penColor Gets or sets the color of the pen.
+     * @param int $penColor Gets or sets the annotation's pen color
      *
      * @return $this
      */
@@ -842,7 +848,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets penWidth
      *
-     * @param int $penWidth Gets or sets the width of the pen.
+     * @param int $penWidth Gets or sets the annotation's pen width
      *
      * @return $this
      */
@@ -866,7 +872,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets penStyle
      *
-     * @param int $penStyle Gets or sets the pen style.
+     * @param int $penStyle Gets or sets the annotation's pen style
      *
      * @return $this
      */
@@ -890,7 +896,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets backgroundColor
      *
-     * @param int $backgroundColor Gets or sets the color of the background.
+     * @param int $backgroundColor Gets or sets the annotation's background color
      *
      * @return $this
      */
@@ -914,7 +920,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets fieldText
      *
-     * @param string $fieldText Gets or sets the field text.
+     * @param string $fieldText Gets or sets the annotation's field text
      *
      * @return $this
      */
@@ -938,7 +944,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets fontFamily
      *
-     * @param string $fontFamily Gets or sets the font family.
+     * @param string $fontFamily Gets or sets the annotation's font family
      *
      * @return $this
      */
@@ -962,13 +968,61 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets fontSize
      *
-     * @param double $fontSize Gets or sets the size of the font.
+     * @param double $fontSize Gets or sets the annotation's font size
      *
      * @return $this
      */
     public function setFontSize($fontSize)
     {
         $this->container['fontSize'] = $fontSize;
+
+        return $this;
+    }
+
+    /*
+     * Gets opacity
+     *
+     * @return double
+     */
+    public function getOpacity()
+    {
+        return $this->container['opacity'];
+    }
+
+    /*
+     * Sets opacity
+     *
+     * @param double $opacity Gets or sets the annotation's opacity
+     *
+     * @return $this
+     */
+    public function setOpacity($opacity)
+    {
+        $this->container['opacity'] = $opacity;
+
+        return $this;
+    }
+
+    /*
+     * Gets angle
+     *
+     * @return double
+     */
+    public function getAngle()
+    {
+        return $this->container['angle'];
+    }
+
+    /*
+     * Sets angle
+     *
+     * @param double $angle Gets or sets the watermark annotation's rotation angle
+     *
+     * @return $this
+     */
+    public function setAngle($angle)
+    {
+        $this->container['angle'] = $angle;
 
         return $this;
     }

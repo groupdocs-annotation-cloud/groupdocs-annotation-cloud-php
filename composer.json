@@ -1,7 +1,7 @@
 {
-    "description": "This repository contains GroupDocs.Annotation for Cloud SDK for PHP source code.",
+    "description": "This repository contains GroupDocs.Annotation Cloud SDK for PHP source code.",
     "name": "groupdocscloud/groupdocs-annotation-cloud",
-    "version": "18.4",
+    "version": "19.5",
     "license": "MIT",
     "type": "library",
     "keywords": [
@@ -29,20 +29,19 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
-        "guzzlehttp/guzzle": "^6.2",
-        "aspose/storage-sdk-php": "1.0.*"
+        "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "2.10.*",
         "squizlabs/php_codesniffer": "3.*",
-        "phpunit/phpunit": "^4.8"
+        "phpunit/phpunit": "^5.7"
     },
     "autoload": {
         "classmap": [ "src/" ],
-        "psr-4": { "GroupDocs\\" : "src/" }
+        "psr-4": { "GroupDocs\\Annotation\\" : "src/" }
     },
     "autoload-dev": {
-        "classmap": [ "src/" ],
-        "psr-4": { "GroupDocs\\" : "tests/" }
+        "classmap": [ "src/", "tests/" ],        
+        "psr-4": { "GroupDocs\\Annotation\\" : "tests/" }
     }
 }

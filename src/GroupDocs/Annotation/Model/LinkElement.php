@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="LinkElement.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,9 +25,6 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * LinkElement
- */
 
 namespace GroupDocs\Annotation\Model;
 
@@ -37,7 +34,7 @@ use \GroupDocs\Annotation\ObjectSerializer;
 /*
  * LinkElement
  *
- * @description Reference to document.
+ * @description Reference to document
  */
 class LinkElement implements ArrayAccess
 {
@@ -221,7 +218,7 @@ class LinkElement implements ArrayAccess
     /*
      * Sets link
      *
-     * @param \GroupDocs\Annotation\Model\AnnotationApiLink $link Link to the document.
+     * @param \GroupDocs\Annotation\Model\AnnotationApiLink $link Link to the document
      *
      * @return $this
      */

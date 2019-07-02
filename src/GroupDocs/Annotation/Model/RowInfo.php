@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="RowInfo.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,9 +25,6 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * RowInfo
- */
 
 namespace GroupDocs\Annotation\Model;
 
@@ -37,6 +34,7 @@ use \GroupDocs\Annotation\ObjectSerializer;
 /*
  * RowInfo
  *
+ * @description Describes text row information
  */
 class RowInfo implements ArrayAccess
 {
@@ -276,7 +274,7 @@ class RowInfo implements ArrayAccess
     /*
      * Sets characterCoordinates
      *
-     * @param double[] $characterCoordinates characterCoordinates
+     * @param double[] $characterCoordinates Gets or sets the list of character coordinates
      *
      * @return $this
      */
@@ -300,7 +298,7 @@ class RowInfo implements ArrayAccess
     /*
      * Sets lineHeight
      *
-     * @param double $lineHeight lineHeight
+     * @param double $lineHeight Gets or sets the text line height
      *
      * @return $this
      */
@@ -324,7 +322,7 @@ class RowInfo implements ArrayAccess
     /*
      * Sets lineLeft
      *
-     * @param double $lineLeft lineLeft
+     * @param double $lineLeft Gets or sets the x coordinate of the text line upper left corner
      *
      * @return $this
      */
@@ -348,7 +346,7 @@ class RowInfo implements ArrayAccess
     /*
      * Sets lineTop
      *
-     * @param double $lineTop lineTop
+     * @param double $lineTop Gets or sets the y coordinate of the text line upper left corner
      *
      * @return $this
      */
@@ -372,7 +370,7 @@ class RowInfo implements ArrayAccess
     /*
      * Sets lineWidth
      *
-     * @param double $lineWidth lineWidth
+     * @param double $lineWidth Gets or sets the text line width
      *
      * @return $this
      */
@@ -396,7 +394,7 @@ class RowInfo implements ArrayAccess
     /*
      * Sets text
      *
-     * @param string $text text
+     * @param string $text Gets or sets the text
      *
      * @return $this
      */
@@ -420,7 +418,7 @@ class RowInfo implements ArrayAccess
     /*
      * Sets textCoordinates
      *
-     * @param double[] $textCoordinates textCoordinates
+     * @param double[] $textCoordinates Gets or sets the list of text coordinates
      *
      * @return $this
      */

@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="AnnotationReplyInfo.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,9 +25,6 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * AnnotationReplyInfo
- */
 
 namespace GroupDocs\Annotation\Model;
 
@@ -37,6 +34,7 @@ use \GroupDocs\Annotation\ObjectSerializer;
 /*
  * AnnotationReplyInfo
  *
+ * @description Describes annotation reply properties
  */
 class AnnotationReplyInfo implements ArrayAccess
 {
@@ -258,7 +256,7 @@ class AnnotationReplyInfo implements ArrayAccess
     /*
      * Sets guid
      *
-     * @param string $guid Gets or sets the unique identifier.
+     * @param string $guid Gets or sets the unique identifier
      *
      * @return $this
      */
@@ -282,7 +280,7 @@ class AnnotationReplyInfo implements ArrayAccess
     /*
      * Sets userGuid
      *
-     * @param string $userGuid Gets or sets the user unique identifier.
+     * @param string $userGuid Gets or sets the user's unique identifier
      *
      * @return $this
      */
@@ -306,7 +304,7 @@ class AnnotationReplyInfo implements ArrayAccess
     /*
      * Sets userName
      *
-     * @param string $userName Gets or sets the name of the user.
+     * @param string $userName Gets or sets the user's name
      *
      * @return $this
      */
@@ -330,7 +328,7 @@ class AnnotationReplyInfo implements ArrayAccess
     /*
      * Sets userEmail
      *
-     * @param string $userEmail Gets or sets the user email.
+     * @param string $userEmail Gets or sets the user email
      *
      * @return $this
      */
@@ -354,7 +352,7 @@ class AnnotationReplyInfo implements ArrayAccess
     /*
      * Sets message
      *
-     * @param string $message Gets or sets the message.
+     * @param string $message Gets or sets the message
      *
      * @return $this
      */
@@ -378,7 +376,7 @@ class AnnotationReplyInfo implements ArrayAccess
     /*
      * Sets repliedOn
      *
-     * @param \DateTime $repliedOn Gets or sets the replied on.
+     * @param \DateTime $repliedOn Gets or sets the reply time
      *
      * @return $this
      */
@@ -402,7 +400,7 @@ class AnnotationReplyInfo implements ArrayAccess
     /*
      * Sets parentReplyGuid
      *
-     * @param string $parentReplyGuid Gets or sets the parent reply unique identifier.
+     * @param string $parentReplyGuid Gets or sets the parent reply unique identifier
      *
      * @return $this
      */

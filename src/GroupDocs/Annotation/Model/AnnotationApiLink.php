@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="AnnotationApiLink.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,9 +25,6 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * AnnotationApiLink
- */
 
 namespace GroupDocs\Annotation\Model;
 use \GroupDocs\Annotation\ObjectSerializer;
@@ -35,7 +32,7 @@ use \GroupDocs\Annotation\ObjectSerializer;
 /*
  * AnnotationApiLink
  *
- * @description Provides information for the words api resource link.
+ * @description Provides information for the words api resource link
  */
 class AnnotationApiLink extends Link 
 {

@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="Link.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,9 +25,6 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * Link
- */
 
 namespace GroupDocs\Annotation\Model;
 
@@ -37,7 +34,7 @@ use \GroupDocs\Annotation\ObjectSerializer;
 /*
  * Link
  *
- * @description Provides information for the object link. This is supposed to be an atom:link, therefore it should have all attributes specified here http://tools.ietf.org/html/rfc4287#section-4.2.7
+ * @description Provides information for the object link This is supposed to be an atom:link, therefore it should have all attributes specified here http://tools.ietf.org/html/rfc4287#section-4.2.7
  */
 class Link implements ArrayAccess
 {
@@ -263,7 +260,7 @@ class Link implements ArrayAccess
     /*
      * Sets rel
      *
-     * @param string $rel atom:link elements MAY have a \"rel\" attribute that indicates the link relation type.  If the \"rel\" attribute is not present, the link element MUST be interpreted as if the link relation type is \"alternate\".
+     * @param string $rel atom:link elements MAY have a \"rel\" attribute that indicates the link relation type. If the \"rel\" attribute is not present, the link element MUST be interpreted as if the link relation type is \"alternate\"
      *
      * @return $this
      */
@@ -287,7 +284,7 @@ class Link implements ArrayAccess
     /*
      * Sets type
      *
-     * @param string $type On the link element, the \"type\" attribute's value is an advisory media type: it is a hint about the type of the representation that is expected to be returned when the value of the href attribute is dereferenced.  Note that the type attribute does not override the actual media type returned with the representation.
+     * @param string $type On the link element, the \"type\" attribute's value is an advisory media type: it is a hint about the type of the representation that is expected to be returned when the value of the href attribute is dereferenced. Note that the type attribute does not override the actual media type returned with the representation
      *
      * @return $this
      */
@@ -311,7 +308,7 @@ class Link implements ArrayAccess
     /*
      * Sets title
      *
-     * @param string $title The \"title\" attribute conveys human-readable information about the link.  The content of the \"title\" attribute is Language-Sensitive.
+     * @param string $title The \"title\" attribute conveys human-readable information about the link. The content of the \"title\" attribute is Language-Sensitive
      *
      * @return $this
      */

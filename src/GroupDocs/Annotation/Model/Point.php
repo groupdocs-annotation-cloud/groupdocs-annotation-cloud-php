@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="Point.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,18 +25,18 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * Point
- */
 
 namespace GroupDocs\Annotation\Model;
+
+use \ArrayAccess;
 use \GroupDocs\Annotation\ObjectSerializer;
 
 /*
  * Point
  *
+ * @description Describes point where annotation will be placed
  */
-class Point extends ValueType 
+class Point implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -74,7 +74,7 @@ class Point extends ValueType
      */
     public static function swaggerTypes()
     {
-        return self::$swaggerTypes + parent::swaggerTypes();
+        return self::$swaggerTypes;
     }
 
     /*
@@ -84,7 +84,7 @@ class Point extends ValueType
      */
     public static function swaggerFormats()
     {
-        return self::$swaggerFormats + parent::swaggerFormats();
+        return self::$swaggerFormats;
     }
 
     /*
@@ -126,7 +126,7 @@ class Point extends ValueType
      */
     public static function attributeMap()
     {
-        return parent::attributeMap() + self::$attributeMap;
+        return self::$attributeMap;
     }
 
     /*
@@ -136,7 +136,7 @@ class Point extends ValueType
      */
     public static function setters()
     {
-        return parent::setters() + self::$setters;
+        return self::$setters;
     }
 
     /*
@@ -146,7 +146,7 @@ class Point extends ValueType
      */
     public static function getters()
     {
-        return parent::getters() + self::$getters;
+        return self::$getters;
     }
 
     /*
@@ -163,6 +163,12 @@ class Point extends ValueType
 
     
 
+    /*
+     * Associative array for storing property values
+     *
+     * @var mixed[]
+     */
+    protected $container = [];
 
     /*
      * Constructor
@@ -172,8 +178,6 @@ class Point extends ValueType
      */
     public function __construct(array $data = null)
     {
-        parent::__construct($data);
-
         $this->container['x'] = isset($data['x']) ? $data['x'] : null;
         $this->container['y'] = isset($data['y']) ? $data['y'] : null;
     }
@@ -185,8 +189,14 @@ class Point extends ValueType
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
+        $invalidProperties = [];
 
+        if ($this->container['x'] === null) {
+            $invalidProperties[] = "'x' can't be null";
+        }
+        if ($this->container['y'] === null) {
+            $invalidProperties[] = "'y' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -198,10 +208,13 @@ class Point extends ValueType
      */
     public function valid()
     {
-        if (!parent::valid()) {
+
+        if ($this->container['x'] === null) {
             return false;
         }
-
+        if ($this->container['y'] === null) {
+            return false;
+        }
         return true;
     }
 
@@ -219,7 +232,7 @@ class Point extends ValueType
     /*
      * Sets x
      *
-     * @param double $x Gets or sets the x.
+     * @param double $x Gets or sets the x coordinate
      *
      * @return $this
      */
@@ -243,7 +256,7 @@ class Point extends ValueType
     /*
      * Sets y
      *
-     * @param double $y Gets or sets the y.
+     * @param double $y Gets or sets the y coordinate
      *
      * @return $this
      */

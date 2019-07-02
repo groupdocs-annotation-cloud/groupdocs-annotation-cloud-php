@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="HeaderSelector.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -98,8 +98,6 @@ class HeaderSelector
             return 'application/json';
         } elseif (preg_grep("/application\/json/i", $contentType)) {
             return 'application/json';
-        }  elseif (preg_grep("/application\/x-www-form-urlencoded/i", $contentType)) {
-            return 'application/x-www-form-urlencoded';
         } else {
             return implode(',', $contentType);
         }

@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="Rectangle.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,18 +25,18 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * Rectangle
- */
 
 namespace GroupDocs\Annotation\Model;
+
+use \ArrayAccess;
 use \GroupDocs\Annotation\ObjectSerializer;
 
 /*
  * Rectangle
  *
+ * @description Describes rectangle where annotation will be placed
  */
-class Rectangle extends ValueType 
+class Rectangle implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -78,7 +78,7 @@ class Rectangle extends ValueType
      */
     public static function swaggerTypes()
     {
-        return self::$swaggerTypes + parent::swaggerTypes();
+        return self::$swaggerTypes;
     }
 
     /*
@@ -88,7 +88,7 @@ class Rectangle extends ValueType
      */
     public static function swaggerFormats()
     {
-        return self::$swaggerFormats + parent::swaggerFormats();
+        return self::$swaggerFormats;
     }
 
     /*
@@ -136,7 +136,7 @@ class Rectangle extends ValueType
      */
     public static function attributeMap()
     {
-        return parent::attributeMap() + self::$attributeMap;
+        return self::$attributeMap;
     }
 
     /*
@@ -146,7 +146,7 @@ class Rectangle extends ValueType
      */
     public static function setters()
     {
-        return parent::setters() + self::$setters;
+        return self::$setters;
     }
 
     /*
@@ -156,7 +156,7 @@ class Rectangle extends ValueType
      */
     public static function getters()
     {
-        return parent::getters() + self::$getters;
+        return self::$getters;
     }
 
     /*
@@ -173,6 +173,12 @@ class Rectangle extends ValueType
 
     
 
+    /*
+     * Associative array for storing property values
+     *
+     * @var mixed[]
+     */
+    protected $container = [];
 
     /*
      * Constructor
@@ -182,8 +188,6 @@ class Rectangle extends ValueType
      */
     public function __construct(array $data = null)
     {
-        parent::__construct($data);
-
         $this->container['x'] = isset($data['x']) ? $data['x'] : null;
         $this->container['y'] = isset($data['y']) ? $data['y'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
@@ -197,8 +201,20 @@ class Rectangle extends ValueType
      */
     public function listInvalidProperties()
     {
-        $invalidProperties = parent::listInvalidProperties();
+        $invalidProperties = [];
 
+        if ($this->container['x'] === null) {
+            $invalidProperties[] = "'x' can't be null";
+        }
+        if ($this->container['y'] === null) {
+            $invalidProperties[] = "'y' can't be null";
+        }
+        if ($this->container['width'] === null) {
+            $invalidProperties[] = "'width' can't be null";
+        }
+        if ($this->container['height'] === null) {
+            $invalidProperties[] = "'height' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -210,10 +226,19 @@ class Rectangle extends ValueType
      */
     public function valid()
     {
-        if (!parent::valid()) {
+
+        if ($this->container['x'] === null) {
             return false;
         }
-
+        if ($this->container['y'] === null) {
+            return false;
+        }
+        if ($this->container['width'] === null) {
+            return false;
+        }
+        if ($this->container['height'] === null) {
+            return false;
+        }
         return true;
     }
 
@@ -231,7 +256,7 @@ class Rectangle extends ValueType
     /*
      * Sets x
      *
-     * @param double $x Gets or sets the x.
+     * @param double $x Gets or sets the x coordinate of the rectangle upper left corner
      *
      * @return $this
      */
@@ -255,7 +280,7 @@ class Rectangle extends ValueType
     /*
      * Sets y
      *
-     * @param double $y Gets or sets the y.
+     * @param double $y Gets or sets the y coordinate of the rectangle upper left corner
      *
      * @return $this
      */
@@ -279,7 +304,7 @@ class Rectangle extends ValueType
     /*
      * Sets width
      *
-     * @param double $width Gets or sets the width.
+     * @param double $width Gets or sets the rectangle width
      *
      * @return $this
      */
@@ -303,7 +328,7 @@ class Rectangle extends ValueType
     /*
      * Sets height
      *
-     * @param double $height Gets or sets the height.
+     * @param double $height Gets or sets the rectangle height
      *
      * @return $this
      */

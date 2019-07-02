@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="DocumentInfo.php">
- *   Copyright (c) 2003-2018 Aspose Pty Ltd
+ *   Copyright (c) 2003-2019 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -25,9 +25,6 @@
  * </summary>
  * --------------------------------------------------------------------------------------------------------------------
  */
-/*
- * DocumentInfo
- */
 
 namespace GroupDocs\Annotation\Model;
 
@@ -37,6 +34,7 @@ use \GroupDocs\Annotation\ObjectSerializer;
 /*
  * DocumentInfo
  *
+ * @description Describes document basic info
  */
 class DocumentInfo implements ArrayAccess
 {
@@ -56,7 +54,7 @@ class DocumentInfo implements ArrayAccess
      */
     protected static $swaggerTypes = [
         'name' => 'string',
-        'folder' => 'string',
+        'path' => 'string',
         'extension' => 'string',
         'fileFormat' => 'string',
         'size' => 'int',
@@ -71,7 +69,7 @@ class DocumentInfo implements ArrayAccess
      */
     protected static $swaggerFormats = [
         'name' => null,
-        'folder' => null,
+        'path' => null,
         'extension' => null,
         'fileFormat' => null,
         'size' => 'int64',
@@ -107,7 +105,7 @@ class DocumentInfo implements ArrayAccess
      */
     protected static $attributeMap = [
         'name' => 'Name',
-        'folder' => 'Folder',
+        'path' => 'Path',
         'extension' => 'Extension',
         'fileFormat' => 'FileFormat',
         'size' => 'Size',
@@ -122,7 +120,7 @@ class DocumentInfo implements ArrayAccess
      */
     protected static $setters = [
         'name' => 'setName',
-        'folder' => 'setFolder',
+        'path' => 'setPath',
         'extension' => 'setExtension',
         'fileFormat' => 'setFileFormat',
         'size' => 'setSize',
@@ -137,7 +135,7 @@ class DocumentInfo implements ArrayAccess
      */
     protected static $getters = [
         'name' => 'getName',
-        'folder' => 'getFolder',
+        'path' => 'getPath',
         'extension' => 'getExtension',
         'fileFormat' => 'getFileFormat',
         'size' => 'getSize',
@@ -206,7 +204,7 @@ class DocumentInfo implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['folder'] = isset($data['folder']) ? $data['folder'] : null;
+        $this->container['path'] = isset($data['path']) ? $data['path'] : null;
         $this->container['extension'] = isset($data['extension']) ? $data['extension'] : null;
         $this->container['fileFormat'] = isset($data['fileFormat']) ? $data['fileFormat'] : null;
         $this->container['size'] = isset($data['size']) ? $data['size'] : null;
@@ -264,7 +262,7 @@ class DocumentInfo implements ArrayAccess
     /*
      * Sets name
      *
-     * @param string $name name
+     * @param string $name Gets or sets the document name
      *
      * @return $this
      */
@@ -276,25 +274,25 @@ class DocumentInfo implements ArrayAccess
     }
 
     /*
-     * Gets folder
+     * Gets path
      *
      * @return string
      */
-    public function getFolder()
+    public function getPath()
     {
-        return $this->container['folder'];
+        return $this->container['path'];
     }
 
     /*
-     * Sets folder
+     * Sets path
      *
-     * @param string $folder folder
+     * @param string $path Gets or sets the document path
      *
      * @return $this
      */
-    public function setFolder($folder)
+    public function setPath($path)
     {
-        $this->container['folder'] = $folder;
+        $this->container['path'] = $path;
 
         return $this;
     }
@@ -312,7 +310,7 @@ class DocumentInfo implements ArrayAccess
     /*
      * Sets extension
      *
-     * @param string $extension extension
+     * @param string $extension Gets or sets the document extension
      *
      * @return $this
      */
@@ -336,7 +334,7 @@ class DocumentInfo implements ArrayAccess
     /*
      * Sets fileFormat
      *
-     * @param string $fileFormat fileFormat
+     * @param string $fileFormat Gets or sets the file format
      *
      * @return $this
      */
@@ -360,7 +358,7 @@ class DocumentInfo implements ArrayAccess
     /*
      * Sets size
      *
-     * @param int $size size
+     * @param int $size Gets or sets the document size
      *
      * @return $this
      */
@@ -384,7 +382,7 @@ class DocumentInfo implements ArrayAccess
     /*
      * Sets dateModified
      *
-     * @param \DateTime $dateModified dateModified
+     * @param \DateTime $dateModified Gets or sets the document date modified
      *
      * @return $this
      */
@@ -408,7 +406,7 @@ class DocumentInfo implements ArrayAccess
     /*
      * Sets pages
      *
-     * @param \GroupDocs\Annotation\Model\PageInfo[] $pages pages
+     * @param \GroupDocs\Annotation\Model\PageInfo[] $pages Gets or sets the pages
      *
      * @return $this
      */
