@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="PreviewApi.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -129,8 +129,8 @@ class PreviewApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -365,8 +365,8 @@ class PreviewApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -513,32 +513,42 @@ class PreviewApi
             }
         }
         // query params
-        if ($request->countPagesToConvert !== null) {
-            $localName = lcfirst('countPagesToConvert');
-            $localValue = is_bool($request->countPagesToConvert) ? ($request->countPagesToConvert ? 'true' : 'false') : $request->countPagesToConvert;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->pageNumber !== null) {
-            $localName = lcfirst('pageNumber');
-            $localValue = is_bool($request->pageNumber) ? ($request->pageNumber ? 'true' : 'false') : $request->pageNumber;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
         if (is_array($request->pageNumbersToConvert)) {
             $request->pageNumbersToConvert = ObjectSerializer::serializeCollection($request->pageNumbersToConvert, 'multi', true);
         }
         if ($request->pageNumbersToConvert !== null) {
             $localName = lcfirst('pageNumbersToConvert');
             $localValue = is_bool($request->pageNumbersToConvert) ? ($request->pageNumbersToConvert ? 'true' : 'false') : $request->pageNumbersToConvert;
+            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
+                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
+            } else {
+                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
+            }
+        }
+        // query params
+        if ($request->format !== null) {
+            $localName = lcfirst('format');
+            $localValue = is_bool($request->format) ? ($request->format ? 'true' : 'false') : $request->format;
+            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
+                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
+            } else {
+                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
+            }
+        }
+        // query params
+        if ($request->width !== null) {
+            $localName = lcfirst('width');
+            $localValue = is_bool($request->width) ? ($request->width ? 'true' : 'false') : $request->width;
+            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
+                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
+            } else {
+                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
+            }
+        }
+        // query params
+        if ($request->height !== null) {
+            $localName = lcfirst('height');
+            $localValue = is_bool($request->height) ? ($request->height ? 'true' : 'false') : $request->height;
             if (strpos($resourcePath, '{' . $localName . '}') !== false) {
                 $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
             } else {
@@ -556,19 +566,9 @@ class PreviewApi
             }
         }
         // query params
-        if ($request->enableCaching !== null) {
-            $localName = lcfirst('enableCaching');
-            $localValue = is_bool($request->enableCaching) ? ($request->enableCaching ? 'true' : 'false') : $request->enableCaching;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->cacheStoragePath !== null) {
-            $localName = lcfirst('cacheStoragePath');
-            $localValue = is_bool($request->cacheStoragePath) ? ($request->cacheStoragePath ? 'true' : 'false') : $request->cacheStoragePath;
+        if ($request->renderComments !== null) {
+            $localName = lcfirst('renderComments');
+            $localValue = is_bool($request->renderComments) ? ($request->renderComments ? 'true' : 'false') : $request->renderComments;
             if (strpos($resourcePath, '{' . $localName . '}') !== false) {
                 $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
             } else {
@@ -773,7 +773,7 @@ class PreviewApi
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="deletePagesRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -822,7 +822,7 @@ class deletePagesRequest
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="getPagesRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -857,23 +857,23 @@ class getPagesRequest
      * Initializes a new instance of the getPagesRequest class.
      *  
      * @param string $filePath Document path in storage
-     * @param int $countPagesToConvert The count pages to convert
-     * @param int $pageNumber The start page number
      * @param int[] $pageNumbersToConvert The list of page numbers to convert
+     * @param string $format Preview format: \"PNG\" (default), \"JPEG\", or \"BMP\"
+     * @param int $width Preview image width
+     * @param int $height Preview image height
      * @param bool $withoutAnnotations If true returns specific pages without annotations
-     * @param bool $enableCaching Indicates whether to use previously cached document or not
-     * @param string $cacheStoragePath The cache storage path
+     * @param bool $renderComments Render comments (false by default)
      * @param string $password Source document opening password
      */
-    public function __construct($filePath, $countPagesToConvert = null, $pageNumber = null, $pageNumbersToConvert = null, $withoutAnnotations = null, $enableCaching = null, $cacheStoragePath = null, $password = null)             
+    public function __construct($filePath, $pageNumbersToConvert = null, $format = null, $width = null, $height = null, $withoutAnnotations = null, $renderComments = null, $password = null)             
     {
         $this->filePath = $filePath;
-        $this->countPagesToConvert = $countPagesToConvert;
-        $this->pageNumber = $pageNumber;
         $this->pageNumbersToConvert = $pageNumbersToConvert;
+        $this->format = $format;
+        $this->width = $width;
+        $this->height = $height;
         $this->withoutAnnotations = $withoutAnnotations;
-        $this->enableCaching = $enableCaching;
-        $this->cacheStoragePath = $cacheStoragePath;
+        $this->renderComments = $renderComments;
         $this->password = $password;
     }
 
@@ -883,19 +883,24 @@ class getPagesRequest
     public $filePath;
 	
     /*
-     * The count pages to convert
-     */
-    public $countPagesToConvert;
-	
-    /*
-     * The start page number
-     */
-    public $pageNumber;
-	
-    /*
      * The list of page numbers to convert
      */
     public $pageNumbersToConvert;
+	
+    /*
+     * Preview format: \"PNG\" (default), \"JPEG\", or \"BMP\"
+     */
+    public $format;
+	
+    /*
+     * Preview image width
+     */
+    public $width;
+	
+    /*
+     * Preview image height
+     */
+    public $height;
 	
     /*
      * If true returns specific pages without annotations
@@ -903,14 +908,9 @@ class getPagesRequest
     public $withoutAnnotations;
 	
     /*
-     * Indicates whether to use previously cached document or not
+     * Render comments (false by default)
      */
-    public $enableCaching;
-	
-    /*
-     * The cache storage path
-     */
-    public $cacheStoragePath;
+    public $renderComments;
 	
     /*
      * Source document opening password

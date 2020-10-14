@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="AnnotateApi.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -129,8 +129,8 @@ class AnnotateApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -365,8 +365,8 @@ class AnnotateApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -691,8 +691,8 @@ class AnnotateApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -925,282 +925,6 @@ class AnnotateApi
     }
 
     /*
-     * Operation getPdf
-     *
-     * Retrieves PDF version of document
-     *
-     * @param Requests\getPdfRequest $request is a request object for operation
-     *
-     * @throws \GroupDocs\Annotation\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return \SplFileObject
-     */
-    public function getPdf(Requests\getPdfRequest $request)
-    {
-        list($response) = $this->getPdfWithHttpInfo($request);
-        return $response;
-    }
-
-    /*
-     * Operation getPdfWithHttpInfo
-     *
-     * Retrieves PDF version of document
-     *
-     * @param Requests\getPdfRequest $request is a request object for operation
-     *
-     * @throws \GroupDocs\Annotation\ApiException on non-2xx response
-     * @throws \InvalidArgumentException
-     * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
-     */
-    public function getPdfWithHttpInfo(Requests\getPdfRequest $request)
-    {
-        $returnType = '\SplFileObject';
-        $request = $this->getPdfRequest($request);
-
-        try {
-            $options = $this->_createHttpClientOption();
-            try {
-                $response = $this->client->send($request, $options);
-            } catch (RequestException $e) {
-                $responseBody = $e->getResponse()->getBody();
-                $content = $responseBody->getContents();
-                $error = json_decode($content);
-
-                $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
-                    : $e->getMessage();
-                
-                throw new ApiException($errorMessage, $errorCode);
-            }
-
-            $statusCode = $response->getStatusCode();
-
-            if ($statusCode < 200 || $statusCode > 299) {          
-                throw new ApiException(sprintf('[%d] Error connecting to the API (%s)', $statusCode, $request->getUri()), $statusCode);
-            }
-
-            $responseBody = $response->getBody();
-            if ($returnType === '\SplFileObject') {
-                $content = $responseBody; //stream goes to serializer
-            } else {
-                $content = $responseBody->getContents();
-                if ($returnType !== 'string') {
-                    $content = json_decode($content);
-                }
-            }
-            
-            if ($this->config->getDebug()) {
-                $this->_writeResponseLog($statusCode, $response->getHeaders(), ObjectSerializer::deserialize($content, $returnType, []));
-            }
-
-            return [
-                ObjectSerializer::deserialize($content, $returnType, []),
-                $response->getStatusCode(),
-                $response->getHeaders()
-            ];
-
-        } catch (ApiException $e) {
-            switch ($e->getCode()) {
-            case 200:
-                    $data = ObjectSerializer::deserialize($e->getResponseBody(), '\SplFileObject', $e->getResponseHeaders());
-                    $e->setResponseObject($data);
-                break;
-            }
-            throw $e;
-        }
-    }
-
-    /*
-     * Operation getPdfAsync
-     *
-     * Retrieves PDF version of document
-     *
-     * @param Requests\getPdfRequest $request is a request object for operation
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getPdfAsync(Requests\getPdfRequest $request) 
-    {
-        return $this->getPdfAsyncWithHttpInfo($request)
-            ->then(
-                function ($response) {
-                    return $response[0];
-                }
-            );
-    }
-
-    /*
-     * Operation getPdfAsyncWithHttpInfo
-     *
-     * Retrieves PDF version of document
-     *
-     * @param Requests\getPdfRequest $request is a request object for operation
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Promise\PromiseInterface
-     */
-    public function getPdfAsyncWithHttpInfo(Requests\getPdfRequest $request) 
-    {
-        $returnType = '\SplFileObject';
-        $request = $this->getPdfRequest($request);
-
-        return $this->client
-            ->sendAsync($request, $this->_createHttpClientOption())
-            ->then(
-                function ($response) use ($returnType) {
-                    $responseBody = $response->getBody();
-                    if ($returnType === '\SplFileObject') {
-                        $content = $responseBody; //stream goes to serializer
-                    } else {
-                        $content = $responseBody->getContents();
-                        if ($returnType !== 'string') {
-                            $content = json_decode($content);
-                        }
-                    }
-                    
-                    if ($this->config->getDebug()) {
-                        $this->_writeResponseLog($response->getStatusCode(), $response->getHeaders(), ObjectSerializer::deserialize($content, $returnType, []));
-                    }
-
-                    return [
-                        ObjectSerializer::deserialize($content, $returnType, []),
-                        $response->getStatusCode(),
-                        $response->getHeaders()
-                    ];
-                },
-                function ($exception) {        
-                    $response = $exception->getResponse();
-                    $statusCode = $response->getStatusCode();        
-          
-                    throw new ApiException(
-                        sprintf('[%d] Error connecting to the API (%s)', $statusCode, $exception->getRequest()->getUri()), $statusCode
-                    );
-                }
-            );
-    }
-
-    /*
-     * Create request for operation 'getPdf'
-     *
-     * @param Requests\getPdfRequest $request is a request object for operation
-     *
-     * @throws \InvalidArgumentException
-     * @return \GuzzleHttp\Psr7\Request
-     */
-    protected function getPdfRequest(Requests\getPdfRequest $request)
-    {
-        // verify the required parameter 'filePath' is set
-        if ($request->filePath === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $filePath when calling getPdf');
-        }
-
-        $resourcePath = '/annotation/pdf';
-        $formParams = [];
-        $queryParams = [];
-        $headerParams = [];
-        $httpBody = "";
-        $multipart = false;
-    
-
-        // query params
-        if ($request->filePath !== null) {
-            $localName = lcfirst('filePath');
-            $localValue = is_bool($request->filePath) ? ($request->filePath ? 'true' : 'false') : $request->filePath;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-    
-    
-        $resourcePath = $this->_buildUrl($resourcePath, $queryParams);
-
-        // body params
-        $_tempBody = null;
-
-        if ($multipart) {
-            $headers= $this->headerSelector->selectHeadersForMultipart(
-                ['application/json']
-            );
-        } else {
-            $headers = $this->headerSelector->selectHeaders(
-                ['application/json'],
-                ['application/json']
-            );
-        }
-
-        // for model (json/xml)
-        if (isset($_tempBody)) {
-            // $_tempBody is the method argument, if present
-            $httpBody = $_tempBody;
-            // \stdClass has no __toString(), so we should encode it manually
-            if ($httpBody instanceof \stdClass && $headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($httpBody);
-            }
-            elseif (is_array($httpBody) && $headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode(ObjectSerializer::sanitizeForSerialization($httpBody));
-            }                                            
-        } elseif (count($formParams) > 0) {
-            if ($multipart) {
-                $multipartContents = [];
-                foreach ($formParams as $formParamName => $formParamValue) {
-                    $multipartContents[] = [
-                        'name' => $formParamName,
-                        'filename' => $formParamName,
-                        'contents' => $formParamValue
-                    ];
-                }
-                // for HTTP post (form)
-                $httpBody = new MultipartStream($multipartContents);
-
-            } elseif ($headers['Content-Type'] === 'application/json') {
-                $httpBody = \GuzzleHttp\json_encode($formParams);
-
-            } else {
-                // for HTTP post (form)
-                $httpBody = $formParams["data"];
-            }
-        }
-    
-        $this->_requestToken();
-
-        if ($this->accessToken !== null) {
-            $headers['Authorization'] = 'Bearer ' . $this->accessToken;
-        }
-
-        $defaultHeaders = [];
-        
-        if ($this->config->getClientName()) {
-            $defaultHeaders['x-groupdocs-client'] = $this->config->getClientName();
-        }
-
-        if ($this->config->getClientVersion()) {
-            $defaultHeaders['x-groupdocs-client-version'] = $this->config->getClientVersion();
-        }
-
-        $headers = array_merge(
-            $defaultHeaders,
-            $headerParams,
-            $headers
-        );
-    
-        $req = new Request(
-            'GET',
-            $resourcePath,
-            $headers,
-            $httpBody
-        );
-        if ($this->config->getDebug()) {
-            $this->_writeRequestLog('GET', $resourcePath, $headers, $httpBody);
-        }
-        
-        return $req;
-    }
-
-    /*
      * Operation postAnnotations
      *
      * Adds annotations to document
@@ -1242,8 +966,8 @@ class AnnotateApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -1548,7 +1272,7 @@ class AnnotateApi
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="deleteAnnotationsRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1597,7 +1321,7 @@ class deleteAnnotationsRequest
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="getExportRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1681,7 +1405,7 @@ class getExportRequest
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="getImportRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1729,57 +1453,8 @@ class getImportRequest
 }
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="getPdfRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
- * </copyright>
- * <summary>
- *   Permission is hereby granted, free of charge, to any person obtaining a copy
- *  of this software and associated documentation files (the "Software"), to deal
- *  in the Software without restriction, including without limitation the rights
- *  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- *  copies of the Software, and to permit persons to whom the Software is
- *  furnished to do so, subject to the following conditions:
- * 
- *  The above copyright notice and this permission notice shall be included in all
- *  copies or substantial portions of the Software.
- * 
- *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- *  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- *  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- *  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- *  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- *  SOFTWARE.
- * </summary>
- * --------------------------------------------------------------------------------------------------------------------
- */
-
-namespace GroupDocs\Annotation\Model\Requests;
-
-/*
- * Request model for getPdf operation.
- */
-class getPdfRequest
-{
-    /*
-     * Initializes a new instance of the getPdfRequest class.
-     *  
-     * @param string $filePath Path to document in storage
-     */
-    public function __construct($filePath)             
-    {
-        $this->filePath = $filePath;
-    }
-
-    /*
-     * Path to document in storage
-     */
-    public $filePath;
-}
-/*
- * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="postAnnotationsRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy

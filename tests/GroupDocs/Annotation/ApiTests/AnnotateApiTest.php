@@ -2,7 +2,7 @@
 /**
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose Pty Ltd" >
-*   Copyright (c) 2003-2019 Aspose Pty Ltd
+*   Copyright (c) 2003-2020 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,18 +34,6 @@ require_once "BaseApiTest.php";
 
 class AnnotateApiTest extends BaseApiTest
 {
-    public function testGetPdf()
-    {
-        $files = Internal\TestFiles::getTestFilesNoPassword();
-        foreach ($files as $file) {
-            $path = $file->folder . $file->fileName;
-            $request = new Requests\getPdfRequest($path);
-            $response = self::$annotateApi->getPdf($request); 
-            $size = $response->getSize();
-            $this->assertGreaterThan(0, $size);
-        }
-    }
-
     public function testAnnotations()
     {
         $files = Internal\TestFiles::getTestFilesList();
@@ -62,7 +50,7 @@ class AnnotateApiTest extends BaseApiTest
             $this->assertGreaterThan(0, count($response));
 
             // Export annotation
-            $request = new Requests\getExportRequest($path, null, null, null, null, $file->password);
+            $request = new Requests\getExportRequest($path, null, false, -1, -1, $file->password);
             $response = self::$annotateApi->getExport($request); 
             $size = $response->getSize();
             $this->assertGreaterThan(0, $size);
@@ -88,7 +76,7 @@ class AnnotateApiTest extends BaseApiTest
         $a->setBox($box);
         $a->setPageNumber(0);
         $a->setPenColor(1201033);
-        $a->setPenStyle(0);
+        $a->setPenStyle(Model\AnnotationInfo::PEN_STYLE_SOLID);
         $a->setPenWidth(1);
         $a->setType(Model\AnnotationInfo::TYPE_AREA);
         $a->setCreatorName("Anonym A.");

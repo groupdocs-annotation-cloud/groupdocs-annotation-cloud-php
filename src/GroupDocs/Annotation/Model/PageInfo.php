@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="PageInfo.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -55,9 +55,7 @@ class PageInfo implements ArrayAccess
     protected static $swaggerTypes = [
         'number' => 'int',
         'width' => 'int',
-        'height' => 'int',
-        'isVisible' => 'bool',
-        'rows' => '\GroupDocs\Annotation\Model\RowInfo[]'
+        'height' => 'int'
     ];
 
     /*
@@ -68,9 +66,7 @@ class PageInfo implements ArrayAccess
     protected static $swaggerFormats = [
         'number' => 'int32',
         'width' => 'int32',
-        'height' => 'int32',
-        'isVisible' => null,
-        'rows' => null
+        'height' => 'int32'
     ];
 
     /*
@@ -102,9 +98,7 @@ class PageInfo implements ArrayAccess
     protected static $attributeMap = [
         'number' => 'Number',
         'width' => 'Width',
-        'height' => 'Height',
-        'isVisible' => 'IsVisible',
-        'rows' => 'Rows'
+        'height' => 'Height'
     ];
 
     /*
@@ -115,9 +109,7 @@ class PageInfo implements ArrayAccess
     protected static $setters = [
         'number' => 'setNumber',
         'width' => 'setWidth',
-        'height' => 'setHeight',
-        'isVisible' => 'setIsVisible',
-        'rows' => 'setRows'
+        'height' => 'setHeight'
     ];
 
     /*
@@ -128,9 +120,7 @@ class PageInfo implements ArrayAccess
     protected static $getters = [
         'number' => 'getNumber',
         'width' => 'getWidth',
-        'height' => 'getHeight',
-        'isVisible' => 'getIsVisible',
-        'rows' => 'getRows'
+        'height' => 'getHeight'
     ];
 
     /*
@@ -196,8 +186,6 @@ class PageInfo implements ArrayAccess
         $this->container['number'] = isset($data['number']) ? $data['number'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
-        $this->container['isVisible'] = isset($data['isVisible']) ? $data['isVisible'] : null;
-        $this->container['rows'] = isset($data['rows']) ? $data['rows'] : null;
     }
 
     /*
@@ -218,9 +206,6 @@ class PageInfo implements ArrayAccess
         if ($this->container['height'] === null) {
             $invalidProperties[] = "'height' can't be null";
         }
-        if ($this->container['isVisible'] === null) {
-            $invalidProperties[] = "'isVisible' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -240,9 +225,6 @@ class PageInfo implements ArrayAccess
             return false;
         }
         if ($this->container['height'] === null) {
-            return false;
-        }
-        if ($this->container['isVisible'] === null) {
             return false;
         }
         return true;
@@ -317,54 +299,6 @@ class PageInfo implements ArrayAccess
     public function setHeight($height)
     {
         $this->container['height'] = $height;
-
-        return $this;
-    }
-
-    /*
-     * Gets isVisible
-     *
-     * @return bool
-     */
-    public function getIsVisible()
-    {
-        return $this->container['isVisible'];
-    }
-
-    /*
-     * Sets isVisible
-     *
-     * @param bool $isVisible Indicates whether page is visible or not
-     *
-     * @return $this
-     */
-    public function setIsVisible($isVisible)
-    {
-        $this->container['isVisible'] = $isVisible;
-
-        return $this;
-    }
-
-    /*
-     * Gets rows
-     *
-     * @return \GroupDocs\Annotation\Model\RowInfo[]
-     */
-    public function getRows()
-    {
-        return $this->container['rows'];
-    }
-
-    /*
-     * Sets rows
-     *
-     * @param \GroupDocs\Annotation\Model\RowInfo[] $rows Gets or sets the list of text rows
-     *
-     * @return $this
-     */
-    public function setRows($rows)
-    {
-        $this->container['rows'] = $rows;
 
         return $this;
     }

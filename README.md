@@ -1,23 +1,28 @@
 # GroupDocs.Annotation Cloud SDK for PHP
+
 This repository contains GroupDocs.Annotation Cloud SDK for PHP source code. This SDK allows you to work with GroupDocs.Annotation Cloud REST APIs in your PHP applications.
 
 ## Dependencies
+
 - PHP 5.5 or later
 
 ## Authorization
+
 To use SDK you need AppSID and AppKey authorization keys. You can get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).  
 
 ## Installation & Usage
+
 ### Composer
 
 The package is available at [Packagist](https://packagist.org/) and it can be installed via [Composer](http://getcomposer.org/) by executing following command:
-```
+
+```shell
 composer require groupdocscloud/groupdocs-annotation-cloud
-``` 
+```
 
 Or you can install SDK via [Composer](http://getcomposer.org/) directly from this repository, add the following to `composer.json`:
 
-```
+```javascript
 {
   "repositories": [
     {
@@ -45,12 +50,13 @@ require_once('/path/to/groupdocs-annotation-cloud-php/vendor/autoload.php');
 
 To run the unit tests set your AppSID and AppKey in [json.config](tests/GroupDocs/Annotation/config.json) and execute following commands:
 
-```
+```shell
 php composer.phar install
 ./vendor/bin/phpunit
 ```
 
 ## Getting Started
+
 Please follow the [installation procedure](#installation--usage) and then run the following:
 
 ```php
@@ -80,6 +86,17 @@ try {
 ```
 
 ## Licensing
+
 GroupDocs.Annotation Cloud SDK for PHP is licensed under [MIT License](LICENSE).
 
-[Home](https://www.groupdocs.cloud/) | [Product Page](https://products.groupdocs.cloud/annotation/php) | [Docs](https://docs.groupdocs.cloud/annotation/) | [Demos](https://products.groupdocs.app/annotation/family) | [API Reference](https://apireference.groupdocs.cloud/annotation/) | [Examples](https://github.com/groupdocs-annotation-cloud/groupdocs-annotation-cloud-php-samples) | [Blog](https://blog.groupdocs.cloud/category/annotation/) | [Free Support](https://forum.groupdocs.cloud/c/annotation) | [Free Trial](https://purchase.groupdocs.cloud/trial)
+## Resources
+
++[**Website**](https://www.groupdocs.cloud)
++[**Product Home**](https://products.groupdocs.cloud/annotation)
++[**Documentation**](https://docs.groupdocs.cloud/display/annotationcloud/Home)
++[**Free Support Forum**](https://forum.groupdocs.cloud/c/annotation)
++[**Blog**](https://blog.groupdocs.cloud/category/annotation)
+
+## Contact Us
+
+Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://forum.groupdocs.cloud/c/annotation).

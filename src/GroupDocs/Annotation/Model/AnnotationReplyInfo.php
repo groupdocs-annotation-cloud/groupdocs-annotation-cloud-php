@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="AnnotationReplyInfo.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -53,13 +53,13 @@ class AnnotationReplyInfo implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'guid' => 'string',
-        'userGuid' => 'string',
+        'id' => 'int',
+        'userId' => 'int',
         'userName' => 'string',
         'userEmail' => 'string',
-        'message' => 'string',
+        'comment' => 'string',
         'repliedOn' => '\DateTime',
-        'parentReplyGuid' => 'string'
+        'parentReplyId' => 'int'
     ];
 
     /*
@@ -68,13 +68,13 @@ class AnnotationReplyInfo implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'guid' => null,
-        'userGuid' => null,
+        'id' => 'int32',
+        'userId' => 'int32',
         'userName' => null,
         'userEmail' => null,
-        'message' => null,
+        'comment' => null,
         'repliedOn' => 'date-time',
-        'parentReplyGuid' => null
+        'parentReplyId' => 'int32'
     ];
 
     /*
@@ -104,13 +104,13 @@ class AnnotationReplyInfo implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'guid' => 'Guid',
-        'userGuid' => 'UserGuid',
+        'id' => 'Id',
+        'userId' => 'UserId',
         'userName' => 'UserName',
         'userEmail' => 'UserEmail',
-        'message' => 'Message',
+        'comment' => 'Comment',
         'repliedOn' => 'RepliedOn',
-        'parentReplyGuid' => 'ParentReplyGuid'
+        'parentReplyId' => 'ParentReplyId'
     ];
 
     /*
@@ -119,13 +119,13 @@ class AnnotationReplyInfo implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'guid' => 'setGuid',
-        'userGuid' => 'setUserGuid',
+        'id' => 'setId',
+        'userId' => 'setUserId',
         'userName' => 'setUserName',
         'userEmail' => 'setUserEmail',
-        'message' => 'setMessage',
+        'comment' => 'setComment',
         'repliedOn' => 'setRepliedOn',
-        'parentReplyGuid' => 'setParentReplyGuid'
+        'parentReplyId' => 'setParentReplyId'
     ];
 
     /*
@@ -134,13 +134,13 @@ class AnnotationReplyInfo implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'guid' => 'getGuid',
-        'userGuid' => 'getUserGuid',
+        'id' => 'getId',
+        'userId' => 'getUserId',
         'userName' => 'getUserName',
         'userEmail' => 'getUserEmail',
-        'message' => 'getMessage',
+        'comment' => 'getComment',
         'repliedOn' => 'getRepliedOn',
-        'parentReplyGuid' => 'getParentReplyGuid'
+        'parentReplyId' => 'getParentReplyId'
     ];
 
     /*
@@ -203,13 +203,13 @@ class AnnotationReplyInfo implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['guid'] = isset($data['guid']) ? $data['guid'] : null;
-        $this->container['userGuid'] = isset($data['userGuid']) ? $data['userGuid'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
         $this->container['userName'] = isset($data['userName']) ? $data['userName'] : null;
         $this->container['userEmail'] = isset($data['userEmail']) ? $data['userEmail'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['comment'] = isset($data['comment']) ? $data['comment'] : null;
         $this->container['repliedOn'] = isset($data['repliedOn']) ? $data['repliedOn'] : null;
-        $this->container['parentReplyGuid'] = isset($data['parentReplyGuid']) ? $data['parentReplyGuid'] : null;
+        $this->container['parentReplyId'] = isset($data['parentReplyId']) ? $data['parentReplyId'] : null;
     }
 
     /*
@@ -221,8 +221,17 @@ class AnnotationReplyInfo implements ArrayAccess
     {
         $invalidProperties = [];
 
+        if ($this->container['id'] === null) {
+            $invalidProperties[] = "'id' can't be null";
+        }
+        if ($this->container['userId'] === null) {
+            $invalidProperties[] = "'userId' can't be null";
+        }
         if ($this->container['repliedOn'] === null) {
             $invalidProperties[] = "'repliedOn' can't be null";
+        }
+        if ($this->container['parentReplyId'] === null) {
+            $invalidProperties[] = "'parentReplyId' can't be null";
         }
         return $invalidProperties;
     }
@@ -236,7 +245,16 @@ class AnnotationReplyInfo implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['id'] === null) {
+            return false;
+        }
+        if ($this->container['userId'] === null) {
+            return false;
+        }
         if ($this->container['repliedOn'] === null) {
+            return false;
+        }
+        if ($this->container['parentReplyId'] === null) {
             return false;
         }
         return true;
@@ -244,49 +262,49 @@ class AnnotationReplyInfo implements ArrayAccess
 
 
     /*
-     * Gets guid
+     * Gets id
      *
-     * @return string
+     * @return int
      */
-    public function getGuid()
+    public function getId()
     {
-        return $this->container['guid'];
+        return $this->container['id'];
     }
 
     /*
-     * Sets guid
+     * Sets id
      *
-     * @param string $guid Gets or sets the unique identifier
+     * @param int $id Gets or sets the unique identifier
      *
      * @return $this
      */
-    public function setGuid($guid)
+    public function setId($id)
     {
-        $this->container['guid'] = $guid;
+        $this->container['id'] = $id;
 
         return $this;
     }
 
     /*
-     * Gets userGuid
+     * Gets userId
      *
-     * @return string
+     * @return int
      */
-    public function getUserGuid()
+    public function getUserId()
     {
-        return $this->container['userGuid'];
+        return $this->container['userId'];
     }
 
     /*
-     * Sets userGuid
+     * Sets userId
      *
-     * @param string $userGuid Gets or sets the user's unique identifier
+     * @param int $userId Gets or sets the user's unique identifier
      *
      * @return $this
      */
-    public function setUserGuid($userGuid)
+    public function setUserId($userId)
     {
-        $this->container['userGuid'] = $userGuid;
+        $this->container['userId'] = $userId;
 
         return $this;
     }
@@ -340,25 +358,25 @@ class AnnotationReplyInfo implements ArrayAccess
     }
 
     /*
-     * Gets message
+     * Gets comment
      *
      * @return string
      */
-    public function getMessage()
+    public function getComment()
     {
-        return $this->container['message'];
+        return $this->container['comment'];
     }
 
     /*
-     * Sets message
+     * Sets comment
      *
-     * @param string $message Gets or sets the message
+     * @param string $comment Gets or sets the message
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setComment($comment)
     {
-        $this->container['message'] = $message;
+        $this->container['comment'] = $comment;
 
         return $this;
     }
@@ -388,25 +406,25 @@ class AnnotationReplyInfo implements ArrayAccess
     }
 
     /*
-     * Gets parentReplyGuid
+     * Gets parentReplyId
      *
-     * @return string
+     * @return int
      */
-    public function getParentReplyGuid()
+    public function getParentReplyId()
     {
-        return $this->container['parentReplyGuid'];
+        return $this->container['parentReplyId'];
     }
 
     /*
-     * Sets parentReplyGuid
+     * Sets parentReplyId
      *
-     * @param string $parentReplyGuid Gets or sets the parent reply unique identifier
+     * @param int $parentReplyId Gets or sets the parent reply unique identifier
      *
      * @return $this
      */
-    public function setParentReplyGuid($parentReplyGuid)
+    public function setParentReplyId($parentReplyId)
     {
-        $this->container['parentReplyGuid'] = $parentReplyGuid;
+        $this->container['parentReplyId'] = $parentReplyId;
 
         return $this;
     }

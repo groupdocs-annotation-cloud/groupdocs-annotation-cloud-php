@@ -3,7 +3,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="TestFiles.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -205,13 +205,13 @@ class TestFiles
 
     public static function getTestFilesList() {        
         return array(
-            #self::OnePageCells(),
-            #self::OnePagePasswordCells(),
-            #self::TenPagesCells(),
+            self::OnePageCells(),
+            self::OnePagePasswordCells(),
+            self::TenPagesCells(),
             self::OnePageDiagram(),
             self::TenPagesDiagram(),
             self::OnePageEmail(),
-            #self::OnePageHtml(),
+            self::OnePageHtml(),
             self::OnePageBmp(),
             self::OnePagePng(),
             self::OnePagePdf(),
@@ -267,9 +267,9 @@ class TestFiles
     public static function getTestFilesManyPages() {        
         return array(
             self::TenPagesDiagram(),
-            #self::TenPagesPdf(),
-            self::TenPagesSlides()
-            #self::TenPagesWords()
+            self::TenPagesPdf(),
+            self::TenPagesSlides(),
+            self::TenPagesWords()
         );
     }
 

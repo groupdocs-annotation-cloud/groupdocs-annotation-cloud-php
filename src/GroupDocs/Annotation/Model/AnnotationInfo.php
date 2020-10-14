@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="AnnotationInfo.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -53,30 +53,33 @@ class AnnotationInfo implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'guid' => 'string',
-        'documentGuid' => 'int',
+        'id' => 'int',
         'text' => 'string',
-        'creatorGuid' => 'string',
+        'textToReplace' => 'string',
+        'horizontalAlignment' => 'string',
+        'verticalAlignment' => 'string',
+        'creatorId' => 'int',
         'creatorName' => 'string',
         'creatorEmail' => 'string',
         'box' => '\GroupDocs\Annotation\Model\Rectangle',
+        'points' => '\GroupDocs\Annotation\Model\Point[]',
         'pageNumber' => 'int',
         'annotationPosition' => '\GroupDocs\Annotation\Model\Point',
         'svgPath' => 'string',
         'type' => 'string',
-        'access' => 'string',
         'replies' => '\GroupDocs\Annotation\Model\AnnotationReplyInfo[]',
         'createdOn' => '\DateTime',
         'fontColor' => 'int',
         'penColor' => 'int',
         'penWidth' => 'int',
-        'penStyle' => 'int',
+        'penStyle' => 'string',
         'backgroundColor' => 'int',
-        'fieldText' => 'string',
         'fontFamily' => 'string',
         'fontSize' => 'double',
         'opacity' => 'double',
-        'angle' => 'double'
+        'angle' => 'double',
+        'url' => 'string',
+        'imagePath' => 'string'
     ];
 
     /*
@@ -85,30 +88,33 @@ class AnnotationInfo implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'guid' => null,
-        'documentGuid' => 'int64',
+        'id' => 'int32',
         'text' => null,
-        'creatorGuid' => null,
+        'textToReplace' => null,
+        'horizontalAlignment' => null,
+        'verticalAlignment' => null,
+        'creatorId' => 'int32',
         'creatorName' => null,
         'creatorEmail' => null,
         'box' => null,
+        'points' => null,
         'pageNumber' => 'int32',
         'annotationPosition' => null,
         'svgPath' => null,
         'type' => null,
-        'access' => null,
         'replies' => null,
         'createdOn' => 'date-time',
         'fontColor' => 'int32',
         'penColor' => 'int32',
         'penWidth' => 'byte',
-        'penStyle' => 'byte',
+        'penStyle' => null,
         'backgroundColor' => 'int32',
-        'fieldText' => null,
         'fontFamily' => null,
         'fontSize' => 'double',
         'opacity' => 'double',
-        'angle' => 'double'
+        'angle' => 'double',
+        'url' => null,
+        'imagePath' => null
     ];
 
     /*
@@ -138,18 +144,20 @@ class AnnotationInfo implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'guid' => 'Guid',
-        'documentGuid' => 'DocumentGuid',
+        'id' => 'Id',
         'text' => 'Text',
-        'creatorGuid' => 'CreatorGuid',
+        'textToReplace' => 'TextToReplace',
+        'horizontalAlignment' => 'HorizontalAlignment',
+        'verticalAlignment' => 'VerticalAlignment',
+        'creatorId' => 'CreatorId',
         'creatorName' => 'CreatorName',
         'creatorEmail' => 'CreatorEmail',
         'box' => 'Box',
+        'points' => 'Points',
         'pageNumber' => 'PageNumber',
         'annotationPosition' => 'AnnotationPosition',
         'svgPath' => 'SvgPath',
         'type' => 'Type',
-        'access' => 'Access',
         'replies' => 'Replies',
         'createdOn' => 'CreatedOn',
         'fontColor' => 'FontColor',
@@ -157,11 +165,12 @@ class AnnotationInfo implements ArrayAccess
         'penWidth' => 'PenWidth',
         'penStyle' => 'PenStyle',
         'backgroundColor' => 'BackgroundColor',
-        'fieldText' => 'FieldText',
         'fontFamily' => 'FontFamily',
         'fontSize' => 'FontSize',
         'opacity' => 'Opacity',
-        'angle' => 'Angle'
+        'angle' => 'Angle',
+        'url' => 'Url',
+        'imagePath' => 'ImagePath'
     ];
 
     /*
@@ -170,18 +179,20 @@ class AnnotationInfo implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'guid' => 'setGuid',
-        'documentGuid' => 'setDocumentGuid',
+        'id' => 'setId',
         'text' => 'setText',
-        'creatorGuid' => 'setCreatorGuid',
+        'textToReplace' => 'setTextToReplace',
+        'horizontalAlignment' => 'setHorizontalAlignment',
+        'verticalAlignment' => 'setVerticalAlignment',
+        'creatorId' => 'setCreatorId',
         'creatorName' => 'setCreatorName',
         'creatorEmail' => 'setCreatorEmail',
         'box' => 'setBox',
+        'points' => 'setPoints',
         'pageNumber' => 'setPageNumber',
         'annotationPosition' => 'setAnnotationPosition',
         'svgPath' => 'setSvgPath',
         'type' => 'setType',
-        'access' => 'setAccess',
         'replies' => 'setReplies',
         'createdOn' => 'setCreatedOn',
         'fontColor' => 'setFontColor',
@@ -189,11 +200,12 @@ class AnnotationInfo implements ArrayAccess
         'penWidth' => 'setPenWidth',
         'penStyle' => 'setPenStyle',
         'backgroundColor' => 'setBackgroundColor',
-        'fieldText' => 'setFieldText',
         'fontFamily' => 'setFontFamily',
         'fontSize' => 'setFontSize',
         'opacity' => 'setOpacity',
-        'angle' => 'setAngle'
+        'angle' => 'setAngle',
+        'url' => 'setUrl',
+        'imagePath' => 'setImagePath'
     ];
 
     /*
@@ -202,18 +214,20 @@ class AnnotationInfo implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'guid' => 'getGuid',
-        'documentGuid' => 'getDocumentGuid',
+        'id' => 'getId',
         'text' => 'getText',
-        'creatorGuid' => 'getCreatorGuid',
+        'textToReplace' => 'getTextToReplace',
+        'horizontalAlignment' => 'getHorizontalAlignment',
+        'verticalAlignment' => 'getVerticalAlignment',
+        'creatorId' => 'getCreatorId',
         'creatorName' => 'getCreatorName',
         'creatorEmail' => 'getCreatorEmail',
         'box' => 'getBox',
+        'points' => 'getPoints',
         'pageNumber' => 'getPageNumber',
         'annotationPosition' => 'getAnnotationPosition',
         'svgPath' => 'getSvgPath',
         'type' => 'getType',
-        'access' => 'getAccess',
         'replies' => 'getReplies',
         'createdOn' => 'getCreatedOn',
         'fontColor' => 'getFontColor',
@@ -221,11 +235,12 @@ class AnnotationInfo implements ArrayAccess
         'penWidth' => 'getPenWidth',
         'penStyle' => 'getPenStyle',
         'backgroundColor' => 'getBackgroundColor',
-        'fieldText' => 'getFieldText',
         'fontFamily' => 'getFontFamily',
         'fontSize' => 'getFontSize',
         'opacity' => 'getOpacity',
-        'angle' => 'getAngle'
+        'angle' => 'getAngle',
+        'url' => 'getUrl',
+        'imagePath' => 'getImagePath'
     ];
 
     /*
@@ -269,24 +284,69 @@ class AnnotationInfo implements ArrayAccess
         return self::$swaggerModelName;
     }
 
-    const TYPE_TEXT = 'Text';
+    const HORIZONTAL_ALIGNMENT_NONE = 'None';
+    const HORIZONTAL_ALIGNMENT_LEFT = 'Left';
+    const HORIZONTAL_ALIGNMENT_CENTER = 'Center';
+    const HORIZONTAL_ALIGNMENT_RIGHT = 'Right';
+    const VERTICAL_ALIGNMENT_NONE = 'None';
+    const VERTICAL_ALIGNMENT_TOP = 'Top';
+    const VERTICAL_ALIGNMENT_CENTER = 'Center';
+    const VERTICAL_ALIGNMENT_BOTTOM = 'Bottom';
+    const TYPE_NONE = 'None';
     const TYPE_AREA = 'Area';
-    const TYPE_POINT = 'Point';
-    const TYPE_TEXT_STRIKEOUT = 'TextStrikeout';
-    const TYPE_POLYLINE = 'Polyline';
-    const TYPE_TEXT_FIELD = 'TextField';
-    const TYPE_WATERMARK = 'Watermark';
-    const TYPE_TEXT_REPLACEMENT = 'TextReplacement';
     const TYPE_ARROW = 'Arrow';
-    const TYPE_TEXT_REDACTION = 'TextRedaction';
-    const TYPE_RESOURCES_REDACTION = 'ResourcesRedaction';
-    const TYPE_TEXT_UNDERLINE = 'TextUnderline';
     const TYPE_DISTANCE = 'Distance';
     const TYPE_ELLIPSE = 'Ellipse';
-    const ACCESS__PUBLIC = 'Public';
-    const ACCESS__PRIVATE = 'Private';
+    const TYPE_LINK = 'Link';
+    const TYPE_POINT = 'Point';
+    const TYPE_POLYLINE = 'Polyline';
+    const TYPE_RESOURCES_REDACTION = 'ResourcesRedaction';
+    const TYPE_TEXT_FIELD = 'TextField';
+    const TYPE_TEXT_HIGHLIGHT = 'TextHighlight';
+    const TYPE_TEXT_REDACTION = 'TextRedaction';
+    const TYPE_TEXT_REPLACEMENT = 'TextReplacement';
+    const TYPE_TEXT_STRIKEOUT = 'TextStrikeout';
+    const TYPE_TEXT_UNDERLINE = 'TextUnderline';
+    const TYPE_WATERMARK = 'Watermark';
+    const TYPE_IMAGE = 'Image';
+    const PEN_STYLE_SOLID = 'Solid';
+    const PEN_STYLE_DASH = 'Dash';
+    const PEN_STYLE_DASH_DOT = 'DashDot';
+    const PEN_STYLE_DOT = 'Dot';
+    const PEN_STYLE_LONG_DASH = 'LongDash';
+    const PEN_STYLE_DASH_DOT_DOT = 'DashDotDot';
     
 
+    
+    /*
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getHorizontalAlignmentAllowableValues()
+    {
+        return [
+            self::HORIZONTAL_ALIGNMENT_NONE,
+            self::HORIZONTAL_ALIGNMENT_LEFT,
+            self::HORIZONTAL_ALIGNMENT_CENTER,
+            self::HORIZONTAL_ALIGNMENT_RIGHT,
+        ];
+    }
+    
+    /*
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getVerticalAlignmentAllowableValues()
+    {
+        return [
+            self::VERTICAL_ALIGNMENT_NONE,
+            self::VERTICAL_ALIGNMENT_TOP,
+            self::VERTICAL_ALIGNMENT_CENTER,
+            self::VERTICAL_ALIGNMENT_BOTTOM,
+        ];
+    }
     
     /*
      * Gets allowable values of the enum
@@ -296,20 +356,23 @@ class AnnotationInfo implements ArrayAccess
     public function getTypeAllowableValues()
     {
         return [
-            self::TYPE_TEXT,
+            self::TYPE_NONE,
             self::TYPE_AREA,
-            self::TYPE_POINT,
-            self::TYPE_TEXT_STRIKEOUT,
-            self::TYPE_POLYLINE,
-            self::TYPE_TEXT_FIELD,
-            self::TYPE_WATERMARK,
-            self::TYPE_TEXT_REPLACEMENT,
             self::TYPE_ARROW,
-            self::TYPE_TEXT_REDACTION,
-            self::TYPE_RESOURCES_REDACTION,
-            self::TYPE_TEXT_UNDERLINE,
             self::TYPE_DISTANCE,
             self::TYPE_ELLIPSE,
+            self::TYPE_LINK,
+            self::TYPE_POINT,
+            self::TYPE_POLYLINE,
+            self::TYPE_RESOURCES_REDACTION,
+            self::TYPE_TEXT_FIELD,
+            self::TYPE_TEXT_HIGHLIGHT,
+            self::TYPE_TEXT_REDACTION,
+            self::TYPE_TEXT_REPLACEMENT,
+            self::TYPE_TEXT_STRIKEOUT,
+            self::TYPE_TEXT_UNDERLINE,
+            self::TYPE_WATERMARK,
+            self::TYPE_IMAGE,
         ];
     }
     
@@ -318,11 +381,15 @@ class AnnotationInfo implements ArrayAccess
      *
      * @return string[]
      */
-    public function getAccessAllowableValues()
+    public function getPenStyleAllowableValues()
     {
         return [
-            self::ACCESS__PUBLIC,
-            self::ACCESS__PRIVATE,
+            self::PEN_STYLE_SOLID,
+            self::PEN_STYLE_DASH,
+            self::PEN_STYLE_DASH_DOT,
+            self::PEN_STYLE_DOT,
+            self::PEN_STYLE_LONG_DASH,
+            self::PEN_STYLE_DASH_DOT_DOT,
         ];
     }
     
@@ -342,18 +409,20 @@ class AnnotationInfo implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['guid'] = isset($data['guid']) ? $data['guid'] : null;
-        $this->container['documentGuid'] = isset($data['documentGuid']) ? $data['documentGuid'] : null;
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
         $this->container['text'] = isset($data['text']) ? $data['text'] : null;
-        $this->container['creatorGuid'] = isset($data['creatorGuid']) ? $data['creatorGuid'] : null;
+        $this->container['textToReplace'] = isset($data['textToReplace']) ? $data['textToReplace'] : null;
+        $this->container['horizontalAlignment'] = isset($data['horizontalAlignment']) ? $data['horizontalAlignment'] : null;
+        $this->container['verticalAlignment'] = isset($data['verticalAlignment']) ? $data['verticalAlignment'] : null;
+        $this->container['creatorId'] = isset($data['creatorId']) ? $data['creatorId'] : null;
         $this->container['creatorName'] = isset($data['creatorName']) ? $data['creatorName'] : null;
         $this->container['creatorEmail'] = isset($data['creatorEmail']) ? $data['creatorEmail'] : null;
         $this->container['box'] = isset($data['box']) ? $data['box'] : null;
+        $this->container['points'] = isset($data['points']) ? $data['points'] : null;
         $this->container['pageNumber'] = isset($data['pageNumber']) ? $data['pageNumber'] : null;
         $this->container['annotationPosition'] = isset($data['annotationPosition']) ? $data['annotationPosition'] : null;
         $this->container['svgPath'] = isset($data['svgPath']) ? $data['svgPath'] : null;
         $this->container['type'] = isset($data['type']) ? $data['type'] : null;
-        $this->container['access'] = isset($data['access']) ? $data['access'] : null;
         $this->container['replies'] = isset($data['replies']) ? $data['replies'] : null;
         $this->container['createdOn'] = isset($data['createdOn']) ? $data['createdOn'] : null;
         $this->container['fontColor'] = isset($data['fontColor']) ? $data['fontColor'] : null;
@@ -361,11 +430,12 @@ class AnnotationInfo implements ArrayAccess
         $this->container['penWidth'] = isset($data['penWidth']) ? $data['penWidth'] : null;
         $this->container['penStyle'] = isset($data['penStyle']) ? $data['penStyle'] : null;
         $this->container['backgroundColor'] = isset($data['backgroundColor']) ? $data['backgroundColor'] : null;
-        $this->container['fieldText'] = isset($data['fieldText']) ? $data['fieldText'] : null;
         $this->container['fontFamily'] = isset($data['fontFamily']) ? $data['fontFamily'] : null;
         $this->container['fontSize'] = isset($data['fontSize']) ? $data['fontSize'] : null;
         $this->container['opacity'] = isset($data['opacity']) ? $data['opacity'] : null;
         $this->container['angle'] = isset($data['angle']) ? $data['angle'] : null;
+        $this->container['url'] = isset($data['url']) ? $data['url'] : null;
+        $this->container['imagePath'] = isset($data['imagePath']) ? $data['imagePath'] : null;
     }
 
     /*
@@ -377,8 +447,33 @@ class AnnotationInfo implements ArrayAccess
     {
         $invalidProperties = [];
 
-        if ($this->container['documentGuid'] === null) {
-            $invalidProperties[] = "'documentGuid' can't be null";
+        if ($this->container['id'] === null) {
+            $invalidProperties[] = "'id' can't be null";
+        }
+        if ($this->container['horizontalAlignment'] === null) {
+            $invalidProperties[] = "'horizontalAlignment' can't be null";
+        }
+        $allowedValues = $this->getHorizontalAlignmentAllowableValues();
+        if (!in_array($this->container['horizontalAlignment'], $allowedValues)) {
+            $invalidProperties[] = sprintf(
+                "invalid value for 'horizontalAlignment', must be one of '%s'",
+                implode("', '", $allowedValues)
+            );
+        }
+
+        if ($this->container['verticalAlignment'] === null) {
+            $invalidProperties[] = "'verticalAlignment' can't be null";
+        }
+        $allowedValues = $this->getVerticalAlignmentAllowableValues();
+        if (!in_array($this->container['verticalAlignment'], $allowedValues)) {
+            $invalidProperties[] = sprintf(
+                "invalid value for 'verticalAlignment', must be one of '%s'",
+                implode("', '", $allowedValues)
+            );
+        }
+
+        if ($this->container['creatorId'] === null) {
+            $invalidProperties[] = "'creatorId' can't be null";
         }
         if ($this->container['box'] === null) {
             $invalidProperties[] = "'box' can't be null";
@@ -394,17 +489,17 @@ class AnnotationInfo implements ArrayAccess
             );
         }
 
-        $allowedValues = $this->getAccessAllowableValues();
-        if (!in_array($this->container['access'], $allowedValues)) {
+        if ($this->container['createdOn'] === null) {
+            $invalidProperties[] = "'createdOn' can't be null";
+        }
+        $allowedValues = $this->getPenStyleAllowableValues();
+        if (!in_array($this->container['penStyle'], $allowedValues)) {
             $invalidProperties[] = sprintf(
-                "invalid value for 'access', must be one of '%s'",
+                "invalid value for 'penStyle', must be one of '%s'",
                 implode("', '", $allowedValues)
             );
         }
 
-        if ($this->container['createdOn'] === null) {
-            $invalidProperties[] = "'createdOn' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -417,7 +512,24 @@ class AnnotationInfo implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['documentGuid'] === null) {
+        if ($this->container['id'] === null) {
+            return false;
+        }
+        if ($this->container['horizontalAlignment'] === null) {
+            return false;
+        }
+        $allowedValues = $this->getHorizontalAlignmentAllowableValues();
+        if (!in_array($this->container['horizontalAlignment'], $allowedValues)) {
+            return false;
+        }
+        if ($this->container['verticalAlignment'] === null) {
+            return false;
+        }
+        $allowedValues = $this->getVerticalAlignmentAllowableValues();
+        if (!in_array($this->container['verticalAlignment'], $allowedValues)) {
+            return false;
+        }
+        if ($this->container['creatorId'] === null) {
             return false;
         }
         if ($this->container['box'] === null) {
@@ -430,11 +542,11 @@ class AnnotationInfo implements ArrayAccess
         if (!in_array($this->container['type'], $allowedValues)) {
             return false;
         }
-        $allowedValues = $this->getAccessAllowableValues();
-        if (!in_array($this->container['access'], $allowedValues)) {
+        if ($this->container['createdOn'] === null) {
             return false;
         }
-        if ($this->container['createdOn'] === null) {
+        $allowedValues = $this->getPenStyleAllowableValues();
+        if (!in_array($this->container['penStyle'], $allowedValues)) {
             return false;
         }
         return true;
@@ -442,49 +554,25 @@ class AnnotationInfo implements ArrayAccess
 
 
     /*
-     * Gets guid
-     *
-     * @return string
-     */
-    public function getGuid()
-    {
-        return $this->container['guid'];
-    }
-
-    /*
-     * Sets guid
-     *
-     * @param string $guid Gets or sets the unique identifier
-     *
-     * @return $this
-     */
-    public function setGuid($guid)
-    {
-        $this->container['guid'] = $guid;
-
-        return $this;
-    }
-
-    /*
-     * Gets documentGuid
+     * Gets id
      *
      * @return int
      */
-    public function getDocumentGuid()
+    public function getId()
     {
-        return $this->container['documentGuid'];
+        return $this->container['id'];
     }
 
     /*
-     * Sets documentGuid
+     * Sets id
      *
-     * @param int $documentGuid Gets or sets the document unique identifier
+     * @param int $id Gets or sets the unique identifier
      *
      * @return $this
      */
-    public function setDocumentGuid($documentGuid)
+    public function setId($id)
     {
-        $this->container['documentGuid'] = $documentGuid;
+        $this->container['id'] = $id;
 
         return $this;
     }
@@ -514,25 +602,107 @@ class AnnotationInfo implements ArrayAccess
     }
 
     /*
-     * Gets creatorGuid
+     * Gets textToReplace
      *
      * @return string
      */
-    public function getCreatorGuid()
+    public function getTextToReplace()
     {
-        return $this->container['creatorGuid'];
+        return $this->container['textToReplace'];
     }
 
     /*
-     * Sets creatorGuid
+     * Sets textToReplace
      *
-     * @param string $creatorGuid Gets or sets the creator unique identifier
+     * @param string $textToReplace GGets or sets text to be replaced
      *
      * @return $this
      */
-    public function setCreatorGuid($creatorGuid)
+    public function setTextToReplace($textToReplace)
     {
-        $this->container['creatorGuid'] = $creatorGuid;
+        $this->container['textToReplace'] = $textToReplace;
+
+        return $this;
+    }
+
+    /*
+     * Gets horizontalAlignment
+     *
+     * @return string
+     */
+    public function getHorizontalAlignment()
+    {
+        return $this->container['horizontalAlignment'];
+    }
+
+    /*
+     * Sets horizontalAlignment
+     *
+     * @param string $horizontalAlignment Gets or sets text horizontal alignment
+     *
+     * @return $this
+     */
+    public function setHorizontalAlignment($horizontalAlignment)
+    {
+        $allowedValues = $this->getHorizontalAlignmentAllowableValues();
+        if ((!is_numeric($horizontalAlignment) && !in_array($horizontalAlignment, $allowedValues)) || (is_numeric($horizontalAlignment) && !in_array($allowedValues[$horizontalAlignment], $allowedValues))) {
+            throw new \InvalidArgumentException(sprintf("Invalid value for 'horizontalAlignment', must be one of '%s'", implode("', '", $allowedValues)));
+        }
+			
+        $this->container['horizontalAlignment'] = $horizontalAlignment;
+
+        return $this;
+    }
+
+    /*
+     * Gets verticalAlignment
+     *
+     * @return string
+     */
+    public function getVerticalAlignment()
+    {
+        return $this->container['verticalAlignment'];
+    }
+
+    /*
+     * Sets verticalAlignment
+     *
+     * @param string $verticalAlignment Gets or sets text vertical alignment
+     *
+     * @return $this
+     */
+    public function setVerticalAlignment($verticalAlignment)
+    {
+        $allowedValues = $this->getVerticalAlignmentAllowableValues();
+        if ((!is_numeric($verticalAlignment) && !in_array($verticalAlignment, $allowedValues)) || (is_numeric($verticalAlignment) && !in_array($allowedValues[$verticalAlignment], $allowedValues))) {
+            throw new \InvalidArgumentException(sprintf("Invalid value for 'verticalAlignment', must be one of '%s'", implode("', '", $allowedValues)));
+        }
+			
+        $this->container['verticalAlignment'] = $verticalAlignment;
+
+        return $this;
+    }
+
+    /*
+     * Gets creatorId
+     *
+     * @return int
+     */
+    public function getCreatorId()
+    {
+        return $this->container['creatorId'];
+    }
+
+    /*
+     * Sets creatorId
+     *
+     * @param int $creatorId Gets or sets the creator unique identifier
+     *
+     * @return $this
+     */
+    public function setCreatorId($creatorId)
+    {
+        $this->container['creatorId'] = $creatorId;
 
         return $this;
     }
@@ -605,6 +775,30 @@ class AnnotationInfo implements ArrayAccess
     public function setBox($box)
     {
         $this->container['box'] = $box;
+
+        return $this;
+    }
+
+    /*
+     * Gets points
+     *
+     * @return \GroupDocs\Annotation\Model\Point[]
+     */
+    public function getPoints()
+    {
+        return $this->container['points'];
+    }
+
+    /*
+     * Sets points
+     *
+     * @param \GroupDocs\Annotation\Model\Point[] $points Gets or sets collection of points that describe rectangles with text
+     *
+     * @return $this
+     */
+    public function setPoints($points)
+    {
+        $this->container['points'] = $points;
 
         return $this;
     }
@@ -706,35 +900,6 @@ class AnnotationInfo implements ArrayAccess
         }
 			
         $this->container['type'] = $type;
-
-        return $this;
-    }
-
-    /*
-     * Gets access
-     *
-     * @return string
-     */
-    public function getAccess()
-    {
-        return $this->container['access'];
-    }
-
-    /*
-     * Sets access
-     *
-     * @param string $access Gets or sets the annotation access
-     *
-     * @return $this
-     */
-    public function setAccess($access)
-    {
-        $allowedValues = $this->getAccessAllowableValues();
-        if ((!is_numeric($access) && !in_array($access, $allowedValues)) || (is_numeric($access) && !in_array($allowedValues[$access], $allowedValues))) {
-            throw new \InvalidArgumentException(sprintf("Invalid value for 'access', must be one of '%s'", implode("', '", $allowedValues)));
-        }
-			
-        $this->container['access'] = $access;
 
         return $this;
     }
@@ -862,7 +1027,7 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Gets penStyle
      *
-     * @return int
+     * @return string
      */
     public function getPenStyle()
     {
@@ -872,12 +1037,17 @@ class AnnotationInfo implements ArrayAccess
     /*
      * Sets penStyle
      *
-     * @param int $penStyle Gets or sets the annotation's pen style
+     * @param string $penStyle Gets or sets the annotation's pen style
      *
      * @return $this
      */
     public function setPenStyle($penStyle)
     {
+        $allowedValues = $this->getPenStyleAllowableValues();
+        if ((!is_numeric($penStyle) && !in_array($penStyle, $allowedValues)) || (is_numeric($penStyle) && !in_array($allowedValues[$penStyle], $allowedValues))) {
+            throw new \InvalidArgumentException(sprintf("Invalid value for 'penStyle', must be one of '%s'", implode("', '", $allowedValues)));
+        }
+			
         $this->container['penStyle'] = $penStyle;
 
         return $this;
@@ -903,30 +1073,6 @@ class AnnotationInfo implements ArrayAccess
     public function setBackgroundColor($backgroundColor)
     {
         $this->container['backgroundColor'] = $backgroundColor;
-
-        return $this;
-    }
-
-    /*
-     * Gets fieldText
-     *
-     * @return string
-     */
-    public function getFieldText()
-    {
-        return $this->container['fieldText'];
-    }
-
-    /*
-     * Sets fieldText
-     *
-     * @param string $fieldText Gets or sets the annotation's field text
-     *
-     * @return $this
-     */
-    public function setFieldText($fieldText)
-    {
-        $this->container['fieldText'] = $fieldText;
 
         return $this;
     }
@@ -1023,6 +1169,54 @@ class AnnotationInfo implements ArrayAccess
     public function setAngle($angle)
     {
         $this->container['angle'] = $angle;
+
+        return $this;
+    }
+
+    /*
+     * Gets url
+     *
+     * @return string
+     */
+    public function getUrl()
+    {
+        return $this->container['url'];
+    }
+
+    /*
+     * Sets url
+     *
+     * @param string $url Gets or sets annotation link url
+     *
+     * @return $this
+     */
+    public function setUrl($url)
+    {
+        $this->container['url'] = $url;
+
+        return $this;
+    }
+
+    /*
+     * Gets imagePath
+     *
+     * @return string
+     */
+    public function getImagePath()
+    {
+        return $this->container['imagePath'];
+    }
+
+    /*
+     * Sets imagePath
+     *
+     * @param string $imagePath Gets or sets image file path in cloud storage, for Image annotations
+     *
+     * @return $this
+     */
+    public function setImagePath($imagePath)
+    {
+        $this->container['imagePath'] = $imagePath;
 
         return $this;
     }

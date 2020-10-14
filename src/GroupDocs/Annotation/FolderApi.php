@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="FolderApi.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -129,8 +129,8 @@ class FolderApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -393,8 +393,8 @@ class FolderApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -579,13 +579,13 @@ class FolderApi
         );
     
         $req = new Request(
-            'POST',
+            'PUT',
             $resourcePath,
             $headers,
             $httpBody
         );
         if ($this->config->getDebug()) {
-            $this->_writeRequestLog('POST', $resourcePath, $headers, $httpBody);
+            $this->_writeRequestLog('PUT', $resourcePath, $headers, $httpBody);
         }
         
         return $req;
@@ -633,8 +633,8 @@ class FolderApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -884,8 +884,8 @@ class FolderApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -1164,8 +1164,8 @@ class FolderApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->Error != null && $error->Error->Message != null
-                    ? $error->Error->Message
+                $errorMessage = $error->error != null && $error->error->message != null
+                    ? $error->error->message
                     : $e->getMessage();
                 
                 throw new ApiException($errorMessage, $errorCode);
@@ -1488,7 +1488,7 @@ class FolderApi
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="copyFolderRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1558,7 +1558,7 @@ class copyFolderRequest
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="createFolderRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1614,7 +1614,7 @@ class createFolderRequest
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="deleteFolderRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1677,7 +1677,7 @@ class deleteFolderRequest
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="getFilesListRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1733,7 +1733,7 @@ class getFilesListRequest
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="moveFolderRequest.php">
- *   Copyright (c) 2003-2019 Aspose Pty Ltd
+ *   Copyright (c) 2003-2020 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
