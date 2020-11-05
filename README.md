@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/api-v2.0-lightgrey) ![Packagist Version](https://img.shields.io/packagist/v/groupdocscloud/groupdocs-annotation-cloud) ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/groupdocscloud/groupdocs-annotation-cloud) [![GitHub license](https://img.shields.io/github/license/groupdocs-annotation-cloud/groupdocs-annotation-cloud-php)](https://github.com/groupdocs-annotation-cloud/groupdocs-annotation-cloud-php/blob/master/LICENSE) 
 
-# Annotate Documents via Python
+# Annotate Documents via PHP
 
 [GroupDocs.Annotation Cloud SDK for PHP](https://products.groupdocs.cloud/annotation/php) wraps GroupDocs.Annotation RESTful APIs so you may integrate Document Annotation features in your own apps with zero initial cost.
 
@@ -32,7 +32,7 @@ Check out the [Developer's Guide](https://docs.groupdocs.cloud/annotation/develo
 **Web:** MHTML\
 **Others:** TXT
 
-## Get Started with GroupDocs.Annotation Cloud SDK for Ruby
+## Get Started with GroupDocs.Annotation Cloud SDK for PHP
 
 First create an account at [GroupDocs for Cloud](https://dashboard.groupdocs.cloud/) and get your application information. Next, follow the installation steps to get started.
 
