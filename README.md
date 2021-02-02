@@ -86,11 +86,14 @@ php composer.phar install
 
 require_once(__DIR__ . '/vendor/autoload.php');
 
-//TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required).
-$configuration = new GroupDocs\Annotation\Configuration();
-$configuration->setAppSid("XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
-$configuration->setAppKey("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+//Get Client Id and Client Secret from https://dashboard.groupdocs.cloud
+$myClientId = "";
+$myClientSecret = "";
 
+// Create instance of the API
+$configuration = new GroupDocs\Annotation\Configuration();
+$configuration->setAppSid($myClientId);
+$configuration->setAppKey($myClientSecret);
 $infoApi = new GroupDocs\Annotation\InfoApi($configuration); 
 
 try {
