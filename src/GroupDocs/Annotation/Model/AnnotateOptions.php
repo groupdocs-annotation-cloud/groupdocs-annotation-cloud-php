@@ -1,7 +1,7 @@
 <?php
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="LinkElement.php">
+ * <copyright company="Aspose Pty Ltd" file="AnnotateOptions.php">
  *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
@@ -32,20 +32,20 @@ use \ArrayAccess;
 use \GroupDocs\Annotation\ObjectSerializer;
 
 /*
- * LinkElement
+ * AnnotateOptions
  *
- * @description Reference to document
+ * @description Defines options for annotating documents
  */
-class LinkElement implements ArrayAccess
+class AnnotateOptions implements ArrayAccess
 {
-    const DISCRIMINATOR = 'Type';
+    const DISCRIMINATOR = null;
 
     /*
      * The original name of the model.
      *
      * @var string
      */
-    protected static $swaggerModelName = "LinkElement";
+    protected static $swaggerModelName = "AnnotateOptions";
 
     /*
      * Array of property to type mappings. Used for (de)serialization
@@ -53,7 +53,12 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'link' => '\GroupDocs\Annotation\Model\AnnotationApiLink'
+        'fileInfo' => '\GroupDocs\Annotation\Model\FileInfo',
+        'annotations' => '\GroupDocs\Annotation\Model\AnnotationInfo[]',
+        'firstPage' => 'int',
+        'lastPage' => 'int',
+        'onlyAnnotatedPages' => 'bool',
+        'outputPath' => 'string'
     ];
 
     /*
@@ -62,7 +67,12 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'link' => null
+        'fileInfo' => null,
+        'annotations' => null,
+        'firstPage' => 'int32',
+        'lastPage' => 'int32',
+        'onlyAnnotatedPages' => null,
+        'outputPath' => null
     ];
 
     /*
@@ -92,7 +102,12 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'link' => 'link'
+        'fileInfo' => 'FileInfo',
+        'annotations' => 'Annotations',
+        'firstPage' => 'FirstPage',
+        'lastPage' => 'LastPage',
+        'onlyAnnotatedPages' => 'OnlyAnnotatedPages',
+        'outputPath' => 'OutputPath'
     ];
 
     /*
@@ -101,7 +116,12 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'link' => 'setLink'
+        'fileInfo' => 'setFileInfo',
+        'annotations' => 'setAnnotations',
+        'firstPage' => 'setFirstPage',
+        'lastPage' => 'setLastPage',
+        'onlyAnnotatedPages' => 'setOnlyAnnotatedPages',
+        'outputPath' => 'setOutputPath'
     ];
 
     /*
@@ -110,7 +130,12 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'link' => 'getLink'
+        'fileInfo' => 'getFileInfo',
+        'annotations' => 'getAnnotations',
+        'firstPage' => 'getFirstPage',
+        'lastPage' => 'getLastPage',
+        'onlyAnnotatedPages' => 'getOnlyAnnotatedPages',
+        'outputPath' => 'getOutputPath'
     ];
 
     /*
@@ -173,11 +198,12 @@ class LinkElement implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['link'] = isset($data['link']) ? $data['link'] : null;
-
-        // Initialize discriminator property with the model name.
-        $discriminator = array_search('Type', self::$attributeMap);
-        $this->container[$discriminator] = static::$swaggerModelName;
+        $this->container['fileInfo'] = isset($data['fileInfo']) ? $data['fileInfo'] : null;
+        $this->container['annotations'] = isset($data['annotations']) ? $data['annotations'] : null;
+        $this->container['firstPage'] = isset($data['firstPage']) ? $data['firstPage'] : null;
+        $this->container['lastPage'] = isset($data['lastPage']) ? $data['lastPage'] : null;
+        $this->container['onlyAnnotatedPages'] = isset($data['onlyAnnotatedPages']) ? $data['onlyAnnotatedPages'] : null;
+        $this->container['outputPath'] = isset($data['outputPath']) ? $data['outputPath'] : null;
     }
 
     /*
@@ -189,6 +215,15 @@ class LinkElement implements ArrayAccess
     {
         $invalidProperties = [];
 
+        if ($this->container['firstPage'] === null) {
+            $invalidProperties[] = "'firstPage' can't be null";
+        }
+        if ($this->container['lastPage'] === null) {
+            $invalidProperties[] = "'lastPage' can't be null";
+        }
+        if ($this->container['onlyAnnotatedPages'] === null) {
+            $invalidProperties[] = "'onlyAnnotatedPages' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -201,30 +236,159 @@ class LinkElement implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['firstPage'] === null) {
+            return false;
+        }
+        if ($this->container['lastPage'] === null) {
+            return false;
+        }
+        if ($this->container['onlyAnnotatedPages'] === null) {
+            return false;
+        }
         return true;
     }
 
 
     /*
-     * Gets link
+     * Gets fileInfo
      *
-     * @return \GroupDocs\Annotation\Model\AnnotationApiLink
+     * @return \GroupDocs\Annotation\Model\FileInfo
      */
-    public function getLink()
+    public function getFileInfo()
     {
-        return $this->container['link'];
+        return $this->container['fileInfo'];
     }
 
     /*
-     * Sets link
+     * Sets fileInfo
      *
-     * @param \GroupDocs\Annotation\Model\AnnotationApiLink $link Link to the document
+     * @param \GroupDocs\Annotation\Model\FileInfo $fileInfo Input document description
      *
      * @return $this
      */
-    public function setLink($link)
+    public function setFileInfo($fileInfo)
     {
-        $this->container['link'] = $link;
+        $this->container['fileInfo'] = $fileInfo;
+
+        return $this;
+    }
+
+    /*
+     * Gets annotations
+     *
+     * @return \GroupDocs\Annotation\Model\AnnotationInfo[]
+     */
+    public function getAnnotations()
+    {
+        return $this->container['annotations'];
+    }
+
+    /*
+     * Sets annotations
+     *
+     * @param \GroupDocs\Annotation\Model\AnnotationInfo[] $annotations List of annotations to add to the document
+     *
+     * @return $this
+     */
+    public function setAnnotations($annotations)
+    {
+        $this->container['annotations'] = $annotations;
+
+        return $this;
+    }
+
+    /*
+     * Gets firstPage
+     *
+     * @return int
+     */
+    public function getFirstPage()
+    {
+        return $this->container['firstPage'];
+    }
+
+    /*
+     * Sets firstPage
+     *
+     * @param int $firstPage First page number when saving page range
+     *
+     * @return $this
+     */
+    public function setFirstPage($firstPage)
+    {
+        $this->container['firstPage'] = $firstPage;
+
+        return $this;
+    }
+
+    /*
+     * Gets lastPage
+     *
+     * @return int
+     */
+    public function getLastPage()
+    {
+        return $this->container['lastPage'];
+    }
+
+    /*
+     * Sets lastPage
+     *
+     * @param int $lastPage Last page number when saving page range
+     *
+     * @return $this
+     */
+    public function setLastPage($lastPage)
+    {
+        $this->container['lastPage'] = $lastPage;
+
+        return $this;
+    }
+
+    /*
+     * Gets onlyAnnotatedPages
+     *
+     * @return bool
+     */
+    public function getOnlyAnnotatedPages()
+    {
+        return $this->container['onlyAnnotatedPages'];
+    }
+
+    /*
+     * Sets onlyAnnotatedPages
+     *
+     * @param bool $onlyAnnotatedPages Indicates whether to save only annotated pages
+     *
+     * @return $this
+     */
+    public function setOnlyAnnotatedPages($onlyAnnotatedPages)
+    {
+        $this->container['onlyAnnotatedPages'] = $onlyAnnotatedPages;
+
+        return $this;
+    }
+
+    /*
+     * Gets outputPath
+     *
+     * @return string
+     */
+    public function getOutputPath()
+    {
+        return $this->container['outputPath'];
+    }
+
+    /*
+     * Sets outputPath
+     *
+     * @param string $outputPath Path to output document in the cloud storage. Required for Add method. Not required if Annotate (with file result) method used.
+     *
+     * @return $this
+     */
+    public function setOutputPath($outputPath)
+    {
+        $this->container['outputPath'] = $outputPath;
 
         return $this;
     }

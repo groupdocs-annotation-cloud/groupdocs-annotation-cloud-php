@@ -2,7 +2,7 @@
 /**
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose Pty Ltd" >
-*   Copyright (c) 2003-2020 Aspose Pty Ltd
+*   Copyright (c) 2003-2021 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,6 +27,7 @@
 */
 namespace GroupDocs\Annotation\ApiTests;
 
+use GroupDocs\Annotation\Model;
 use GroupDocs\Annotation\Model\Requests;
 
 require_once "BaseApiTest.php";
@@ -51,7 +52,12 @@ class InfoApiTest extends BaseApiTest
         $files = Internal\TestFiles::getTestFilesListPreview();
         foreach ($files as $file) {
             $path = $file->folder . $file->fileName;
-            $request = new Requests\getInfoRequest($path, $file->password);
+
+            $fileInfo = new Model\FileInfo();
+            $fileInfo->setFilePath($path);
+            $fileInfo->setPassword($file->password);
+
+            $request = new Requests\getInfoRequest($fileInfo);
             $response = self::$infoApi->getInfo($request);
             $this->assertEquals($path, $response->getPath());
         }

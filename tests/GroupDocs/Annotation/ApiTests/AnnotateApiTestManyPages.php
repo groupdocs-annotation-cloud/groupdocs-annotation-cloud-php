@@ -2,7 +2,7 @@
 /**
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose Pty Ltd" >
-*   Copyright (c) 2003-2020 Aspose Pty Ltd
+*   Copyright (c) 2003-2021 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,30 +34,27 @@ require_once "BaseApiTest.php";
 
 class AnnotateApiTestManyPages extends BaseApiTest
 {
-    public function testAnnotations()
+    public function testAddAnnotationsManyPages()
     {
         $files = Internal\TestFiles::getTestFilesManyPages();
         foreach ($files as $file) {
             $path = $file->folder . $file->fileName;
-            echo $path; 
-            // Post annotation
-            $request = new Requests\postAnnotationsRequest($path, $this->GetAnnotations());
-            self::$annotateApi->postAnnotations($request);
-            
-            // Import annotation
-            $request = new Requests\getImportRequest($path);
-            $response = self::$annotateApi->getImport($request);            
-            $this->assertGreaterThan(0, count($response));
+            echo "AddAnnotationsManyPages:". $path . "\n";
 
-            // Export annotation
-            $request = new Requests\getExportRequest($path, null, false, -1, -1, $file->password);
-            $response = self::$annotateApi->getExport($request); 
-            $size = $response->getSize();
-            $this->assertGreaterThan(0, $size);
+            $fileInfo = new Model\FileInfo();
+            $fileInfo->setFilePath($path);
+            $fileInfo->setPassword($file->password);
 
-            // Delete annotation
-            $request = new Requests\deleteAnnotationsRequest($path);
-            self::$annotateApi->deleteAnnotations($request);            
+            $options = new Model\AnnotateOptions();
+            $options->setFileInfo($fileInfo);
+            $options->setAnnotations($this->GetAnnotations());
+            $options->setOutputPath(self::$outputDir . "/" . $file->fileName);
+
+            // Add annotations
+            $request = new Requests\annotateRequest($options);
+            $result = self::$annotateApi->annotate($request);
+            $this->assertNotNull($result);
+            $this->assertNotNull($result->getHref());
         }        
     }
     

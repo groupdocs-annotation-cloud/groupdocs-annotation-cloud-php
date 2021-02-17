@@ -1,7 +1,7 @@
 <?php
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="Error.php">
+ * <copyright company="Aspose Pty Ltd" file="PreviewOptions.php">
  *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
@@ -32,11 +32,11 @@ use \ArrayAccess;
 use \GroupDocs\Annotation\ObjectSerializer;
 
 /*
- * Error
+ * PreviewOptions
  *
- * @description Error
+ * @description Represents options for GetPages API method
  */
-class Error implements ArrayAccess
+class PreviewOptions implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -45,7 +45,7 @@ class Error implements ArrayAccess
      *
      * @var string
      */
-    protected static $swaggerModelName = "Error";
+    protected static $swaggerModelName = "PreviewOptions";
 
     /*
      * Array of property to type mappings. Used for (de)serialization
@@ -53,10 +53,12 @@ class Error implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'code' => 'string',
-        'message' => 'string',
-        'description' => 'string',
-        'innerError' => '\GroupDocs\Annotation\Model\ErrorDetails'
+        'fileInfo' => '\GroupDocs\Annotation\Model\FileInfo',
+        'format' => 'string',
+        'pageNumbers' => 'int[]',
+        'width' => 'int',
+        'height' => 'int',
+        'renderComments' => 'bool'
     ];
 
     /*
@@ -65,10 +67,12 @@ class Error implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'code' => null,
-        'message' => null,
-        'description' => null,
-        'innerError' => null
+        'fileInfo' => null,
+        'format' => null,
+        'pageNumbers' => 'int32',
+        'width' => 'int32',
+        'height' => 'int32',
+        'renderComments' => null
     ];
 
     /*
@@ -98,10 +102,12 @@ class Error implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'code' => 'Code',
-        'message' => 'Message',
-        'description' => 'Description',
-        'innerError' => 'InnerError'
+        'fileInfo' => 'FileInfo',
+        'format' => 'Format',
+        'pageNumbers' => 'PageNumbers',
+        'width' => 'Width',
+        'height' => 'Height',
+        'renderComments' => 'RenderComments'
     ];
 
     /*
@@ -110,10 +116,12 @@ class Error implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'message' => 'setMessage',
-        'description' => 'setDescription',
-        'innerError' => 'setInnerError'
+        'fileInfo' => 'setFileInfo',
+        'format' => 'setFormat',
+        'pageNumbers' => 'setPageNumbers',
+        'width' => 'setWidth',
+        'height' => 'setHeight',
+        'renderComments' => 'setRenderComments'
     ];
 
     /*
@@ -122,10 +130,12 @@ class Error implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'message' => 'getMessage',
-        'description' => 'getDescription',
-        'innerError' => 'getInnerError'
+        'fileInfo' => 'getFileInfo',
+        'format' => 'getFormat',
+        'pageNumbers' => 'getPageNumbers',
+        'width' => 'getWidth',
+        'height' => 'getHeight',
+        'renderComments' => 'getRenderComments'
     ];
 
     /*
@@ -169,8 +179,25 @@ class Error implements ArrayAccess
         return self::$swaggerModelName;
     }
 
+    const FORMAT_PNG = 'PNG';
+    const FORMAT_JPEG = 'JPEG';
+    const FORMAT_BMP = 'BMP';
     
 
+    
+    /*
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function getFormatAllowableValues()
+    {
+        return [
+            self::FORMAT_PNG,
+            self::FORMAT_JPEG,
+            self::FORMAT_BMP,
+        ];
+    }
     
 
     /*
@@ -188,10 +215,12 @@ class Error implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['code'] = isset($data['code']) ? $data['code'] : null;
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['innerError'] = isset($data['innerError']) ? $data['innerError'] : null;
+        $this->container['fileInfo'] = isset($data['fileInfo']) ? $data['fileInfo'] : null;
+        $this->container['format'] = isset($data['format']) ? $data['format'] : null;
+        $this->container['pageNumbers'] = isset($data['pageNumbers']) ? $data['pageNumbers'] : null;
+        $this->container['width'] = isset($data['width']) ? $data['width'] : null;
+        $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['renderComments'] = isset($data['renderComments']) ? $data['renderComments'] : null;
     }
 
     /*
@@ -203,6 +232,26 @@ class Error implements ArrayAccess
     {
         $invalidProperties = [];
 
+        if ($this->container['format'] === null) {
+            $invalidProperties[] = "'format' can't be null";
+        }
+        $allowedValues = $this->getFormatAllowableValues();
+        if (!in_array($this->container['format'], $allowedValues)) {
+            $invalidProperties[] = sprintf(
+                "invalid value for 'format', must be one of '%s'",
+                implode("', '", $allowedValues)
+            );
+        }
+
+        if ($this->container['width'] === null) {
+            $invalidProperties[] = "'width' can't be null";
+        }
+        if ($this->container['height'] === null) {
+            $invalidProperties[] = "'height' can't be null";
+        }
+        if ($this->container['renderComments'] === null) {
+            $invalidProperties[] = "'renderComments' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -215,102 +264,171 @@ class Error implements ArrayAccess
     public function valid()
     {
 
+        if ($this->container['format'] === null) {
+            return false;
+        }
+        $allowedValues = $this->getFormatAllowableValues();
+        if (!in_array($this->container['format'], $allowedValues)) {
+            return false;
+        }
+        if ($this->container['width'] === null) {
+            return false;
+        }
+        if ($this->container['height'] === null) {
+            return false;
+        }
+        if ($this->container['renderComments'] === null) {
+            return false;
+        }
         return true;
     }
 
 
     /*
-     * Gets code
+     * Gets fileInfo
      *
-     * @return string
+     * @return \GroupDocs\Annotation\Model\FileInfo
      */
-    public function getCode()
+    public function getFileInfo()
     {
-        return $this->container['code'];
+        return $this->container['fileInfo'];
     }
 
     /*
-     * Sets code
+     * Sets fileInfo
      *
-     * @param string $code Code
+     * @param \GroupDocs\Annotation\Model\FileInfo $fileInfo Input document description
      *
      * @return $this
      */
-    public function setCode($code)
+    public function setFileInfo($fileInfo)
     {
-        $this->container['code'] = $code;
+        $this->container['fileInfo'] = $fileInfo;
 
         return $this;
     }
 
     /*
-     * Gets message
+     * Gets format
      *
      * @return string
      */
-    public function getMessage()
+    public function getFormat()
     {
-        return $this->container['message'];
+        return $this->container['format'];
     }
 
     /*
-     * Sets message
+     * Sets format
      *
-     * @param string $message Message
+     * @param string $format Preview format. Supported values are: PNG, JPEG or BMP. Default value is PNG.
      *
      * @return $this
      */
-    public function setMessage($message)
+    public function setFormat($format)
     {
-        $this->container['message'] = $message;
+        $allowedValues = $this->getFormatAllowableValues();
+        if ((!is_numeric($format) && !in_array($format, $allowedValues)) || (is_numeric($format) && !in_array($allowedValues[$format], $allowedValues))) {
+            throw new \InvalidArgumentException(sprintf("Invalid value for 'format', must be one of '%s'", implode("', '", $allowedValues)));
+        }
+			
+        $this->container['format'] = $format;
 
         return $this;
     }
 
     /*
-     * Gets description
+     * Gets pageNumbers
      *
-     * @return string
+     * @return int[]
      */
-    public function getDescription()
+    public function getPageNumbers()
     {
-        return $this->container['description'];
+        return $this->container['pageNumbers'];
     }
 
     /*
-     * Sets description
+     * Sets pageNumbers
      *
-     * @param string $description Description
+     * @param int[] $pageNumbers Page numbers to preview. All pages proceeded if not specified.
      *
      * @return $this
      */
-    public function setDescription($description)
+    public function setPageNumbers($pageNumbers)
     {
-        $this->container['description'] = $description;
+        $this->container['pageNumbers'] = $pageNumbers;
 
         return $this;
     }
 
     /*
-     * Gets innerError
+     * Gets width
      *
-     * @return \GroupDocs\Annotation\Model\ErrorDetails
+     * @return int
      */
-    public function getInnerError()
+    public function getWidth()
     {
-        return $this->container['innerError'];
+        return $this->container['width'];
     }
 
     /*
-     * Sets innerError
+     * Sets width
      *
-     * @param \GroupDocs\Annotation\Model\ErrorDetails $innerError Inner Error
+     * @param int $width Preview image width. Not required. Default width used if not specified or 0.
      *
      * @return $this
      */
-    public function setInnerError($innerError)
+    public function setWidth($width)
     {
-        $this->container['innerError'] = $innerError;
+        $this->container['width'] = $width;
+
+        return $this;
+    }
+
+    /*
+     * Gets height
+     *
+     * @return int
+     */
+    public function getHeight()
+    {
+        return $this->container['height'];
+    }
+
+    /*
+     * Sets height
+     *
+     * @param int $height Preview image height. Not required. Default width used if not specified or 0.
+     *
+     * @return $this
+     */
+    public function setHeight($height)
+    {
+        $this->container['height'] = $height;
+
+        return $this;
+    }
+
+    /*
+     * Gets renderComments
+     *
+     * @return bool
+     */
+    public function getRenderComments()
+    {
+        return $this->container['renderComments'];
+    }
+
+    /*
+     * Sets renderComments
+     *
+     * @param bool $renderComments Render document comments. Default value is 'false'.
+     *
+     * @return $this
+     */
+    public function setRenderComments($renderComments)
+    {
+        $this->container['renderComments'] = $renderComments;
 
         return $this;
     }

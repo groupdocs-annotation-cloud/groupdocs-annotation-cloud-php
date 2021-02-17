@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="AnnotateApi.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -88,36 +88,37 @@ class AnnotateApi
     }
 
     /*
-     * Operation deleteAnnotations
+     * Operation annotate
      *
-     * Removes annotations from document
+     * Adds annotations to document and saves output file into cloud storage
      *
-     * @param Requests\deleteAnnotationsRequest $request is a request object for operation
+     * @param Requests\annotateRequest $request is a request object for operation
      *
      * @throws \GroupDocs\Annotation\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return void
+     * @return \GroupDocs\Annotation\Model\AnnotationApiLink
      */
-    public function deleteAnnotations(Requests\deleteAnnotationsRequest $request)
+    public function annotate(Requests\annotateRequest $request)
     {
-        $this->deleteAnnotationsWithHttpInfo($request);
+        list($response) = $this->annotateWithHttpInfo($request);
+        return $response;
     }
 
     /*
-     * Operation deleteAnnotationsWithHttpInfo
+     * Operation annotateWithHttpInfo
      *
-     * Removes annotations from document
+     * Adds annotations to document and saves output file into cloud storage
      *
-     * @param Requests\deleteAnnotationsRequest $request is a request object for operation
+     * @param Requests\annotateRequest $request is a request object for operation
      *
      * @throws \GroupDocs\Annotation\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GroupDocs\Annotation\Model\AnnotationApiLink, HTTP status code, HTTP response headers (array of strings)
      */
-    public function deleteAnnotationsWithHttpInfo(Requests\deleteAnnotationsRequest $request)
+    public function annotateWithHttpInfo(Requests\annotateRequest $request)
     {
-        $returnType = '';
-        $request = $this->deleteAnnotationsRequest($request);
+        $returnType = '\GroupDocs\Annotation\Model\AnnotationApiLink';
+        $request = $this->annotateRequest($request);
 
         try {
             $options = $this->_createHttpClientOption();
@@ -142,28 +143,50 @@ class AnnotateApi
                 throw new ApiException(sprintf('[%d] Error connecting to the API (%s)', $statusCode, $request->getUri()), $statusCode);
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if ($returnType !== 'string') {
+                    $content = json_decode($content);
+                }
+            }
+            
+            if ($this->config->getDebug()) {
+                $this->_writeResponseLog($statusCode, $response->getHeaders(), ObjectSerializer::deserialize($content, $returnType, []));
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
+            case 200:
+                    $data = ObjectSerializer::deserialize($e->getResponseBody(), '\GroupDocs\Annotation\Model\AnnotationApiLink', $e->getResponseHeaders());
+                    $e->setResponseObject($data);
+                break;
             }
             throw $e;
         }
     }
 
     /*
-     * Operation deleteAnnotationsAsync
+     * Operation annotateAsync
      *
-     * Removes annotations from document
+     * Adds annotations to document and saves output file into cloud storage
      *
-     * @param Requests\deleteAnnotationsRequest $request is a request object for operation
+     * @param Requests\annotateRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteAnnotationsAsync(Requests\deleteAnnotationsRequest $request) 
+    public function annotateAsync(Requests\annotateRequest $request) 
     {
-        return $this->deleteAnnotationsAsyncWithHttpInfo($request)
+        return $this->annotateAsyncWithHttpInfo($request)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -172,25 +195,43 @@ class AnnotateApi
     }
 
     /*
-     * Operation deleteAnnotationsAsyncWithHttpInfo
+     * Operation annotateAsyncWithHttpInfo
      *
-     * Removes annotations from document
+     * Adds annotations to document and saves output file into cloud storage
      *
-     * @param Requests\deleteAnnotationsRequest $request is a request object for operation
+     * @param Requests\annotateRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteAnnotationsAsyncWithHttpInfo(Requests\deleteAnnotationsRequest $request) 
+    public function annotateAsyncWithHttpInfo(Requests\annotateRequest $request) 
     {
-        $returnType = '';
-        $request = $this->deleteAnnotationsRequest($request);
+        $returnType = '\GroupDocs\Annotation\Model\AnnotationApiLink';
+        $request = $this->annotateRequest($request);
 
         return $this->client
             ->sendAsync($request, $this->_createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    return [null, $response->getStatusCode(), $response->getHeaders()];
+                    $responseBody = $response->getBody();
+                    if ($returnType === '\SplFileObject') {
+                        $content = $responseBody; //stream goes to serializer
+                    } else {
+                        $content = $responseBody->getContents();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+                    
+                    if ($this->config->getDebug()) {
+                        $this->_writeResponseLog($response->getStatusCode(), $response->getHeaders(), ObjectSerializer::deserialize($content, $returnType, []));
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
                 },
                 function ($exception) {        
                     $response = $exception->getResponse();
@@ -204,21 +245,21 @@ class AnnotateApi
     }
 
     /*
-     * Create request for operation 'deleteAnnotations'
+     * Create request for operation 'annotate'
      *
-     * @param Requests\deleteAnnotationsRequest $request is a request object for operation
+     * @param Requests\annotateRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function deleteAnnotationsRequest(Requests\deleteAnnotationsRequest $request)
+    protected function annotateRequest(Requests\annotateRequest $request)
     {
-        // verify the required parameter 'filePath' is set
-        if ($request->filePath === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $filePath when calling deleteAnnotations');
+        // verify the required parameter 'options' is set
+        if ($request->options === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $options when calling annotate');
         }
 
-        $resourcePath = '/annotation';
+        $resourcePath = '/annotation/add';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -226,22 +267,19 @@ class AnnotateApi
         $multipart = false;
     
 
-        // query params
-        if ($request->filePath !== null) {
-            $localName = lcfirst('filePath');
-            $localValue = is_bool($request->filePath) ? ($request->filePath ? 'true' : 'false') : $request->filePath;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
     
     
         $resourcePath = $this->_buildUrl($resourcePath, $queryParams);
 
         // body params
         $_tempBody = null;
+        if (isset($request->options)) {
+            if (is_string($request->options)) {
+                $_tempBody = "\"" . $request->options . "\"";   
+            } else {
+                $_tempBody = $request->options;
+            }
+        }
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
@@ -310,50 +348,50 @@ class AnnotateApi
         );
     
         $req = new Request(
-            'DELETE',
+            'POST',
             $resourcePath,
             $headers,
             $httpBody
         );
         if ($this->config->getDebug()) {
-            $this->_writeRequestLog('DELETE', $resourcePath, $headers, $httpBody);
+            $this->_writeRequestLog('POST', $resourcePath, $headers, $httpBody);
         }
         
         return $req;
     }
 
     /*
-     * Operation getExport
+     * Operation annotateDirect
      *
-     * Retrieves document with annotations
+     * Adds annotations to document and returns output file
      *
-     * @param Requests\getExportRequest $request is a request object for operation
+     * @param Requests\annotateDirectRequest $request is a request object for operation
      *
      * @throws \GroupDocs\Annotation\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
-    public function getExport(Requests\getExportRequest $request)
+    public function annotateDirect(Requests\annotateDirectRequest $request)
     {
-        list($response) = $this->getExportWithHttpInfo($request);
+        list($response) = $this->annotateDirectWithHttpInfo($request);
         return $response;
     }
 
     /*
-     * Operation getExportWithHttpInfo
+     * Operation annotateDirectWithHttpInfo
      *
-     * Retrieves document with annotations
+     * Adds annotations to document and returns output file
      *
-     * @param Requests\getExportRequest $request is a request object for operation
+     * @param Requests\annotateDirectRequest $request is a request object for operation
      *
      * @throws \GroupDocs\Annotation\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getExportWithHttpInfo(Requests\getExportRequest $request)
+    public function annotateDirectWithHttpInfo(Requests\annotateDirectRequest $request)
     {
         $returnType = '\SplFileObject';
-        $request = $this->getExportRequest($request);
+        $request = $this->annotateDirectRequest($request);
 
         try {
             $options = $this->_createHttpClientOption();
@@ -410,18 +448,18 @@ class AnnotateApi
     }
 
     /*
-     * Operation getExportAsync
+     * Operation annotateDirectAsync
      *
-     * Retrieves document with annotations
+     * Adds annotations to document and returns output file
      *
-     * @param Requests\getExportRequest $request is a request object for operation
+     * @param Requests\annotateDirectRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getExportAsync(Requests\getExportRequest $request) 
+    public function annotateDirectAsync(Requests\annotateDirectRequest $request) 
     {
-        return $this->getExportAsyncWithHttpInfo($request)
+        return $this->annotateDirectAsyncWithHttpInfo($request)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -430,19 +468,19 @@ class AnnotateApi
     }
 
     /*
-     * Operation getExportAsyncWithHttpInfo
+     * Operation annotateDirectAsyncWithHttpInfo
      *
-     * Retrieves document with annotations
+     * Adds annotations to document and returns output file
      *
-     * @param Requests\getExportRequest $request is a request object for operation
+     * @param Requests\annotateDirectRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getExportAsyncWithHttpInfo(Requests\getExportRequest $request) 
+    public function annotateDirectAsyncWithHttpInfo(Requests\annotateDirectRequest $request) 
     {
         $returnType = '\SplFileObject';
-        $request = $this->getExportRequest($request);
+        $request = $this->annotateDirectRequest($request);
 
         return $this->client
             ->sendAsync($request, $this->_createHttpClientOption())
@@ -480,21 +518,21 @@ class AnnotateApi
     }
 
     /*
-     * Create request for operation 'getExport'
+     * Create request for operation 'annotateDirect'
      *
-     * @param Requests\getExportRequest $request is a request object for operation
+     * @param Requests\annotateDirectRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function getExportRequest(Requests\getExportRequest $request)
+    protected function annotateDirectRequest(Requests\annotateDirectRequest $request)
     {
-        // verify the required parameter 'filePath' is set
-        if ($request->filePath === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $filePath when calling getExport');
+        // verify the required parameter 'options' is set
+        if ($request->options === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $options when calling annotateDirect');
         }
 
-        $resourcePath = '/annotation/result';
+        $resourcePath = '/annotation/add';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -502,72 +540,19 @@ class AnnotateApi
         $multipart = false;
     
 
-        // query params
-        if ($request->filePath !== null) {
-            $localName = lcfirst('filePath');
-            $localValue = is_bool($request->filePath) ? ($request->filePath ? 'true' : 'false') : $request->filePath;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->annotationTypes !== null) {
-            $localName = lcfirst('annotationTypes');
-            $localValue = is_bool($request->annotationTypes) ? ($request->annotationTypes ? 'true' : 'false') : $request->annotationTypes;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->annotatedPages !== null) {
-            $localName = lcfirst('annotatedPages');
-            $localValue = is_bool($request->annotatedPages) ? ($request->annotatedPages ? 'true' : 'false') : $request->annotatedPages;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->firstPage !== null) {
-            $localName = lcfirst('firstPage');
-            $localValue = is_bool($request->firstPage) ? ($request->firstPage ? 'true' : 'false') : $request->firstPage;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->lastPage !== null) {
-            $localName = lcfirst('lastPage');
-            $localValue = is_bool($request->lastPage) ? ($request->lastPage ? 'true' : 'false') : $request->lastPage;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->password !== null) {
-            $localName = lcfirst('password');
-            $localValue = is_bool($request->password) ? ($request->password ? 'true' : 'false') : $request->password;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
     
     
         $resourcePath = $this->_buildUrl($resourcePath, $queryParams);
 
         // body params
         $_tempBody = null;
+        if (isset($request->options)) {
+            if (is_string($request->options)) {
+                $_tempBody = "\"" . $request->options . "\"";   
+            } else {
+                $_tempBody = $request->options;
+            }
+        }
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
@@ -636,50 +621,50 @@ class AnnotateApi
         );
     
         $req = new Request(
-            'GET',
+            'PUT',
             $resourcePath,
             $headers,
             $httpBody
         );
         if ($this->config->getDebug()) {
-            $this->_writeRequestLog('GET', $resourcePath, $headers, $httpBody);
+            $this->_writeRequestLog('PUT', $resourcePath, $headers, $httpBody);
         }
         
         return $req;
     }
 
     /*
-     * Operation getImport
+     * Operation extract
      *
      * Extracts annotations from document
      *
-     * @param Requests\getImportRequest $request is a request object for operation
+     * @param Requests\extractRequest $request is a request object for operation
      *
      * @throws \GroupDocs\Annotation\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \GroupDocs\Annotation\Model\AnnotationInfo[]
      */
-    public function getImport(Requests\getImportRequest $request)
+    public function extract(Requests\extractRequest $request)
     {
-        list($response) = $this->getImportWithHttpInfo($request);
+        list($response) = $this->extractWithHttpInfo($request);
         return $response;
     }
 
     /*
-     * Operation getImportWithHttpInfo
+     * Operation extractWithHttpInfo
      *
      * Extracts annotations from document
      *
-     * @param Requests\getImportRequest $request is a request object for operation
+     * @param Requests\extractRequest $request is a request object for operation
      *
      * @throws \GroupDocs\Annotation\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \GroupDocs\Annotation\Model\AnnotationInfo[], HTTP status code, HTTP response headers (array of strings)
      */
-    public function getImportWithHttpInfo(Requests\getImportRequest $request)
+    public function extractWithHttpInfo(Requests\extractRequest $request)
     {
         $returnType = '\GroupDocs\Annotation\Model\AnnotationInfo[]';
-        $request = $this->getImportRequest($request);
+        $request = $this->extractRequest($request);
 
         try {
             $options = $this->_createHttpClientOption();
@@ -736,18 +721,18 @@ class AnnotateApi
     }
 
     /*
-     * Operation getImportAsync
+     * Operation extractAsync
      *
      * Extracts annotations from document
      *
-     * @param Requests\getImportRequest $request is a request object for operation
+     * @param Requests\extractRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getImportAsync(Requests\getImportRequest $request) 
+    public function extractAsync(Requests\extractRequest $request) 
     {
-        return $this->getImportAsyncWithHttpInfo($request)
+        return $this->extractAsyncWithHttpInfo($request)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -756,19 +741,19 @@ class AnnotateApi
     }
 
     /*
-     * Operation getImportAsyncWithHttpInfo
+     * Operation extractAsyncWithHttpInfo
      *
      * Extracts annotations from document
      *
-     * @param Requests\getImportRequest $request is a request object for operation
+     * @param Requests\extractRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getImportAsyncWithHttpInfo(Requests\getImportRequest $request) 
+    public function extractAsyncWithHttpInfo(Requests\extractRequest $request) 
     {
         $returnType = '\GroupDocs\Annotation\Model\AnnotationInfo[]';
-        $request = $this->getImportRequest($request);
+        $request = $this->extractRequest($request);
 
         return $this->client
             ->sendAsync($request, $this->_createHttpClientOption())
@@ -806,21 +791,21 @@ class AnnotateApi
     }
 
     /*
-     * Create request for operation 'getImport'
+     * Create request for operation 'extract'
      *
-     * @param Requests\getImportRequest $request is a request object for operation
+     * @param Requests\extractRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function getImportRequest(Requests\getImportRequest $request)
+    protected function extractRequest(Requests\extractRequest $request)
     {
-        // verify the required parameter 'filePath' is set
-        if ($request->filePath === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $filePath when calling getImport');
+        // verify the required parameter 'fileInfo' is set
+        if ($request->fileInfo === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $fileInfo when calling extract');
         }
 
-        $resourcePath = '/annotation';
+        $resourcePath = '/annotation/extract';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -828,22 +813,19 @@ class AnnotateApi
         $multipart = false;
     
 
-        // query params
-        if ($request->filePath !== null) {
-            $localName = lcfirst('filePath');
-            $localValue = is_bool($request->filePath) ? ($request->filePath ? 'true' : 'false') : $request->filePath;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
     
     
         $resourcePath = $this->_buildUrl($resourcePath, $queryParams);
 
         // body params
         $_tempBody = null;
+        if (isset($request->fileInfo)) {
+            if (is_string($request->fileInfo)) {
+                $_tempBody = "\"" . $request->fileInfo . "\"";   
+            } else {
+                $_tempBody = $request->fileInfo;
+            }
+        }
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
@@ -912,49 +894,50 @@ class AnnotateApi
         );
     
         $req = new Request(
-            'GET',
+            'POST',
             $resourcePath,
             $headers,
             $httpBody
         );
         if ($this->config->getDebug()) {
-            $this->_writeRequestLog('GET', $resourcePath, $headers, $httpBody);
+            $this->_writeRequestLog('POST', $resourcePath, $headers, $httpBody);
         }
         
         return $req;
     }
 
     /*
-     * Operation postAnnotations
+     * Operation removeAnnotations
      *
-     * Adds annotations to document
+     * Removes annotations from document
      *
-     * @param Requests\postAnnotationsRequest $request is a request object for operation
+     * @param Requests\removeAnnotationsRequest $request is a request object for operation
      *
      * @throws \GroupDocs\Annotation\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return void
+     * @return \GroupDocs\Annotation\Model\AnnotationApiLink
      */
-    public function postAnnotations(Requests\postAnnotationsRequest $request)
+    public function removeAnnotations(Requests\removeAnnotationsRequest $request)
     {
-        $this->postAnnotationsWithHttpInfo($request);
+        list($response) = $this->removeAnnotationsWithHttpInfo($request);
+        return $response;
     }
 
     /*
-     * Operation postAnnotationsWithHttpInfo
+     * Operation removeAnnotationsWithHttpInfo
      *
-     * Adds annotations to document
+     * Removes annotations from document
      *
-     * @param Requests\postAnnotationsRequest $request is a request object for operation
+     * @param Requests\removeAnnotationsRequest $request is a request object for operation
      *
      * @throws \GroupDocs\Annotation\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \GroupDocs\Annotation\Model\AnnotationApiLink, HTTP status code, HTTP response headers (array of strings)
      */
-    public function postAnnotationsWithHttpInfo(Requests\postAnnotationsRequest $request)
+    public function removeAnnotationsWithHttpInfo(Requests\removeAnnotationsRequest $request)
     {
-        $returnType = '';
-        $request = $this->postAnnotationsRequest($request);
+        $returnType = '\GroupDocs\Annotation\Model\AnnotationApiLink';
+        $request = $this->removeAnnotationsRequest($request);
 
         try {
             $options = $this->_createHttpClientOption();
@@ -979,28 +962,50 @@ class AnnotateApi
                 throw new ApiException(sprintf('[%d] Error connecting to the API (%s)', $statusCode, $request->getUri()), $statusCode);
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            $responseBody = $response->getBody();
+            if ($returnType === '\SplFileObject') {
+                $content = $responseBody; //stream goes to serializer
+            } else {
+                $content = $responseBody->getContents();
+                if ($returnType !== 'string') {
+                    $content = json_decode($content);
+                }
+            }
+            
+            if ($this->config->getDebug()) {
+                $this->_writeResponseLog($statusCode, $response->getHeaders(), ObjectSerializer::deserialize($content, $returnType, []));
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
+            case 200:
+                    $data = ObjectSerializer::deserialize($e->getResponseBody(), '\GroupDocs\Annotation\Model\AnnotationApiLink', $e->getResponseHeaders());
+                    $e->setResponseObject($data);
+                break;
             }
             throw $e;
         }
     }
 
     /*
-     * Operation postAnnotationsAsync
+     * Operation removeAnnotationsAsync
      *
-     * Adds annotations to document
+     * Removes annotations from document
      *
-     * @param Requests\postAnnotationsRequest $request is a request object for operation
+     * @param Requests\removeAnnotationsRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postAnnotationsAsync(Requests\postAnnotationsRequest $request) 
+    public function removeAnnotationsAsync(Requests\removeAnnotationsRequest $request) 
     {
-        return $this->postAnnotationsAsyncWithHttpInfo($request)
+        return $this->removeAnnotationsAsyncWithHttpInfo($request)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1009,25 +1014,43 @@ class AnnotateApi
     }
 
     /*
-     * Operation postAnnotationsAsyncWithHttpInfo
+     * Operation removeAnnotationsAsyncWithHttpInfo
      *
-     * Adds annotations to document
+     * Removes annotations from document
      *
-     * @param Requests\postAnnotationsRequest $request is a request object for operation
+     * @param Requests\removeAnnotationsRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postAnnotationsAsyncWithHttpInfo(Requests\postAnnotationsRequest $request) 
+    public function removeAnnotationsAsyncWithHttpInfo(Requests\removeAnnotationsRequest $request) 
     {
-        $returnType = '';
-        $request = $this->postAnnotationsRequest($request);
+        $returnType = '\GroupDocs\Annotation\Model\AnnotationApiLink';
+        $request = $this->removeAnnotationsRequest($request);
 
         return $this->client
             ->sendAsync($request, $this->_createHttpClientOption())
             ->then(
                 function ($response) use ($returnType) {
-                    return [null, $response->getStatusCode(), $response->getHeaders()];
+                    $responseBody = $response->getBody();
+                    if ($returnType === '\SplFileObject') {
+                        $content = $responseBody; //stream goes to serializer
+                    } else {
+                        $content = $responseBody->getContents();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+                    
+                    if ($this->config->getDebug()) {
+                        $this->_writeResponseLog($response->getStatusCode(), $response->getHeaders(), ObjectSerializer::deserialize($content, $returnType, []));
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
                 },
                 function ($exception) {        
                     $response = $exception->getResponse();
@@ -1041,25 +1064,21 @@ class AnnotateApi
     }
 
     /*
-     * Create request for operation 'postAnnotations'
+     * Create request for operation 'removeAnnotations'
      *
-     * @param Requests\postAnnotationsRequest $request is a request object for operation
+     * @param Requests\removeAnnotationsRequest $request is a request object for operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function postAnnotationsRequest(Requests\postAnnotationsRequest $request)
+    protected function removeAnnotationsRequest(Requests\removeAnnotationsRequest $request)
     {
-        // verify the required parameter 'filePath' is set
-        if ($request->filePath === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $filePath when calling postAnnotations');
-        }
-        // verify the required parameter 'annotations' is set
-        if ($request->annotations === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $annotations when calling postAnnotations');
+        // verify the required parameter 'options' is set
+        if ($request->options === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $options when calling removeAnnotations');
         }
 
-        $resourcePath = '/annotation';
+        $resourcePath = '/annotation/remove';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -1067,27 +1086,17 @@ class AnnotateApi
         $multipart = false;
     
 
-        // query params
-        if ($request->filePath !== null) {
-            $localName = lcfirst('filePath');
-            $localValue = is_bool($request->filePath) ? ($request->filePath ? 'true' : 'false') : $request->filePath;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
     
     
         $resourcePath = $this->_buildUrl($resourcePath, $queryParams);
 
         // body params
         $_tempBody = null;
-        if (isset($request->annotations)) {
-            if (is_string($request->annotations)) {
-                $_tempBody = "\"" . $request->annotations . "\"";   
+        if (isset($request->options)) {
+            if (is_string($request->options)) {
+                $_tempBody = "\"" . $request->options . "\"";   
             } else {
-                $_tempBody = $request->annotations;
+                $_tempBody = $request->options;
             }
         }
 
@@ -1271,8 +1280,8 @@ class AnnotateApi
 }
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="deleteAnnotationsRequest.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ * <copyright company="Aspose Pty Ltd" file="annotateRequest.php">
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1299,29 +1308,29 @@ class AnnotateApi
 namespace GroupDocs\Annotation\Model\Requests;
 
 /*
- * Request model for deleteAnnotations operation.
+ * Request model for annotate operation.
  */
-class deleteAnnotationsRequest
+class annotateRequest
 {
     /*
-     * Initializes a new instance of the deleteAnnotationsRequest class.
+     * Initializes a new instance of the annotateRequest class.
      *  
-     * @param string $filePath Document path in storage
+     * @param \GroupDocs\Annotation\Model\AnnotateOptions $options Annotation options
      */
-    public function __construct($filePath)             
+    public function __construct($options)             
     {
-        $this->filePath = $filePath;
+        $this->options = $options;
     }
 
     /*
-     * Document path in storage
+     * Annotation options
      */
-    public $filePath;
+    public $options;
 }
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="getExportRequest.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ * <copyright company="Aspose Pty Ltd" file="annotateDirectRequest.php">
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1348,64 +1357,29 @@ class deleteAnnotationsRequest
 namespace GroupDocs\Annotation\Model\Requests;
 
 /*
- * Request model for getExport operation.
+ * Request model for annotateDirect operation.
  */
-class getExportRequest
+class annotateDirectRequest
 {
     /*
-     * Initializes a new instance of the getExportRequest class.
+     * Initializes a new instance of the annotateDirectRequest class.
      *  
-     * @param string $filePath Document path in storage
-     * @param string $annotationTypes Annotation types that will be exported. All annotation types will be exported if not specified
-     * @param bool $annotatedPages Indicates whether to export only annotated pages
-     * @param int $firstPage Determines number of first exported page
-     * @param int $lastPage Determines number of last exported page
-     * @param string $password Source document password
+     * @param \GroupDocs\Annotation\Model\AnnotateOptions $options Annotation options
      */
-    public function __construct($filePath, $annotationTypes = null, $annotatedPages = null, $firstPage = null, $lastPage = null, $password = null)             
+    public function __construct($options)             
     {
-        $this->filePath = $filePath;
-        $this->annotationTypes = $annotationTypes;
-        $this->annotatedPages = $annotatedPages;
-        $this->firstPage = $firstPage;
-        $this->lastPage = $lastPage;
-        $this->password = $password;
+        $this->options = $options;
     }
 
     /*
-     * Document path in storage
+     * Annotation options
      */
-    public $filePath;
-	
-    /*
-     * Annotation types that will be exported. All annotation types will be exported if not specified
-     */
-    public $annotationTypes;
-	
-    /*
-     * Indicates whether to export only annotated pages
-     */
-    public $annotatedPages;
-	
-    /*
-     * Determines number of first exported page
-     */
-    public $firstPage;
-	
-    /*
-     * Determines number of last exported page
-     */
-    public $lastPage;
-	
-    /*
-     * Source document password
-     */
-    public $password;
+    public $options;
 }
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="getImportRequest.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ * <copyright company="Aspose Pty Ltd" file="extractRequest.php">
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1432,29 +1406,29 @@ class getExportRequest
 namespace GroupDocs\Annotation\Model\Requests;
 
 /*
- * Request model for getImport operation.
+ * Request model for extract operation.
  */
-class getImportRequest
+class extractRequest
 {
     /*
-     * Initializes a new instance of the getImportRequest class.
+     * Initializes a new instance of the extractRequest class.
      *  
-     * @param string $filePath Document path in storage
+     * @param \GroupDocs\Annotation\Model\FileInfo $fileInfo Input file information
      */
-    public function __construct($filePath)             
+    public function __construct($fileInfo)             
     {
-        $this->filePath = $filePath;
+        $this->fileInfo = $fileInfo;
     }
 
     /*
-     * Document path in storage
+     * Input file information
      */
-    public $filePath;
+    public $fileInfo;
 }
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="postAnnotationsRequest.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ * <copyright company="Aspose Pty Ltd" file="removeAnnotationsRequest.php">
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1481,29 +1455,22 @@ class getImportRequest
 namespace GroupDocs\Annotation\Model\Requests;
 
 /*
- * Request model for postAnnotations operation.
+ * Request model for removeAnnotations operation.
  */
-class postAnnotationsRequest
+class removeAnnotationsRequest
 {
     /*
-     * Initializes a new instance of the postAnnotationsRequest class.
+     * Initializes a new instance of the removeAnnotationsRequest class.
      *  
-     * @param string $filePath Document path in storage
-     * @param \GroupDocs\Annotation\Model\AnnotationInfo[] $annotations Array of annotation descriptions
+     * @param \GroupDocs\Annotation\Model\RemoveOptions $options Remove annotations options
      */
-    public function __construct($filePath, $annotations)             
+    public function __construct($options)             
     {
-        $this->filePath = $filePath;
-        $this->annotations = $annotations;
+        $this->options = $options;
     }
 
     /*
-     * Document path in storage
+     * Remove annotations options
      */
-    public $filePath;
-	
-    /*
-     * Array of annotation descriptions
-     */
-    public $annotations;
+    public $options;
 }

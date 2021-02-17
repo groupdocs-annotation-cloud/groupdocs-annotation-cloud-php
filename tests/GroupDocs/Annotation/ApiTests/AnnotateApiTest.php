@@ -2,7 +2,7 @@
 /**
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose Pty Ltd" >
-*   Copyright (c) 2003-2020 Aspose Pty Ltd
+*   Copyright (c) 2003-2021 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,32 +34,93 @@ require_once "BaseApiTest.php";
 
 class AnnotateApiTest extends BaseApiTest
 {
-    public function testAnnotations()
+    public function testAddAnnotations()
     {
         $files = Internal\TestFiles::getTestFilesList();
         foreach ($files as $file) {
             $path = $file->folder . $file->fileName;
+            //echo "AddAnnotations:". $path . "\n";
 
-            // Post annotation
-            $request = new Requests\postAnnotationsRequest($path, $this->GetAnnotations());
-            self::$annotateApi->postAnnotations($request);
-            
-            // Import annotation
-            $request = new Requests\getImportRequest($path);
-            $response = self::$annotateApi->getImport($request);            
-            $this->assertGreaterThan(0, count($response));
+            $fileInfo = new Model\FileInfo();
+            $fileInfo->setFilePath($path);
+            $fileInfo->setPassword($file->password);
 
-            // Export annotation
-            $request = new Requests\getExportRequest($path, null, false, -1, -1, $file->password);
-            $response = self::$annotateApi->getExport($request); 
-            $size = $response->getSize();
-            $this->assertGreaterThan(0, $size);
+            $options = new Model\AnnotateOptions();
+            $options->setFileInfo($fileInfo);
+            $options->setAnnotations($this->GetAnnotations());
+            $options->setOutputPath(self::$outputDir . "/" . $file->fileName);
 
-            // Delete annotation
-            $request = new Requests\deleteAnnotationsRequest($path);
-            self::$annotateApi->deleteAnnotations($request);            
+            // Add annotation
+            $request = new Requests\annotateRequest($options);
+            $result = self::$annotateApi->annotate($request);
+            $this->assertNotNull($result);
+            $this->assertNotNull($result->getHref());
         }        
     }
+
+    public function testAddAnnotationsDirect()
+    {
+        $file = Internal\TestFiles::OnePagePasswordWords();
+
+        $path = $file->folder . $file->fileName;
+        //echo "AddAnnotationsDirect:". $path . "\n";
+
+        $fileInfo = new Model\FileInfo();
+        $fileInfo->setFilePath($path);
+        $fileInfo->setPassword($file->password);
+
+        $options = new Model\AnnotateOptions();
+        $options->setFileInfo($fileInfo);
+        $options->setAnnotations($this->GetAnnotations());
+        $options->setOutputPath(self::$outputDir . "/" . $file->fileName);
+
+        // Add annotation
+        $request = new Requests\annotateDirectRequest($options);
+        $result = self::$annotateApi->annotateDirect($request);
+        $this->assertNotNull($result);
+        $this->assertGreaterThan(0, $result->getSize());
+    }    
+
+    public function testExtractAnnotations()
+    {
+        $files = Internal\TestFiles::getTestFilesWithAnnotations();
+        foreach ($files as $file) {
+            $path = $file->folder . $file->fileName;
+            //echo "ExtractAnnotations:". $path . "\n";
+
+            $fileInfo = new Model\FileInfo();
+            $fileInfo->setFilePath($path);
+            $fileInfo->setPassword($file->password);
+
+            $request = new Requests\extractRequest($fileInfo);
+            $result = self::$annotateApi->extract($request);
+            $this->assertNotNull($result);
+            $this->assertGreaterThan(0, count($result));
+        }    
+    }      
+
+    public function testRemoveAnnotations()
+    {
+        $files = Internal\TestFiles::getTestFilesWithAnnotations();
+        foreach ($files as $file) {
+            $path = $file->folder . $file->fileName;
+            //echo "RemoveAnnotations:". $path . "\n";
+
+            $fileInfo = new Model\FileInfo();
+            $fileInfo->setFilePath($path);
+
+            $options = new Model\RemoveOptions();
+            $options->setFileInfo($fileInfo);
+            $options->setAnnotationIds([1, 2, 3]);
+            $options->setOutputPath(self::$outputDir . "/" . $file->fileName);
+
+            // Remove annotation
+            $request = new Requests\removeAnnotationsRequest($options);
+            $result = self::$annotateApi->removeAnnotations($request);
+            $this->assertNotNull($result);
+            $this->assertNotNull($result->getHref());
+        }        
+    }    
     
     public function GetAnnotations()
     {

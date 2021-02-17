@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="PreviewApi.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -213,12 +213,12 @@ class PreviewApi
      */
     protected function deletePagesRequest(Requests\deletePagesRequest $request)
     {
-        // verify the required parameter 'filePath' is set
-        if ($request->filePath === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $filePath when calling deletePages');
+        // verify the required parameter 'fileInfo' is set
+        if ($request->fileInfo === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $fileInfo when calling deletePages');
         }
 
-        $resourcePath = '/annotation/pages';
+        $resourcePath = '/annotation/preview/remove';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -226,22 +226,19 @@ class PreviewApi
         $multipart = false;
     
 
-        // query params
-        if ($request->filePath !== null) {
-            $localName = lcfirst('filePath');
-            $localValue = is_bool($request->filePath) ? ($request->filePath ? 'true' : 'false') : $request->filePath;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
     
     
         $resourcePath = $this->_buildUrl($resourcePath, $queryParams);
 
         // body params
         $_tempBody = null;
+        if (isset($request->fileInfo)) {
+            if (is_string($request->fileInfo)) {
+                $_tempBody = "\"" . $request->fileInfo . "\"";   
+            } else {
+                $_tempBody = $request->fileInfo;
+            }
+        }
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
@@ -310,13 +307,13 @@ class PreviewApi
         );
     
         $req = new Request(
-            'DELETE',
+            'POST',
             $resourcePath,
             $headers,
             $httpBody
         );
         if ($this->config->getDebug()) {
-            $this->_writeRequestLog('DELETE', $resourcePath, $headers, $httpBody);
+            $this->_writeRequestLog('POST', $resourcePath, $headers, $httpBody);
         }
         
         return $req;
@@ -489,12 +486,12 @@ class PreviewApi
      */
     protected function getPagesRequest(Requests\getPagesRequest $request)
     {
-        // verify the required parameter 'filePath' is set
-        if ($request->filePath === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $filePath when calling getPages');
+        // verify the required parameter 'options' is set
+        if ($request->options === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $options when calling getPages');
         }
 
-        $resourcePath = '/annotation/pages';
+        $resourcePath = '/annotation/preview/create';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -502,95 +499,19 @@ class PreviewApi
         $multipart = false;
     
 
-        // query params
-        if ($request->filePath !== null) {
-            $localName = lcfirst('filePath');
-            $localValue = is_bool($request->filePath) ? ($request->filePath ? 'true' : 'false') : $request->filePath;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if (is_array($request->pageNumbersToConvert)) {
-            $request->pageNumbersToConvert = ObjectSerializer::serializeCollection($request->pageNumbersToConvert, 'multi', true);
-        }
-        if ($request->pageNumbersToConvert !== null) {
-            $localName = lcfirst('pageNumbersToConvert');
-            $localValue = is_bool($request->pageNumbersToConvert) ? ($request->pageNumbersToConvert ? 'true' : 'false') : $request->pageNumbersToConvert;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->format !== null) {
-            $localName = lcfirst('format');
-            $localValue = is_bool($request->format) ? ($request->format ? 'true' : 'false') : $request->format;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->width !== null) {
-            $localName = lcfirst('width');
-            $localValue = is_bool($request->width) ? ($request->width ? 'true' : 'false') : $request->width;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->height !== null) {
-            $localName = lcfirst('height');
-            $localValue = is_bool($request->height) ? ($request->height ? 'true' : 'false') : $request->height;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->withoutAnnotations !== null) {
-            $localName = lcfirst('withoutAnnotations');
-            $localValue = is_bool($request->withoutAnnotations) ? ($request->withoutAnnotations ? 'true' : 'false') : $request->withoutAnnotations;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->renderComments !== null) {
-            $localName = lcfirst('renderComments');
-            $localValue = is_bool($request->renderComments) ? ($request->renderComments ? 'true' : 'false') : $request->renderComments;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->password !== null) {
-            $localName = lcfirst('password');
-            $localValue = is_bool($request->password) ? ($request->password ? 'true' : 'false') : $request->password;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
     
     
         $resourcePath = $this->_buildUrl($resourcePath, $queryParams);
 
         // body params
         $_tempBody = null;
+        if (isset($request->options)) {
+            if (is_string($request->options)) {
+                $_tempBody = "\"" . $request->options . "\"";   
+            } else {
+                $_tempBody = $request->options;
+            }
+        }
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
@@ -659,13 +580,13 @@ class PreviewApi
         );
     
         $req = new Request(
-            'GET',
+            'POST',
             $resourcePath,
             $headers,
             $httpBody
         );
         if ($this->config->getDebug()) {
-            $this->_writeRequestLog('GET', $resourcePath, $headers, $httpBody);
+            $this->_writeRequestLog('POST', $resourcePath, $headers, $httpBody);
         }
         
         return $req;
@@ -773,7 +694,7 @@ class PreviewApi
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="deletePagesRequest.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -807,22 +728,22 @@ class deletePagesRequest
     /*
      * Initializes a new instance of the deletePagesRequest class.
      *  
-     * @param string $filePath Document path in storage
+     * @param \GroupDocs\Annotation\Model\FileInfo $fileInfo Document info to remove preview
      */
-    public function __construct($filePath)             
+    public function __construct($fileInfo)             
     {
-        $this->filePath = $filePath;
+        $this->fileInfo = $fileInfo;
     }
 
     /*
-     * Document path in storage
+     * Document info to remove preview
      */
-    public $filePath;
+    public $fileInfo;
 }
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="getPagesRequest.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -856,64 +777,15 @@ class getPagesRequest
     /*
      * Initializes a new instance of the getPagesRequest class.
      *  
-     * @param string $filePath Document path in storage
-     * @param int[] $pageNumbersToConvert The list of page numbers to convert
-     * @param string $format Preview format: \"PNG\" (default), \"JPEG\", or \"BMP\"
-     * @param int $width Preview image width
-     * @param int $height Preview image height
-     * @param bool $withoutAnnotations If true returns specific pages without annotations
-     * @param bool $renderComments Render comments (false by default)
-     * @param string $password Source document opening password
+     * @param \GroupDocs\Annotation\Model\PreviewOptions $options Document preview options
      */
-    public function __construct($filePath, $pageNumbersToConvert = null, $format = null, $width = null, $height = null, $withoutAnnotations = null, $renderComments = null, $password = null)             
+    public function __construct($options)             
     {
-        $this->filePath = $filePath;
-        $this->pageNumbersToConvert = $pageNumbersToConvert;
-        $this->format = $format;
-        $this->width = $width;
-        $this->height = $height;
-        $this->withoutAnnotations = $withoutAnnotations;
-        $this->renderComments = $renderComments;
-        $this->password = $password;
+        $this->options = $options;
     }
 
     /*
-     * Document path in storage
+     * Document preview options
      */
-    public $filePath;
-	
-    /*
-     * The list of page numbers to convert
-     */
-    public $pageNumbersToConvert;
-	
-    /*
-     * Preview format: \"PNG\" (default), \"JPEG\", or \"BMP\"
-     */
-    public $format;
-	
-    /*
-     * Preview image width
-     */
-    public $width;
-	
-    /*
-     * Preview image height
-     */
-    public $height;
-	
-    /*
-     * If true returns specific pages without annotations
-     */
-    public $withoutAnnotations;
-	
-    /*
-     * Render comments (false by default)
-     */
-    public $renderComments;
-	
-    /*
-     * Source document opening password
-     */
-    public $password;
+    public $options;
 }

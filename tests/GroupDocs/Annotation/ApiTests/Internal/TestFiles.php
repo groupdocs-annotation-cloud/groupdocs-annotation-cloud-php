@@ -3,7 +3,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="TestFiles.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -180,6 +180,70 @@ class TestFiles
         return $file;
     }
 
+    public static function InputWords() {
+        $file = new TestFile();
+        $file->fileName = "input.docx";
+        $file->folder = "input\\";
+        $file->password = null;
+        return $file;
+    }    
+
+    public static function InputCells() {
+        $file = new TestFile();
+        $file->fileName = "input.xlsx";
+        $file->folder = "input\\";
+        $file->password = null;
+        return $file;
+    }    
+
+    public static function InputEmail() {
+        $file = new TestFile();
+        $file->fileName = "input.eml";
+        $file->folder = "input\\";
+        $file->password = null;
+        return $file;
+    }    
+
+    public static function InputHtml() {
+        $file = new TestFile();
+        $file->fileName = "input.html";
+        $file->folder = "input\\";
+        $file->password = null;
+        return $file;
+    }    
+
+    public static function InputPdf() {
+        $file = new TestFile();
+        $file->fileName = "input.pdf";
+        $file->folder = "input\\";
+        $file->password = null;
+        return $file;
+    }    
+
+    public static function InputImage() {
+        $file = new TestFile();
+        $file->fileName = "input.png";
+        $file->folder = "input\\";
+        $file->password = null;
+        return $file;
+    }    
+
+    public static function InputPresentation() {
+        $file = new TestFile();
+        $file->fileName = "input.pptx";
+        $file->folder = "input\\";
+        $file->password = null;
+        return $file;
+    }    
+
+    public static function InputDiagram() {
+        $file = new TestFile();
+        $file->fileName = "input.vsdx";
+        $file->folder = "input\\";
+        $file->password = null;
+        return $file;
+    }    
+
     public static function getTestFilesListUpload() {        
         return array(
             self::OnePageCells(),
@@ -199,7 +263,15 @@ class TestFiles
             self::TenPagesSlides(),
             self::OnePageWords(),
             self::OnePagePasswordWords(),
-            self::TenPagesWords()
+            self::TenPagesWords(),
+            self::InputWords(),
+            self::InputCells(),
+            self::InputEmail(),
+            self::InputHtml(),
+            self::InputPdf(),
+            self::InputImage(),
+            self::InputPresentation(),
+            self::InputDiagram()
         );
     }
 
@@ -273,4 +345,16 @@ class TestFiles
         );
     }
 
+    public static function getTestFilesWithAnnotations() {
+        return array(
+            self::InputWords(),
+            self::InputCells(),
+            self::InputEmail(),
+            self::InputHtml(),
+            self::InputPdf(),
+            self::InputImage(),
+            self::InputPresentation(),
+            self::InputDiagram()
+        );
+    }
 }

@@ -2,7 +2,7 @@
 /**
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose Pty Ltd" >
-*   Copyright (c) 2003-2020 Aspose Pty Ltd
+*   Copyright (c) 2003-2021 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,6 +27,7 @@
 */
 namespace GroupDocs\Annotation\ApiTests;
 
+use GroupDocs\Annotation\Model;
 use GroupDocs\Annotation\Model\Requests;
 
 require_once "BaseApiTest.php";
@@ -38,12 +39,20 @@ class PreviewApiTest extends BaseApiTest
         $files = Internal\TestFiles::getTestFilesListPreview();
         foreach ($files as $file) {
             $path = $file->folder . $file->fileName;
-            $request = new Requests\getPagesRequest($path, null, null, null, null, null, null, $file->password);
+
+            $fileInfo = new Model\FileInfo();
+            $fileInfo->setFilePath($path);
+            $fileInfo->setPassword($file->password);
+
+            $options = new Model\PreviewOptions();
+            $options->setFileInfo($fileInfo);
+
+            $request = new Requests\getPagesRequest($options);
             $response = self::$previewApi->getPages($request);
             $this->assertGreaterThan(0, $response->getTotalCount());
             $this->assertGreaterThan(0, count($response->getEntries()));
 
-            $request = new Requests\deletePagesRequest($path);
+            $request = new Requests\deletePagesRequest($fileInfo);
             self::$previewApi->deletePages($request);            
         }
     }    

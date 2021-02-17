@@ -2,7 +2,7 @@
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="InfoApi.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -254,9 +254,9 @@ class InfoApi
      */
     protected function getInfoRequest(Requests\getInfoRequest $request)
     {
-        // verify the required parameter 'filePath' is set
-        if ($request->filePath === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $filePath when calling getInfo');
+        // verify the required parameter 'fileInfo' is set
+        if ($request->fileInfo === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $fileInfo when calling getInfo');
         }
 
         $resourcePath = '/annotation/info';
@@ -267,32 +267,19 @@ class InfoApi
         $multipart = false;
     
 
-        // query params
-        if ($request->filePath !== null) {
-            $localName = lcfirst('filePath');
-            $localValue = is_bool($request->filePath) ? ($request->filePath ? 'true' : 'false') : $request->filePath;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
-        // query params
-        if ($request->password !== null) {
-            $localName = lcfirst('password');
-            $localValue = is_bool($request->password) ? ($request->password ? 'true' : 'false') : $request->password;
-            if (strpos($resourcePath, '{' . $localName . '}') !== false) {
-                $resourcePath = str_replace('{' . $localName . '}', ObjectSerializer::toPathValue($localValue), $resourcePath);
-            } else {
-                $queryParams[$localName] = ObjectSerializer::toQueryValue($localValue);
-            }
-        }
     
     
         $resourcePath = $this->_buildUrl($resourcePath, $queryParams);
 
         // body params
         $_tempBody = null;
+        if (isset($request->fileInfo)) {
+            if (is_string($request->fileInfo)) {
+                $_tempBody = "\"" . $request->fileInfo . "\"";   
+            } else {
+                $_tempBody = $request->fileInfo;
+            }
+        }
 
         if ($multipart) {
             $headers= $this->headerSelector->selectHeadersForMultipart(
@@ -361,13 +348,13 @@ class InfoApi
         );
     
         $req = new Request(
-            'GET',
+            'POST',
             $resourcePath,
             $headers,
             $httpBody
         );
         if ($this->config->getDebug()) {
-            $this->_writeRequestLog('GET', $resourcePath, $headers, $httpBody);
+            $this->_writeRequestLog('POST', $resourcePath, $headers, $httpBody);
         }
         
         return $req;
@@ -731,7 +718,7 @@ class InfoApi
 /*
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose Pty Ltd" file="getInfoRequest.php">
- *   Copyright (c) 2003-2020 Aspose Pty Ltd
+ *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
  *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -765,22 +752,15 @@ class getInfoRequest
     /*
      * Initializes a new instance of the getInfoRequest class.
      *  
-     * @param string $filePath Document path in storage
-     * @param string $password Source document password
+     * @param \GroupDocs\Annotation\Model\FileInfo $fileInfo Document path in storage and password
      */
-    public function __construct($filePath, $password = null)             
+    public function __construct($fileInfo)             
     {
-        $this->filePath = $filePath;
-        $this->password = $password;
+        $this->fileInfo = $fileInfo;
     }
 
     /*
-     * Document path in storage
+     * Document path in storage and password
      */
-    public $filePath;
-	
-    /*
-     * Source document password
-     */
-    public $password;
+    public $fileInfo;
 }

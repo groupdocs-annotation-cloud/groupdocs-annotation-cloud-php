@@ -1,7 +1,7 @@
 <?php
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="LinkElement.php">
+ * <copyright company="Aspose Pty Ltd" file="FileInfo.php">
  *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
@@ -32,20 +32,20 @@ use \ArrayAccess;
 use \GroupDocs\Annotation\ObjectSerializer;
 
 /*
- * LinkElement
+ * FileInfo
  *
- * @description Reference to document
+ * @description File info
  */
-class LinkElement implements ArrayAccess
+class FileInfo implements ArrayAccess
 {
-    const DISCRIMINATOR = 'Type';
+    const DISCRIMINATOR = null;
 
     /*
      * The original name of the model.
      *
      * @var string
      */
-    protected static $swaggerModelName = "LinkElement";
+    protected static $swaggerModelName = "FileInfo";
 
     /*
      * Array of property to type mappings. Used for (de)serialization
@@ -53,7 +53,10 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'link' => '\GroupDocs\Annotation\Model\AnnotationApiLink'
+        'filePath' => 'string',
+        'storageName' => 'string',
+        'versionId' => 'string',
+        'password' => 'string'
     ];
 
     /*
@@ -62,7 +65,10 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'link' => null
+        'filePath' => null,
+        'storageName' => null,
+        'versionId' => null,
+        'password' => null
     ];
 
     /*
@@ -92,7 +98,10 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'link' => 'link'
+        'filePath' => 'FilePath',
+        'storageName' => 'StorageName',
+        'versionId' => 'VersionId',
+        'password' => 'Password'
     ];
 
     /*
@@ -101,7 +110,10 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'link' => 'setLink'
+        'filePath' => 'setFilePath',
+        'storageName' => 'setStorageName',
+        'versionId' => 'setVersionId',
+        'password' => 'setPassword'
     ];
 
     /*
@@ -110,7 +122,10 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'link' => 'getLink'
+        'filePath' => 'getFilePath',
+        'storageName' => 'getStorageName',
+        'versionId' => 'getVersionId',
+        'password' => 'getPassword'
     ];
 
     /*
@@ -173,11 +188,10 @@ class LinkElement implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['link'] = isset($data['link']) ? $data['link'] : null;
-
-        // Initialize discriminator property with the model name.
-        $discriminator = array_search('Type', self::$attributeMap);
-        $this->container[$discriminator] = static::$swaggerModelName;
+        $this->container['filePath'] = isset($data['filePath']) ? $data['filePath'] : null;
+        $this->container['storageName'] = isset($data['storageName']) ? $data['storageName'] : null;
+        $this->container['versionId'] = isset($data['versionId']) ? $data['versionId'] : null;
+        $this->container['password'] = isset($data['password']) ? $data['password'] : null;
     }
 
     /*
@@ -206,25 +220,97 @@ class LinkElement implements ArrayAccess
 
 
     /*
-     * Gets link
+     * Gets filePath
      *
-     * @return \GroupDocs\Annotation\Model\AnnotationApiLink
+     * @return string
      */
-    public function getLink()
+    public function getFilePath()
     {
-        return $this->container['link'];
+        return $this->container['filePath'];
     }
 
     /*
-     * Sets link
+     * Sets filePath
      *
-     * @param \GroupDocs\Annotation\Model\AnnotationApiLink $link Link to the document
+     * @param string $filePath File path in storage
      *
      * @return $this
      */
-    public function setLink($link)
+    public function setFilePath($filePath)
     {
-        $this->container['link'] = $link;
+        $this->container['filePath'] = $filePath;
+
+        return $this;
+    }
+
+    /*
+     * Gets storageName
+     *
+     * @return string
+     */
+    public function getStorageName()
+    {
+        return $this->container['storageName'];
+    }
+
+    /*
+     * Sets storageName
+     *
+     * @param string $storageName Storage name
+     *
+     * @return $this
+     */
+    public function setStorageName($storageName)
+    {
+        $this->container['storageName'] = $storageName;
+
+        return $this;
+    }
+
+    /*
+     * Gets versionId
+     *
+     * @return string
+     */
+    public function getVersionId()
+    {
+        return $this->container['versionId'];
+    }
+
+    /*
+     * Sets versionId
+     *
+     * @param string $versionId Version ID
+     *
+     * @return $this
+     */
+    public function setVersionId($versionId)
+    {
+        $this->container['versionId'] = $versionId;
+
+        return $this;
+    }
+
+    /*
+     * Gets password
+     *
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->container['password'];
+    }
+
+    /*
+     * Sets password
+     *
+     * @param string $password Password to open file
+     *
+     * @return $this
+     */
+    public function setPassword($password)
+    {
+        $this->container['password'] = $password;
 
         return $this;
     }

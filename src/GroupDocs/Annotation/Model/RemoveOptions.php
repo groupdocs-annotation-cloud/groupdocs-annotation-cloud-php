@@ -1,7 +1,7 @@
 <?php
 /*
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose Pty Ltd" file="LinkElement.php">
+ * <copyright company="Aspose Pty Ltd" file="RemoveOptions.php">
  *   Copyright (c) 2003-2021 Aspose Pty Ltd
  * </copyright>
  * <summary>
@@ -32,20 +32,20 @@ use \ArrayAccess;
 use \GroupDocs\Annotation\ObjectSerializer;
 
 /*
- * LinkElement
+ * RemoveOptions
  *
- * @description Reference to document
+ * @description Options for removing annotations
  */
-class LinkElement implements ArrayAccess
+class RemoveOptions implements ArrayAccess
 {
-    const DISCRIMINATOR = 'Type';
+    const DISCRIMINATOR = null;
 
     /*
      * The original name of the model.
      *
      * @var string
      */
-    protected static $swaggerModelName = "LinkElement";
+    protected static $swaggerModelName = "RemoveOptions";
 
     /*
      * Array of property to type mappings. Used for (de)serialization
@@ -53,7 +53,9 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerTypes = [
-        'link' => '\GroupDocs\Annotation\Model\AnnotationApiLink'
+        'fileInfo' => '\GroupDocs\Annotation\Model\FileInfo',
+        'annotationIds' => 'int[]',
+        'outputPath' => 'string'
     ];
 
     /*
@@ -62,7 +64,9 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $swaggerFormats = [
-        'link' => null
+        'fileInfo' => null,
+        'annotationIds' => 'int32',
+        'outputPath' => null
     ];
 
     /*
@@ -92,7 +96,9 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'link' => 'link'
+        'fileInfo' => 'FileInfo',
+        'annotationIds' => 'AnnotationIds',
+        'outputPath' => 'OutputPath'
     ];
 
     /*
@@ -101,7 +107,9 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'link' => 'setLink'
+        'fileInfo' => 'setFileInfo',
+        'annotationIds' => 'setAnnotationIds',
+        'outputPath' => 'setOutputPath'
     ];
 
     /*
@@ -110,7 +118,9 @@ class LinkElement implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'link' => 'getLink'
+        'fileInfo' => 'getFileInfo',
+        'annotationIds' => 'getAnnotationIds',
+        'outputPath' => 'getOutputPath'
     ];
 
     /*
@@ -173,11 +183,9 @@ class LinkElement implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['link'] = isset($data['link']) ? $data['link'] : null;
-
-        // Initialize discriminator property with the model name.
-        $discriminator = array_search('Type', self::$attributeMap);
-        $this->container[$discriminator] = static::$swaggerModelName;
+        $this->container['fileInfo'] = isset($data['fileInfo']) ? $data['fileInfo'] : null;
+        $this->container['annotationIds'] = isset($data['annotationIds']) ? $data['annotationIds'] : null;
+        $this->container['outputPath'] = isset($data['outputPath']) ? $data['outputPath'] : null;
     }
 
     /*
@@ -206,25 +214,73 @@ class LinkElement implements ArrayAccess
 
 
     /*
-     * Gets link
+     * Gets fileInfo
      *
-     * @return \GroupDocs\Annotation\Model\AnnotationApiLink
+     * @return \GroupDocs\Annotation\Model\FileInfo
      */
-    public function getLink()
+    public function getFileInfo()
     {
-        return $this->container['link'];
+        return $this->container['fileInfo'];
     }
 
     /*
-     * Sets link
+     * Sets fileInfo
      *
-     * @param \GroupDocs\Annotation\Model\AnnotationApiLink $link Link to the document
+     * @param \GroupDocs\Annotation\Model\FileInfo $fileInfo Input document description
      *
      * @return $this
      */
-    public function setLink($link)
+    public function setFileInfo($fileInfo)
     {
-        $this->container['link'] = $link;
+        $this->container['fileInfo'] = $fileInfo;
+
+        return $this;
+    }
+
+    /*
+     * Gets annotationIds
+     *
+     * @return int[]
+     */
+    public function getAnnotationIds()
+    {
+        return $this->container['annotationIds'];
+    }
+
+    /*
+     * Sets annotationIds
+     *
+     * @param int[] $annotationIds List of annotation IDs to remove from the document
+     *
+     * @return $this
+     */
+    public function setAnnotationIds($annotationIds)
+    {
+        $this->container['annotationIds'] = $annotationIds;
+
+        return $this;
+    }
+
+    /*
+     * Gets outputPath
+     *
+     * @return string
+     */
+    public function getOutputPath()
+    {
+        return $this->container['outputPath'];
+    }
+
+    /*
+     * Sets outputPath
+     *
+     * @param string $outputPath Path to output document in the cloud storage.
+     *
+     * @return $this
+     */
+    public function setOutputPath($outputPath)
+    {
+        $this->container['outputPath'] = $outputPath;
 
         return $this;
     }

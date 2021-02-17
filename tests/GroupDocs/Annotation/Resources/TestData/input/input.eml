@@ -1,0 +1,1623 @@
+MIME-Version: 1.0
+Subject: Sender: Vlad
+From: Hello@gmail.com
+To: Email@gmail.com
+Date: Wed, 12 Feb 2020 10:19:41 +0000
+Content-Type: multipart/related;
+ boundary="--_=_NextPart0_679d5272-c96a-46e8-8f02-a32dda09989a";
+ type="text/html"
+
+This is a multi-part message in MIME format.
+
+----_=_NextPart0_679d5272-c96a-46e8-8f02-a32dda09989a
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline; filename="document.html"
+Content-Location: document.html
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dutf-8" /><meta http-equiv=3D"Content-Style-Type" content=3D"text/css" />=
+<meta name=3D"keywords" content=3D"calibre, docs, ebook, conversion" /><met=
+a name=3D"generator" content=3D"Aspose=2EWords for =2ENET 19=2E6" /><title>=
+DOCX Demo</title><style type=3D"text/css">=2Eawlist1 { list-style-type:none=
+; counter-reset:awlistcounter1 }=2Eawlist1 li:before { content:'1=2E' count=
+er(awlistcounter1) '=2E'; counter-increment:awlistcounter1 }=2Eawlist2 { li=
+st-style-type:none; counter-reset:awlistcounter2 }=2Eawlist2 li:before { co=
+ntent:'1=2E1=2E' counter(awlistcounter2) '=2E'; counter-increment:awlistcou=
+nter2 }</style></head><body><div><p style=3D"margin-top:0pt; margin-bottom:=
+15pt; border-bottom:1pt solid #4f81bd; padding-bottom:4pt; font-size:26pt">=
+<a name=3D"OLE_LINK1"></a><a name=3D"OLE_LINK2"></a><a name=3D"_Toc35907785=
+1"><span style=3D"font-family:Ubuntu; letter-spacing:0=2E25pt; color:#17365=
+d">Demonstration of DOCX support in calibre</span></a></p><p style=3D"margi=
+n-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-=
+size:12pt"><span style=3D"font-family:Ubuntu">This document demonstrates th=
+e ability of the calibre DOCX Input plugin to convert the various typograph=
+ic features in a Microsoft Word (2007 and newer) document=2E Convert this d=
+ocument to a modern ebook format, such as AZW3 for Kindles or EPUB for othe=
+r ebook readers, to see it in action=2E</span></p><p style=3D"margin-top:0p=
+t; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12p=
+t"><span style=3D"font-family:Ubuntu">There is support for images, tables, =
+lists, footnotes, endnotes, links, dropcaps and various types of text and p=
+aragraph level formatting=2E</span></p><p style=3D"margin-top:0pt; margin-b=
+ottom:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><span st=
+yle=3D"font-family:Ubuntu">To see the DOCX conversion in action, simply add=
+ this file to calibre using the </span><span style=3D"font-family:Ubuntu; f=
+ont-weight:bold">=E2=80=9CAdd Books=E2=80=9D </span><span style=3D"font-fam=
+ily:Ubuntu">button and then click =E2=80=9C</span><span style=3D"font-famil=
+y:Ubuntu; font-weight:bold">Convert=E2=80=9D=2E </span><span style=3D"font-=
+family:Ubuntu">Set the output format in the top right corner of the convers=
+ion dialog to EPUB or AZW3 and click </span><span style=3D"font-family:Ubun=
+tu; font-weight:bold">=E2=80=9COK=E2=80=9D</span><span style=3D"font-family=
+:Ubuntu">=2E</span></p><p style=3D"margin-top:0pt; margin-bottom:0pt; text-=
+indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=3D"font-fami=
+ly:Ubuntu">&#xa0;</span></p><h1 style=3D"margin-top:24pt; margin-bottom:0pt=
+; text-align:center; page-break-before:always; page-break-inside:avoid; pag=
+e-break-after:avoid; line-height:115%; font-size:14pt"><a name=3D"_Toc35907=
+7852"><span style=3D"font-family:Ubuntu; color:#365f91">Text Formatting</sp=
+an></a></h1><h2 style=3D"margin-top:10pt; margin-bottom:0pt; page-break-ins=
+ide:avoid; page-break-after:avoid; line-height:115%; font-size:13pt"><a nam=
+e=3D"_Toc359077853"><span style=3D"font-family:Ubuntu; color:#4f81bd">Inlin=
+e formatting</span></a></h2><p style=3D"margin-top:0pt; margin-bottom:0pt; =
+text-indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=3D"font=
+-family:Ubuntu">Here, we demonstrate various types of inline text formattin=
+g and the use of embedded fonts=2E</span></p><p style=3D"margin-top:0pt; ma=
+rgin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><s=
+pan style=3D"font-family:Ubuntu">Here is some </span><span style=3D"font-fa=
+mily:Ubuntu; font-weight:bold">bold, </span><span style=3D"font-family:Ubun=
+tu; font-style:italic">italic, </span><span style=3D"font-family:Ubuntu; fo=
+nt-weight:bold; font-style:italic">bold-italic, </span><span style=3D"font-=
+family:Ubuntu; text-decoration:underline">underlined </span><span style=3D"=
+font-family:Ubuntu">and </span><span style=3D"font-family:Ubuntu; text-deco=
+ration:line-through">struck out </span><span style=3D"font-family:Ubuntu">t=
+ext=2E Then, we have a super</span><span style=3D"font-family:Ubuntu; font-=
+size:8pt; vertical-align:super">script</span><span style=3D"font-family:Ubu=
+ntu"> and a sub</span><span style=3D"font-family:Ubuntu; font-size:8pt; ver=
+tical-align:sub">script</span><span style=3D"font-family:Ubuntu">=2E Now we=
+ see some </span><span style=3D"font-family:Ubuntu; color:#ff0000">red</spa=
+n><span style=3D"font-family:Ubuntu">, </span><span style=3D"font-family:Ub=
+untu; color:#92d050">green</span><span style=3D"font-family:Ubuntu"> and </=
+span><span style=3D"font-family:Ubuntu; color:#0070c0">blue</span><span sty=
+le=3D"font-family:Ubuntu"> text=2E Some text with a </span><span style=3D"f=
+ont-family:Ubuntu; background-color:#ffff00">yellow highlight</span><span s=
+tyle=3D"font-family:Ubuntu">=2E Some text in a </span><span style=3D"border=
+:0=2E75pt solid #000000; font-family:Ubuntu">box</span><span style=3D"font-=
+family:Ubuntu">=2E Some text in </span><span style=3D"font-family:Ubuntu; c=
+olor:#ffffff; background-color:#000000">inverse video</span><span style=3D"=
+font-family:Ubuntu">=2E</span></p><p style=3D"margin-top:0pt; margin-bottom=
+:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=
+=3D"font-family:Ubuntu">A paragraph with styled text: </span><span style=3D"=
+font-family:Ubuntu; font-style:italic; color:#808080">subtle emphasis</span=
+><span style=3D"font-family:Ubuntu; font-style:italic; color:#808080">&#xa0=
+;</span><span style=3D"font-family:Ubuntu; font-style:italic; color:#808080=
+"> </span><span style=3D"font-family:Ubuntu">followed by </span><span style=
+=3D"font-family:Ubuntu; font-weight:bold">strong text </span><span style=3D"=
+font-family:Ubuntu">and </span><span style=3D"font-family:Ubuntu; font-weig=
+ht:bold; font-style:italic; color:#4f81bd">intense emphasis</span><span sty=
+le=3D"font-family:Ubuntu">=2E This paragraph uses document wide styles</spa=
+n><a name=3D"_cmntref1"><span style=3D"font-family:Ubuntu; text-decoration:=
+line-through">&#xa0;</span><span style=3D"font-family:Ubuntu; text-decorati=
+on:line-through">for</span></a><a href=3D"#_cmnt1" style=3D"text-decoration=
+:none"><span style=3D"font-family:'Times New Roman'; font-size:8pt">[AU1]</=
+span></a><span style=3D"font-family:Ubuntu"> styling rather than inline tex=
+t properties as demonstrated in the previous paragraph =E2=80=94 calibre ca=
+n handle both with equal ease=2E</span></p><h2 style=3D"margin-top:10pt; ma=
+rgin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; line-heig=
+ht:115%; font-size:13pt"><a name=3D"_Toc359077854"><span style=3D"font-fami=
+ly:Ubuntu; color:#4f81bd">Fun with fonts</span></a></h2><p style=3D"margin-=
+top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-si=
+ze:12pt"><span style=3D"font-family:Ubuntu">This document has embedded the =
+Ubuntu font family=2E The body text is in the Ubuntu typeface, here is </sp=
+an><span style=3D"font-family:'Ubuntu Mono'">some text in the Ubuntu Mono t=
+ypeface, notice how every letter has the same width, even i and m</span><sp=
+an style=3D"font-family:Ubuntu">=2E Every embedded font will automatically =
+be embedded in the output ebook during conversion=2E </span></p><h2 style=
+=3D"margin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break=
+-after:avoid; line-height:115%; font-size:13pt"><a name=3D"_Paragraph_level=
+_formatting"></a><a name=3D"_Toc359077855"><span style=3D"font-family:Ubunt=
+u; color:#4f81bd">Paragraph level formatting</span></a></h2><p style=3D"mar=
+gin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; lin=
+e-height:115%; border-right:0=2E75pt solid #000000; padding-right:4pt; font=
+-size:12pt; background-color:#dddddd"><span style=3D"font-family:Ubuntu">Yo=
+u can do crazy things with paragraphs, if the urge strikes you=2E For insta=
+nce this paragraph is right aligned and has a right border=2E It has also b=
+een given a light gray background=2E</span></p><p style=3D"margin-top:30pt;=
+ margin-left:36pt; margin-bottom:0pt; text-indent:-36pt; line-height:115%; =
+font-size:12pt"><span style=3D"font-family:Ubuntu">For the lovers of poetry=
+ amongst you, paragraphs with hanging indents, like this often come in hand=
+y=2E You can use hanging indents to ensure that a line of poetry retains it=
+s individual identity as a line even when the screen is</span><span style=
+=3D"font-family:Ubuntu">&#xa0;</span><span style=3D"font-family:Ubuntu"> to=
+o narrow to display it as a single line=2E Not only does this paragraph hav=
+e a hanging indent, it is also has an extra top margin, setting it apart fr=
+om the preceding paragraph=2E</span></p><h1 style=3D"margin-top:24pt; margi=
+n-bottom:0pt; text-align:center; page-break-before:always; page-break-insid=
+e:avoid; page-break-after:avoid; line-height:115%; font-size:14pt"><a name=
+=3D"_Toc359077856"><span style=3D"font-family:Ubuntu; color:#365f91">Tables=
+</span></a></h1><table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin-=
+right:9=2E35pt; margin-bottom:3=2E6pt; border:1pt solid #9bbb59; border-col=
+lapse:collapse; float:left"><tr><td style=3D"width:79=2E85pt; padding-right=
+:5=2E65pt; padding-left:4=2E9pt; padding-bottom:0=2E25pt; vertical-align:to=
+p; background-color:#9bbb59"><p style=3D"margin-top:0pt; margin-bottom:0pt;=
+ text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu; f=
+ont-weight:bold; color:#ffffff">ITEM</span></p></td><td style=3D"width:69=
+=2E95pt; padding-right:4=2E9pt; padding-left:5=2E65pt; padding-bottom:0=2E2=
+5pt; vertical-align:top; background-color:#9bbb59"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; font-weight:bold; color:#ffffff">NEEDED</span></p></td>=
+</tr><tr><td style=3D"width:79=2E85pt; padding:0=2E25pt 5=2E65pt 0=2E25pt 4=
+=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; =
+text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu">Bo=
+oks</span></p></td><td style=3D"width:69=2E95pt; padding:0=2E25pt 4=2E9pt 0=
+=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bo=
+ttom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:=
+Ubuntu">1</span></p></td></tr><tr><td style=3D"width:79=2E85pt; padding:0=
+=2E25pt 5=2E65pt 0=2E25pt 4=2E9pt; vertical-align:top"><p style=3D"margin-t=
+op:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span styl=
+e=3D"font-family:Ubuntu">Pens</span></p></td><td style=3D"width:69=2E95pt; =
+padding:0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"=
+margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><s=
+pan style=3D"font-family:Ubuntu">3</span></p></td></tr><tr><td style=3D"wid=
+th:79=2E85pt; padding:0=2E25pt 5=2E65pt 0=2E25pt 4=2E9pt; vertical-align:to=
+p"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; fon=
+t-size:11pt"><span style=3D"font-family:Ubuntu">Pencils</span></p></td><td =
+style=3D"width:69=2E95pt; padding:0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; verti=
+cal-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:2=
+1=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu">2</span></p></t=
+d></tr><tr><td style=3D"width:79=2E85pt; padding:0=2E25pt 5=2E65pt 0=2E25pt=
+ 4=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt=
+; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu">=
+Highlighter</span></p></td><td style=3D"width:69=2E95pt; padding:0=2E25pt 4=
+=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font=
+-family:Ubuntu">2 colors</span></p></td></tr><tr><td style=3D"width:79=2E85=
+pt; padding-top:0=2E25pt; padding-right:5=2E65pt; padding-left:4=2E9pt; ver=
+tical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent=
+:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu">Scissors</spa=
+n></p></td><td style=3D"width:69=2E95pt; padding-top:0=2E25pt; padding-righ=
+t:4=2E9pt; padding-left:5=2E65pt; vertical-align:top"><p style=3D"margin-to=
+p:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=
+=3D"font-family:Ubuntu">1 pair</span></p></td></tr></table><p style=3D"marg=
+in-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font=
+-size:12pt"><span style=3D"font-family:Ubuntu">Tables in Word can vary from=
+ the extremely simple to the extremely complex=2E calibre tries to do its b=
+est when converting tables=2E While you may run into trouble with the occas=
+ional table, the vast majority of common cases should be converted very wel=
+l, as demonstrated in this section=2E Note that for optimum results, when c=
+reating tables in Word, you should set their widths using percentages, rath=
+er than absolute units=2E To the left of this paragraph is a floating two c=
+olumn table with a nice green border and header row=2E</span></p><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:11=
+5%; font-size:12pt"><span style=3D"font-family:Ubuntu">Now let=E2=80=99s lo=
+ok at a fancier table=E2=80=94one with alternating row colors and partial b=
+orders=2E This table is stretched out to take 100% of the available width=
+=2E</span></p><table cellspacing=3D"0" cellpadding=3D"0" style=3D"width:100=
+%; border-collapse:collapse"><tr><td style=3D"width:16=2E36%; border-bottom=
+:3pt solid #4f81bd; padding-top:0=2E25pt; padding-right:5=2E65pt; padding-l=
+eft:5=2E65pt; vertical-align:top; background-color:#ffffff"><p style=3D"mar=
+gin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span=
+ style=3D"font-family:Ubuntu">City or Town</span></p></td><td style=3D"widt=
+h:16=2E98%; border-bottom:3pt solid #4f81bd; padding-top:0=2E25pt; padding-=
+right:5=2E65pt; padding-left:5=2E65pt; vertical-align:top; background-color=
+:#ffffff"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">P=
+oint A</span></p></td><td style=3D"width:16=2E98%; border-bottom:3pt solid =
+#4f81bd; padding-top:0=2E25pt; padding-right:5=2E65pt; padding-left:5=2E65p=
+t; vertical-align:top; background-color:#ffffff"><p style=3D"margin-top:0pt=
+; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:11p=
+t"><span style=3D"font-family:Ubuntu">Point B</span></p></td><td style=3D"w=
+idth:17%; border-bottom:3pt solid #4f81bd; padding-top:0=2E25pt; padding-ri=
+ght:5=2E65pt; padding-left:5=2E65pt; vertical-align:top; background-color:#=
+ffffff"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt=
+; text-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">Poi=
+nt C</span></p></td><td style=3D"width:17=2E02%; border-bottom:3pt solid #4=
+f81bd; padding-top:0=2E25pt; padding-right:5=2E65pt; padding-left:5=2E65pt;=
+ vertical-align:top; background-color:#ffffff"><p style=3D"margin-top:0pt; =
+margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:11pt"=
+><span style=3D"font-family:Ubuntu">Point D</span></p></td><td style=3D"wid=
+th:15=2E66%; border-bottom:3pt solid #4f81bd; padding-top:0=2E25pt; padding=
+-right:5=2E65pt; padding-left:5=2E65pt; vertical-align:top; background-colo=
+r:#ffffff"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">P=
+oint E</span></p></td></tr><tr><td style=3D"width:16=2E36%; border-right:1p=
+t solid #4f81bd; padding:0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-align=
+:top; background-color:#ffffff"><p style=3D"margin-top:0pt; margin-bottom:0=
+pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu=
+">Point A</span></p></td><td style=3D"width:16=2E98%; padding:0=2E25pt 5=2E6=
+5pt; vertical-align:top; background-color:#d3dfee"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:1=
+1pt"><span style=3D"font-family:Ubuntu">=E2=80=94</span></p></td><td style=
+=3D"width:16=2E98%; padding:0=2E25pt 5=2E65pt; vertical-align:top; backgrou=
+nd-color:#d3dfee"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-inden=
+t:21=2E6pt; text-align:center; font-size:11pt"><span style=3D"font-family:U=
+buntu">&#xa0;</span></p></td><td style=3D"width:17%; padding:0=2E25pt 5=2E6=
+5pt; vertical-align:top; background-color:#d3dfee"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:1=
+1pt"><span style=3D"font-family:Ubuntu">&#xa0;</span></p></td><td style=3D"=
+width:17=2E02%; padding:0=2E25pt 5=2E65pt; vertical-align:top; background-c=
+olor:#d3dfee"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=
+=2E6pt; text-align:center; font-size:11pt"><span style=3D"font-family:Ubunt=
+u">&#xa0;</span></p></td><td style=3D"width:15=2E66%; border-right:1pt soli=
+d #4f81bd; padding:0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top; =
+background-color:#d3dfee"><p style=3D"margin-top:0pt; margin-bottom:0pt; te=
+xt-indent:21=2E6pt; text-align:center; font-size:11pt"><span style=3D"font-=
+family:Ubuntu">&#xa0;</span></p></td></tr><tr><td style=3D"width:16=2E36%; =
+border-right:1pt solid #4f81bd; padding:0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt;=
+ vertical-align:top; background-color:#ffffff"><p style=3D"margin-top:0pt; =
+margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"fon=
+t-family:Ubuntu">Point B</span></p></td><td style=3D"width:16=2E98%; paddin=
+g:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin=
+-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:11pt"><span=
+ style=3D"font-family:Ubuntu">87</span></p></td><td style=3D"width:16=2E98%=
+; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt=
+; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:11p=
+t"><span style=3D"font-family:Ubuntu">=E2=80=94</span></p></td><td style=3D"=
+width:17%; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margi=
+n-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font=
+-size:11pt"><span style=3D"font-family:Ubuntu">&#xa0;</span></p></td><td st=
+yle=3D"width:17=2E02%; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p st=
+yle=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:=
+center; font-size:11pt"><span style=3D"font-family:Ubuntu">&#xa0;</span></p=
+></td><td style=3D"width:15=2E66%; border-right:1pt solid #4f81bd; padding:=
+0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-=
+top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu">&#xa0;</span></p></td></tr><tr=
+><td style=3D"width:16=2E36%; border-right:1pt solid #4f81bd; padding:0=2E2=
+5pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top; background-color:#ffffff=
+"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font=
+-size:11pt"><span style=3D"font-family:Ubuntu">Point C</span></p></td><td s=
+tyle=3D"width:16=2E98%; padding:0=2E25pt 5=2E65pt; vertical-align:top; back=
+ground-color:#d3dfee"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-i=
+ndent:21=2E6pt; text-align:center; font-size:11pt"><span style=3D"font-fami=
+ly:Ubuntu">64</span></p></td><td style=3D"width:16=2E98%; padding:0=2E25pt =
+5=2E65pt; vertical-align:top; background-color:#d3dfee"><p style=3D"margin-=
+top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu">56</span></p></td><td style=3D"=
+width:17%; padding:0=2E25pt 5=2E65pt; vertical-align:top; background-color:=
+#d3dfee"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6p=
+t; text-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">=
+=E2=80=94</span></p></td><td style=3D"width:17=2E02%; padding:0=2E25pt 5=2E6=
+5pt; vertical-align:top; background-color:#d3dfee"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:1=
+1pt"><span style=3D"font-family:Ubuntu">&#xa0;</span></p></td><td style=3D"=
+width:15=2E66%; border-right:1pt solid #4f81bd; padding:0=2E25pt 4=2E9pt 0=
+=2E25pt 5=2E65pt; vertical-align:top; background-color:#d3dfee"><p style=3D"=
+margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center;=
+ font-size:11pt"><span style=3D"font-family:Ubuntu">&#xa0;</span></p></td><=
+/tr><tr><td style=3D"width:16=2E36%; border-right:1pt solid #4f81bd; paddin=
+g:0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top; background-color:=
+#ffffff"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6p=
+t; font-size:11pt"><span style=3D"font-family:Ubuntu">Point D</span></p></t=
+d><td style=3D"width:16=2E98%; padding:0=2E25pt 5=2E65pt; vertical-align:to=
+p"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; tex=
+t-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">37</span=
+></p></td><td style=3D"width:16=2E98%; padding:0=2E25pt 5=2E65pt; vertical-=
+align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">3=
+2</span></p></td><td style=3D"width:17%; padding:0=2E25pt 5=2E65pt; vertica=
+l-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=
+=2E6pt; text-align:center; font-size:11pt"><span style=3D"font-family:Ubunt=
+u">91</span></p></td><td style=3D"width:17=2E02%; padding:0=2E25pt 5=2E65pt=
+; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-i=
+ndent:21=2E6pt; text-align:center; font-size:11pt"><span style=3D"font-fami=
+ly:Ubuntu">=E2=80=94</span></p></td><td style=3D"width:15=2E66%; border-rig=
+ht:1pt solid #4f81bd; padding:0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-=
+align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">&=
+#xa0;</span></p></td></tr><tr><td style=3D"width:16=2E36%; border-right:1pt=
+ solid #4f81bd; padding:0=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-align:=
+top; background-color:#ffffff"><p style=3D"margin-top:0pt; margin-bottom:0p=
+t; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu"=
+>Point E</span></p></td><td style=3D"width:16=2E98%; padding:0=2E25pt 5=2E6=
+5pt; vertical-align:top; background-color:#d3dfee"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:1=
+1pt"><span style=3D"font-family:Ubuntu">93</span></p></td><td style=3D"widt=
+h:16=2E98%; padding:0=2E25pt 5=2E65pt; vertical-align:top; background-color=
+:#d3dfee"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">3=
+5</span></p></td><td style=3D"width:17%; padding:0=2E25pt 5=2E65pt; vertica=
+l-align:top; background-color:#d3dfee"><p style=3D"margin-top:0pt; margin-b=
+ottom:0pt; text-indent:21=2E6pt; text-align:center; font-size:11pt"><span s=
+tyle=3D"font-family:Ubuntu">54</span></p></td><td style=3D"width:17=2E02%; =
+padding:0=2E25pt 5=2E65pt; vertical-align:top; background-color:#d3dfee"><p=
+ style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-ali=
+gn:center; font-size:11pt"><span style=3D"font-family:Ubuntu">43</span></p>=
+</td><td style=3D"width:15=2E66%; border-right:1pt solid #4f81bd; padding:0=
+=2E25pt 4=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top; background-color:#d3=
+dfee"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; =
+text-align:center; font-size:11pt"><span style=3D"font-family:Ubuntu">=E2=
+=80=94</span></p></td></tr></table><p style=3D"margin-top:0pt; margin-botto=
+m:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=
+=3D"font-family:Ubuntu">&#xa0;</span></p><p style=3D"margin-top:12pt; margi=
+n-bottom:12pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><spa=
+n style=3D"font-family:Ubuntu">Next, we see a table with special formatting=
+ in various locations=2E Notice how the formatting for the header row and s=
+ub header rows is preserved=2E</span></p><table cellspacing=3D"0" cellpaddi=
+ng=3D"0" style=3D"width:100%; border-collapse:collapse"><tr><td style=3D"wi=
+dth:25%; border-top-style:solid; border-top-width:2=2E25pt; border-bottom-s=
+tyle:solid; border-bottom-width:2=2E25pt; padding-right:5=2E65pt; padding-l=
+eft:5=2E65pt; vertical-align:top; background-color:#4bacc6"><p style=3D"mar=
+gin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span=
+ style=3D"font-family:Ubuntu; font-weight:bold; color:#ffffff">College</spa=
+n></p></td><td style=3D"width:25%; border-top-style:solid; border-top-width=
+:2=2E25pt; border-bottom-style:solid; border-bottom-width:2=2E25pt; padding=
+-right:5=2E65pt; padding-left:5=2E65pt; vertical-align:top; background-colo=
+r:#4bacc6"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; font-size:11pt"><span style=3D"font-family:Ubuntu; font-weight:bold; co=
+lor:#ffffff">New students</span></p></td><td style=3D"width:25%; border-top=
+-style:solid; border-top-width:2=2E25pt; border-bottom-style:solid; border-=
+bottom-width:2=2E25pt; padding-right:5=2E65pt; padding-left:5=2E65pt; verti=
+cal-align:top; background-color:#4bacc6"><p style=3D"margin-top:0pt; margin=
+-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-fami=
+ly:Ubuntu; font-weight:bold; color:#ffffff">Graduating students</span></p><=
+/td><td style=3D"width:25%; border-top-style:solid; border-top-width:2=2E25=
+pt; border-bottom-style:solid; border-bottom-width:2=2E25pt; padding-right:=
+5=2E65pt; padding-left:5=2E65pt; vertical-align:top; background-color:#4bac=
+c6"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; fo=
+nt-size:11pt"><span style=3D"font-family:Ubuntu; font-weight:bold; color:#f=
+fffff">Change</span></p></td></tr><tr><td style=3D"width:25%; padding:0=2E2=
+5pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom=
+:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubun=
+tu">&#xa0;</span></p></td><td style=3D"width:25%; padding:0=2E25pt 5=2E65pt=
+; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-i=
+ndent:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu; font-sty=
+le:italic; color:#808080">Undergraduate</span></p></td><td style=3D"width:2=
+5%; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"=
+font-family:Ubuntu">&#xa0;</span></p></td><td style=3D"width:25%; padding:0=
+=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bo=
+ttom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:=
+Ubuntu">&#xa0;</span></p></td></tr><tr><td style=3D"width:25%; padding:0=2E2=
+5pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom=
+:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubun=
+tu">Cedar University</span></p></td><td style=3D"width:25%; padding:0=2E25p=
+t 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:1=
+0pt; font-size:11pt"><span style=3D"font-family:Ubuntu">110</span></p></td>=
+<td style=3D"width:25%; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p s=
+tyle=3D"margin-top:0pt; margin-bottom:10pt; font-size:11pt"><span style=3D"=
+font-family:Ubuntu">103</span></p></td><td style=3D"width:25%; padding:0=2E2=
+5pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom=
+:10pt; font-size:11pt"><span style=3D"font-family:Ubuntu">+7</span></p></td=
+></tr><tr><td style=3D"width:25%; padding:0=2E25pt 5=2E65pt; vertical-align=
+:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; =
+font-size:11pt"><span style=3D"font-family:Ubuntu">Oak Institute</span></p>=
+</td><td style=3D"width:25%; padding:0=2E25pt 5=2E65pt; vertical-align:top"=
+><p style=3D"margin-top:0pt; margin-bottom:10pt; font-size:11pt"><span styl=
+e=3D"font-family:Ubuntu">202</span></p></td><td style=3D"width:25%; padding=
+:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-=
+bottom:10pt; font-size:11pt"><span style=3D"font-family:Ubuntu">210</span><=
+/p></td><td style=3D"width:25%; padding:0=2E25pt 5=2E65pt; vertical-align:t=
+op"><p style=3D"margin-top:0pt; margin-bottom:10pt; font-size:11pt"><span s=
+tyle=3D"font-family:Ubuntu">-8</span></p></td></tr><tr><td style=3D"width:2=
+5%; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"=
+font-family:Ubuntu">&#xa0;</span></p></td><td style=3D"width:25%; padding:0=
+=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bo=
+ttom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"font-family:=
+Ubuntu; font-style:italic; color:#808080">Graduate</span></p></td><td style=
+=3D"width:25%; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"m=
+argin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><sp=
+an style=3D"font-family:Ubuntu">&#xa0;</span></p></td><td style=3D"width:25=
+%; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0p=
+t; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"=
+font-family:Ubuntu">&#xa0;</span></p></td></tr><tr><td style=3D"width:25%; =
+padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; =
+margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt"><span style=3D"fon=
+t-family:Ubuntu">Cedar University</span></p></td><td style=3D"width:25%; pa=
+dding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; ma=
+rgin-bottom:10pt; font-size:11pt"><span style=3D"font-family:Ubuntu">24</sp=
+an></p></td><td style=3D"width:25%; padding:0=2E25pt 5=2E65pt; vertical-ali=
+gn:top"><p style=3D"margin-top:0pt; margin-bottom:10pt; font-size:11pt"><sp=
+an style=3D"font-family:Ubuntu">20</span></p></td><td style=3D"width:25%; p=
+adding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:10pt; font-size:11pt"><span style=3D"font-family:Ubuntu">+4</s=
+pan></p></td></tr><tr><td style=3D"width:25%; padding:0=2E25pt 5=2E65pt; ve=
+rtical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-inden=
+t:21=2E6pt; font-size:11pt"><span style=3D"font-family:Ubuntu">Elm College<=
+/span></p></td><td style=3D"width:25%; padding:0=2E25pt 5=2E65pt; vertical-=
+align:top"><p style=3D"margin-top:0pt; margin-bottom:10pt; font-size:11pt">=
+<span style=3D"font-family:Ubuntu">43</span></p></td><td style=3D"width:25%=
+; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt=
+; margin-bottom:10pt; font-size:11pt"><span style=3D"font-family:Ubuntu">53=
+</span></p></td><td style=3D"width:25%; padding:0=2E25pt 5=2E65pt; vertical=
+-align:top"><p style=3D"margin-top:0pt; margin-bottom:10pt; font-size:11pt"=
+><span style=3D"font-family:Ubuntu">-10</span></p></td></tr><tr><td style=
+=3D"width:25%; border-top-style:double; border-top-width:2=2E25pt; border-b=
+ottom-style:solid; border-bottom-width:2=2E25pt; padding-right:5=2E65pt; pa=
+dding-left:5=2E65pt; vertical-align:top; background-color:#ffffff"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:11pt=
+"><span style=3D"font-family:Ubuntu">Total</span></p></td><td style=3D"widt=
+h:25%; border-top-style:double; border-top-width:2=2E25pt; border-bottom-st=
+yle:solid; border-bottom-width:2=2E25pt; padding-right:5=2E65pt; padding-le=
+ft:5=2E65pt; vertical-align:top; background-color:#ffffff"><p style=3D"marg=
+in-top:0pt; margin-bottom:10pt; font-size:11pt"><span style=3D"font-family:=
+Ubuntu">998</span></p></td><td style=3D"width:25%; border-top-style:double;=
+ border-top-width:2=2E25pt; border-bottom-style:solid; border-bottom-width:=
+2=2E25pt; padding-right:5=2E65pt; padding-left:5=2E65pt; vertical-align:top=
+; background-color:#ffffff"><p style=3D"margin-top:0pt; margin-bottom:10pt;=
+ font-size:11pt"><span style=3D"font-family:Ubuntu">908</span></p></td><td =
+style=3D"width:25%; border-top-style:double; border-top-width:2=2E25pt; bor=
+der-bottom-style:solid; border-bottom-width:2=2E25pt; padding-right:5=2E65p=
+t; padding-left:5=2E65pt; vertical-align:top; background-color:#ffffff"><p =
+style=3D"margin-top:0pt; margin-bottom:10pt; font-size:11pt"><span style=3D"=
+font-family:Ubuntu">90</span></p></td></tr></table><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; font-size:10pt"><span style=3D"font-family:Ubuntu; f=
+ont-style:italic; color:#808080">Source:</span><span style=3D"font-family:U=
+buntu"> Fictitious data, for illustration purposes only</span></p><p style=
+=3D"margin-top:12pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:1=
+15%; font-size:12pt"><span style=3D"font-family:Ubuntu">Next, we have somet=
+hing a little more complex, a nested table, i=2Ee=2E a table inside another=
+ table=2E Additionally, the inner table has some of its cells merged=2E The=
+ table is displayed horizontally centered=2E</span></p><div style=3D"text-a=
+lign:center"><table cellspacing=3D"0" cellpadding=3D"0" style=3D"width:70%;=
+ margin-right:auto; margin-left:auto; border:0=2E75pt solid #000000; border=
+-collapse:collapse"><tr style=3D"height:53=2E95pt"><td style=3D"width:228=
+=2E6pt; border-right-style:solid; border-right-width:0=2E75pt; padding:0=2E0=
+3pt 5=2E03pt; vertical-align:top"><div style=3D"text-align:center"><table c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"width:80%; margin-right:auto; m=
+argin-left:auto; border:0=2E75pt solid #000000; border-collapse:collapse"><=
+tr><td rowspan=3D"2" style=3D"width:73=2E1pt; border-right-style:solid; bor=
+der-right-width:0=2E75pt; border-bottom-style:solid; border-bottom-width:0=
+=2E75pt; padding:0=2E03pt 5=2E03pt; vertical-align:top"><p style=3D"margin-=
+top:12pt; margin-bottom:0pt; font-size:11pt"><span style=3D"font-family:Ubu=
+ntu">One</span></p><p style=3D"margin-top:12pt; margin-bottom:0pt; font-siz=
+e:11pt"><span style=3D"font-family:Ubuntu">Three</span></p></td><td style=
+=3D"width:70=2E65pt; border-left-style:solid; border-left-width:0=2E75pt; b=
+order-bottom-style:solid; border-bottom-width:0=2E75pt; padding:0=2E03pt 5=
+=2E03pt; vertical-align:top"><p style=3D"margin-top:12pt; margin-bottom:0pt=
+; font-size:11pt"><span style=3D"font-family:Ubuntu">Two</span></p></td></t=
+r><tr><td style=3D"width:70=2E65pt; border-top-style:solid; border-top-widt=
+h:0=2E75pt; border-left-style:solid; border-left-width:0=2E75pt; padding:0=
+=2E03pt 5=2E03pt; vertical-align:top"><p style=3D"margin-top:12pt; margin-b=
+ottom:0pt; font-size:11pt"><span style=3D"font-family:Ubuntu">Four</span></=
+p></td></tr></table></div><p style=3D"margin-top:12pt; margin-bottom:0pt; f=
+ont-size:11pt"></p></td><td style=3D"width:228=2E6pt; border-left-style:sol=
+id; border-left-width:0=2E75pt; padding:0=2E03pt 5=2E03pt; vertical-align:t=
+op"><p style=3D"margin-top:12pt; margin-bottom:0pt; font-size:11pt"><span s=
+tyle=3D"font-family:Ubuntu">To the left is a table inside a table, with som=
+e cells merged=2E</span></p></td></tr></table></div><p style=3D"margin-top:=
+12pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-size:=
+12pt"><span style=3D"font-family:Ubuntu">&#xa0;</span></p><p style=3D"margi=
+n-top:12pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font=
+-size:12pt"><span style=3D"font-family:Ubuntu">We end with a fancy calendar=
+, note how much of the original formatting is preserved=2E Note that this t=
+able will only display correctly on relatively wide screens=2E In general, =
+very wide tables or tables whose cells have fixed width requirements don=E2=
+=80=99t fare well in ebooks=2E</span></p><div style=3D"text-align:center"><=
+table cellspacing=3D"0" cellpadding=3D"0" style=3D"margin-right:auto; margi=
+n-left:auto; border-collapse:collapse"><tr style=3D"height:40=2E5pt"><td co=
+lspan=3D"13" style=3D"width:363=2E7pt; padding:0=2E25pt 5=2E65pt; vertical-=
+align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:right; font-size:22pt"><span style=3D"font-family:Ubuntu; co=
+lor:#365f91">December 2007</span></p></td><td style=3D"padding:0=2E25pt; ve=
+rtical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; font-size:=
+12pt"><span style=3D"font-family:'Times New Roman'">&#xa0;</span></p></td><=
+/tr><tr style=3D"height:28=2E8pt"><td style=3D"width:38=2E4pt; border-botto=
+m:0=2E75pt solid #366091; padding:0=2E25pt 2=2E4pt 0=2E03pt; vertical-align=
+:bottom"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6p=
+t; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; col=
+or:#365f91">Sun</span></p></td><td style=3D"width:6=2E3pt; padding:0=2E25pt=
+ 2=2E4pt; vertical-align:bottom"><p style=3D"margin-top:0pt; margin-bottom:=
+0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width=
+:44=2E4pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 2=2E4pt 0=
+=2E03pt; vertical-align:bottom"><p style=3D"margin-top:0pt; margin-bottom:0=
+pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">Mon</span></p></td><td style=3D"width:6=
+=2E3pt; padding:0=2E25pt 2=2E4pt; vertical-align:bottom"><p style=3D"margin=
+-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></=
+p></td><td style=3D"width:38=2E4pt; border-bottom:0=2E75pt solid #7f7f7f; p=
+adding:0=2E25pt 2=2E4pt 0=2E03pt; vertical-align:bottom"><p style=3D"margin=
+-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">Tue</span></p><=
+/td><td style=3D"width:6=2E3pt; padding:0=2E25pt 2=2E4pt; vertical-align:bo=
+ttom"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; =
+text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:=
+#7f7f7f">&#xa0;</span></p></td><td style=3D"width:38=2E4pt; border-bottom:0=
+=2E75pt solid #7f7f7f; padding:0=2E25pt 2=2E4pt 0=2E03pt; vertical-align:bo=
+ttom"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; =
+text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:=
+#7f7f7f">Wed</span></p></td><td style=3D"width:6=2E3pt; padding:0=2E25pt 2=
+=2E4pt; vertical-align:bottom"><p style=3D"margin-top:0pt; margin-bottom:0p=
+t; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"f=
+ont-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:=
+38=2E4pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 2=2E4pt 0=
+=2E03pt; vertical-align:bottom"><p style=3D"margin-top:0pt; margin-bottom:0=
+pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">Thu</span></p></td><td style=3D"width:6=
+=2E3pt; padding:0=2E25pt 2=2E4pt; vertical-align:bottom"><p style=3D"margin=
+-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></=
+p></td><td style=3D"width:38=2E4pt; border-bottom:0=2E75pt solid #7f7f7f; p=
+adding:0=2E25pt 2=2E4pt 0=2E03pt; vertical-align:bottom"><p style=3D"margin=
+-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">Fri</span></p><=
+/td><td style=3D"width:7pt; padding:0=2E25pt 2=2E4pt; vertical-align:bottom=
+"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text=
+-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7=
+f7f">&#xa0;</span></p></td><td colspan=3D"2" style=3D"width:38=2E4pt; borde=
+r-bottom:0=2E75pt solid #366091; padding:0=2E25pt 2=2E4pt 0=2E03pt; vertica=
+l-align:bottom"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:=
+21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubun=
+tu; color:#365f91">Sat</span></p></td></tr><tr style=3D"height:28=2E8pt"><t=
+d style=3D"width:32=2E15pt; border-top:0=2E75pt solid #366091; border-right=
+:3pt solid #366091; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-al=
+ign:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6p=
+t; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; col=
+or:#365f91">&#xa0;</span></p></td><td style=3D"width:0=2E05pt; border-left:=
+3pt solid #366091; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-ali=
+gn:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt=
+; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; colo=
+r:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:38=2E15pt; border-top:0=
+=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=
+=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td =
+style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=
+=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td =
+style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-right:3=
+pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-alig=
+n:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt;=
+ text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color=
+:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:0=2E05pt; border-left:3p=
+t solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align=
+:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; =
+text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:=
+#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; border-top:0=
+=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=
+=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td =
+style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=
+=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td =
+style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-right:3=
+pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-alig=
+n:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt;=
+ text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color=
+:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:0=2E05pt; border-left:3p=
+t solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align=
+:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; =
+text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:=
+#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; border-top:0=
+=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=
+=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td =
+style=3D"width:0=2E75pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=
+=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td =
+colspan=3D"2" style=3D"width:32=2E15pt; border-top:0=2E75pt solid #366091; =
+border-right:3pt solid #366091; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt;=
+ vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-in=
+dent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family=
+:Ubuntu; color:#365f91">1</span></p></td></tr><tr><td style=3D"width:31=2E9=
+pt; border-bottom:0=2E75pt solid #366091; padding:0=2E25pt 5=2E65pt 0=2E03p=
+t; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-=
+indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fami=
+ly:Ubuntu; color:#365f91">&#xa0;</span></p></td><td style=3D"padding:0=2E25=
+pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:=
+0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width=
+:37=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt =
+0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt=
+; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"fo=
+nt-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"padding=
+:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-=
+bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span s=
+tyle=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=
+=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt =
+5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-b=
+ottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span st=
+yle=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=
+=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11=
+pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td=
+><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding=
+:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt=
+; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt=
+"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><=
+td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"marg=
+in-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font=
+-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span>=
+</p></td><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f;=
+ padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin=
+-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></=
+p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0=
+;</span></p></td><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid =
+#7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0=
+;</span></p></td><td style=3D"width:0=2E5pt; padding:0=2E25pt 5=2E65pt; ver=
+tical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent=
+:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubu=
+ntu; color:#7f7f7f">&#xa0;</span></p></td><td colspan=3D"2" style=3D"width:=
+31=2E9pt; border-bottom:0=2E75pt solid #366091; padding:0=2E25pt 5=2E65pt 0=
+=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt;=
+ text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"fon=
+t-family:Ubuntu; color:#365f91">&#xa0;</span></p></td></tr><tr style=3D"hei=
+ght:28=2E8pt"><td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #3660=
+91; border-right:3pt solid #366091; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E6=
+5pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; tex=
+t-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fa=
+mily:Ubuntu; color:#365f91">2</span></p></td><td style=3D"width:0=2E05pt; b=
+order-left:3pt solid #366091; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; v=
+ertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-inde=
+nt:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:U=
+buntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:38=2E15pt; b=
+order-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=
+=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-t=
+op:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-siz=
+e:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">3</span></p></td>=
+<td style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25p=
+t 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt=
+; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt=
+"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><=
+td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-righ=
+t:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-a=
+lign:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; co=
+lor:#7f7f7f">4</span></p></td><td style=3D"width:0=2E05pt; border-left:3pt =
+solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:t=
+op"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; te=
+xt-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7=
+f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; border-top:0=2E7=
+5pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt=
+ 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-=
+bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span s=
+tyle=3D"font-family:Ubuntu; color:#7f7f7f">5</span></p></td><td style=3D"wi=
+dth:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E2=
+5pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:=
+0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width=
+:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f=
+7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p styl=
+e=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:ri=
+ght; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">6</s=
+pan></p></td><td style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; pa=
+dding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"m=
+argin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; f=
+ont-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</sp=
+an></p></td><td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f=
+; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65p=
+t; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-=
+indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fami=
+ly:Ubuntu; color:#7f7f7f">7</span></p></td><td style=3D"width:0=2E75pt; bor=
+der-left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; ver=
+tical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent=
+:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubu=
+ntu; color:#7f7f7f">&#xa0;</span></p></td><td colspan=3D"2" style=3D"width:=
+32=2E15pt; border-top:0=2E75pt solid #366091; border-right:3pt solid #36609=
+1; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#365f91">8</sp=
+an></p></td></tr><tr><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt so=
+lid #366091; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p sty=
+le=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:r=
+ight; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#365f91">&#x=
+a0;</span></p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:t=
+op"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; te=
+xt-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7=
+f7f7f">&#xa0;</span></p></td><td style=3D"width:37=2E9pt; border-bottom:0=
+=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:t=
+op"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; te=
+xt-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7=
+f7f7f">&#xa0;</span></p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertic=
+al-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=
+=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu=
+; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:31=2E9pt; border-=
+bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical=
+-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=
+=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu=
+; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"padding:0=2E25pt 5=2E65=
+pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text=
+-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fam=
+ily:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:31=2E9p=
+t; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt=
+; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-i=
+ndent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-famil=
+y:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"padding:0=2E25p=
+t 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0=
+pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width=
+:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt =
+0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt=
+; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"fo=
+nt-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"padding=
+:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-=
+bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span s=
+tyle=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=
+=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt =
+5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-b=
+ottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span st=
+yle=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=
+=3D"width:0=2E5pt; padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0=
+;</span></p></td><td colspan=3D"2" style=3D"width:31=2E9pt; border-bottom:0=
+=2E75pt solid #366091; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:t=
+op"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; te=
+xt-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#3=
+65f91">&#xa0;</span></p></td></tr><tr style=3D"height:28=2E8pt"><td style=
+=3D"width:32=2E15pt; border-top:0=2E75pt solid #366091; border-right:3pt so=
+lid #366091; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top=
+"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text=
+-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#365=
+f91">9</span></p></td><td style=3D"width:0=2E05pt; border-left:3pt solid #3=
+66091; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p s=
+tyle=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align=
+:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&=
+#xa0;</span></p></td><td style=3D"width:38=2E15pt; border-top:0=2E75pt soli=
+d #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25p=
+t 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0=
+pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">10</span></p></td><td style=3D"width:0=
+=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt =
+3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt;=
+ text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"fon=
+t-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=
+=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f;=
+ padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">11</s=
+pan></p></td><td style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; pa=
+dding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"m=
+argin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; f=
+ont-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</sp=
+an></p></td><td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f=
+; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65p=
+t; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-=
+indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fami=
+ly:Ubuntu; color:#7f7f7f">12</span></p></td><td style=3D"width:0=2E05pt; bo=
+rder-left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; ve=
+rtical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-inden=
+t:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ub=
+untu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; bo=
+rder-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=
+=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-t=
+op:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-siz=
+e:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">13</span></p></td=
+><td style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25=
+pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0p=
+t; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11p=
+t"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td>=
+<td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-rig=
+ht:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-=
+align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; co=
+lor:#7f7f7f">14</span></p></td><td style=3D"width:0=2E75pt; border-left:3pt=
+ solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:=
+top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; t=
+ext-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#=
+7f7f7f">&#xa0;</span></p></td><td colspan=3D"2" style=3D"width:32=2E15pt; b=
+order-top:0=2E75pt solid #366091; border-right:3pt solid #366091; padding:0=
+=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-t=
+op:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-siz=
+e:11pt"><span style=3D"font-family:Ubuntu; color:#365f91">15</span></p></td=
+></tr><tr><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #366091=
+; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margi=
+n-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-=
+size:11pt"><span style=3D"font-family:Ubuntu; color:#365f91">&#xa0;</span><=
+/p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p styl=
+e=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:ri=
+ght; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa=
+0;</span></p></td><td style=3D"width:37=2E9pt; border-bottom:0=2E75pt solid=
+ #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0=
+;</span></p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top=
+"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text=
+-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7=
+f7f">&#xa0;</span></p></td><td style=3D"width:31=2E9pt; border-bottom:0=2E7=
+5pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top">=
+<p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-a=
+lign:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7=
+f">&#xa0;</span></p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-a=
+lign:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; co=
+lor:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:31=2E9pt; border-bott=
+om:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-ali=
+gn:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt=
+; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; colo=
+r:#7f7f7f">&#xa0;</span></p></td><td style=3D"padding:0=2E25pt 5=2E65pt; ve=
+rtical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-inden=
+t:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ub=
+untu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:31=2E9pt; bor=
+der-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vert=
+ical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:=
+21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubun=
+tu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"padding:0=2E25pt 5=2E6=
+5pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; tex=
+t-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fa=
+mily:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:31=2E9=
+pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03p=
+t; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-=
+indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fami=
+ly:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:0=2E5pt;=
+ padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt;=
+ margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"=
+><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><t=
+d colspan=3D"2" style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #3660=
+91; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"mar=
+gin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; fon=
+t-size:11pt"><span style=3D"font-family:Ubuntu; color:#365f91">&#xa0;</span=
+></p></td></tr><tr style=3D"height:28=2E8pt"><td style=3D"width:32=2E15pt; =
+border-top:0=2E75pt solid #366091; border-right:3pt solid #366091; padding:=
+0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-=
+top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-si=
+ze:11pt"><span style=3D"font-family:Ubuntu; color:#365f91">16</span></p></t=
+d><td style=3D"width:0=2E05pt; border-left:3pt solid #366091; padding:0=2E2=
+5pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11=
+pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td=
+><td style=3D"width:38=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-ri=
+ght:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical=
+-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=
+=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu=
+; color:#7f7f7f">17</span></p></td><td style=3D"width:0=2E05pt; border-left=
+:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-al=
+ign:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6p=
+t; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; col=
+or:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; border-top:=
+0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=
+=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">18</span></p></td><td styl=
+e=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65=
+pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; margin=
+-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span =
+style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=
+=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-right:3pt so=
+lid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top=
+"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text=
+-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7=
+f7f">19</span></p></td><td style=3D"width:0=2E05pt; border-left:3pt solid #=
+7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p =
+style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-alig=
+n:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">=
+&#xa0;</span></p></td><td style=3D"width:32=2E15pt; border-top:0=2E75pt sol=
+id #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25=
+pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:=
+0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">20</span></p></td><td style=3D"width:0=
+=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt =
+3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt;=
+ text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"fon=
+t-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=
+=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f;=
+ padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">21</s=
+pan></p></td><td style=3D"width:0=2E75pt; border-left:3pt solid #7f7f7f; pa=
+dding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"m=
+argin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; f=
+ont-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</sp=
+an></p></td><td colspan=3D"2" style=3D"width:32=2E15pt; border-top:0=2E75pt=
+ solid #366091; border-right:3pt solid #366091; padding:0=2E03pt 3=2E9pt 0=
+=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bo=
+ttom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span sty=
+le=3D"font-family:Ubuntu; color:#365f91">22</span></p></td></tr><tr><td sty=
+le=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #366091; padding:0=2E25p=
+t 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin=
+-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span =
+style=3D"font-family:Ubuntu; color:#365f91">&#xa0;</span></p></td><td style=
+=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11=
+pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td=
+><td style=3D"width:37=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding=
+:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt=
+; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt=
+"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><=
+td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"marg=
+in-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font=
+-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span>=
+</p></td><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f;=
+ padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin=
+-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></=
+p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0=
+;</span></p></td><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid =
+#7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0=
+;</span></p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top=
+"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text=
+-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7=
+f7f">&#xa0;</span></p></td><td style=3D"width:31=2E9pt; border-bottom:0=2E7=
+5pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top">=
+<p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-a=
+lign:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7=
+f">&#xa0;</span></p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-a=
+lign:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; co=
+lor:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:31=2E9pt; border-bott=
+om:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-ali=
+gn:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt=
+; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; colo=
+r:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:0=2E5pt; padding:0=2E25=
+pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:=
+0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td colspan=3D"2" =
+style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #366091; padding:0=2E2=
+5pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; marg=
+in-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><spa=
+n style=3D"font-family:Ubuntu; color:#365f91">&#xa0;</span></p></td></tr><t=
+r style=3D"height:28=2E8pt"><td style=3D"width:32=2E15pt; border-top:0=2E75=
+pt solid #366091; border-right:3pt solid #366091; padding:0=2E03pt 3=2E9pt =
+0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-b=
+ottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span st=
+yle=3D"font-family:Ubuntu; color:#365f91">23</span></p></td><td style=3D"wi=
+dth:0=2E05pt; border-left:3pt solid #366091; padding:0=2E25pt 5=2E65pt 0=2E2=
+5pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:=
+0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"=
+font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width=
+:38=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f=
+7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p styl=
+e=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:ri=
+ght; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">24</=
+span></p></td><td style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; p=
+adding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"=
+margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; =
+font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</s=
+pan></p></td><td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7=
+f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65=
+pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text=
+-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fam=
+ily:Ubuntu; color:#7f7f7f">25</span></p></td><td style=3D"width:0=2E05pt; b=
+order-left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; v=
+ertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-inde=
+nt:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:U=
+buntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; b=
+order-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=
+=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-t=
+op:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-siz=
+e:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">26</span></p></td=
+><td style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25=
+pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0p=
+t; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11p=
+t"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td>=
+<td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-rig=
+ht:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-=
+align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; co=
+lor:#7f7f7f">27</span></p></td><td style=3D"width:0=2E05pt; border-left:3pt=
+ solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:=
+top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; t=
+ext-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#=
+7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; border-top:0=2E7=
+5pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt=
+ 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-=
+bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span s=
+tyle=3D"font-family:Ubuntu; color:#7f7f7f">28</span></p></td><td style=3D"w=
+idth:0=2E75pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=
+=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bot=
+tom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span styl=
+e=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td colspan=
+=3D"2" style=3D"width:32=2E15pt; border-top:0=2E75pt solid #366091; border-=
+right:3pt solid #366091; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertic=
+al-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=
+=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu=
+; color:#365f91">29</span></p></td></tr><tr><td style=3D"width:31=2E9pt; bo=
+rder-bottom:0=2E75pt solid #366091; padding:0=2E25pt 5=2E65pt 0=2E03pt; ver=
+tical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent=
+:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubu=
+ntu; color:#365f91">&#xa0;</span></p></td><td style=3D"padding:0=2E25pt 5=
+=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt;=
+ text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"fon=
+t-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:37=
+=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=
+=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt;=
+ text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"fon=
+t-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"padding:=
+0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-b=
+ottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span st=
+yle=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=
+=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding:0=2E25pt =
+5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-b=
+ottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><span st=
+yle=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=
+=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11=
+pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td=
+><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f; padding=
+:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt=
+; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt=
+"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><=
+td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"marg=
+in-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font=
+-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span>=
+</p></td><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid #7f7f7f;=
+ padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=3D"margin=
+-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-s=
+ize:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></=
+p></td><td style=3D"padding:0=2E25pt 5=2E65pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0=
+;</span></p></td><td style=3D"width:31=2E9pt; border-bottom:0=2E75pt solid =
+#7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E03pt; vertical-align:top"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:rig=
+ht; font-size:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0=
+;</span></p></td><td style=3D"width:0=2E5pt; padding:0=2E25pt 5=2E65pt; ver=
+tical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent=
+:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubu=
+ntu; color:#7f7f7f">&#xa0;</span></p></td><td colspan=3D"2" style=3D"width:=
+31=2E9pt; border-bottom:0=2E75pt solid #366091; padding:0=2E25pt 5=2E65pt 0=
+=2E03pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt;=
+ text-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"fon=
+t-family:Ubuntu; color:#365f91">&#xa0;</span></p></td></tr><tr style=3D"hei=
+ght:28=2E8pt"><td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #3660=
+91; border-right:3pt solid #366091; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E6=
+5pt; vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; tex=
+t-indent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-fa=
+mily:Ubuntu; color:#365f91">30</span></p></td><td style=3D"width:0=2E05pt; =
+border-left:3pt solid #366091; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; =
+vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-ind=
+ent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:=
+Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:38=2E15pt; =
+border-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:=
+0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-=
+top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-si=
+ze:11pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">31</span></p></t=
+d><td style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E2=
+5pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11=
+pt"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td=
+><td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-ri=
+ght:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical=
+-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=
+=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu=
+; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:0=2E05pt; border-=
+left:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertica=
+l-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=
+=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu=
+; color:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; border=
+-top:0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03=
+pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0p=
+t; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11p=
+t"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td>=
+<td style=3D"width:0=2E05pt; border-left:3pt solid #7f7f7f; padding:0=2E25p=
+t 5=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt=
+; margin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt=
+"><span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><=
+td style=3D"width:32=2E15pt; border-top:0=2E75pt solid #7f7f7f; border-righ=
+t:3pt solid #7f7f7f; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt; vertical-a=
+lign:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6=
+pt; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; co=
+lor:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:0=2E05pt; border-left=
+:3pt solid #7f7f7f; padding:0=2E25pt 5=2E65pt 0=2E25pt 3=2E9pt; vertical-al=
+ign:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6p=
+t; text-align:right; font-size:11pt"><span style=3D"font-family:Ubuntu; col=
+or:#7f7f7f">&#xa0;</span></p></td><td style=3D"width:32=2E15pt; border-top:=
+0=2E75pt solid #7f7f7f; border-right:3pt solid #7f7f7f; padding:0=2E03pt 3=
+=2E9pt 0=2E25pt 5=2E65pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td =
+style=3D"width:0=2E75pt; border-left:3pt solid #7f7f7f; padding:0=2E25pt 5=
+=2E65pt 0=2E25pt 3=2E9pt; vertical-align:top"><p style=3D"margin-top:0pt; m=
+argin-bottom:0pt; text-indent:21=2E6pt; text-align:right; font-size:11pt"><=
+span style=3D"font-family:Ubuntu; color:#7f7f7f">&#xa0;</span></p></td><td =
+colspan=3D"2" style=3D"width:32=2E15pt; border-top:0=2E75pt solid #366091; =
+border-right:3pt solid #366091; padding:0=2E03pt 3=2E9pt 0=2E25pt 5=2E65pt;=
+ vertical-align:top"><p style=3D"margin-top:0pt; margin-bottom:0pt; text-in=
+dent:21=2E6pt; text-align:right; font-size:11pt"><span style=3D"font-family=
+:Ubuntu; color:#365f91">&#xa0;</span></p></td></tr><tr style=3D"height:0pt"=
+><td style=3D"width:49=2E1pt"></td><td style=3D"width:21=2E55pt"></td><td s=
+tyle=3D"width:54=2E25pt"></td><td style=3D"width:21=2E55pt"></td><td style=
+=3D"width:49=2E1pt"></td><td style=3D"width:21=2E55pt"></td><td style=3D"wi=
+dth:49=2E1pt"></td><td style=3D"width:21=2E55pt"></td><td style=3D"width:49=
+=2E1pt"></td><td style=3D"width:21=2E55pt"></td><td style=3D"width:49=2E1pt=
+"></td><td style=3D"width:22=2E15pt"></td><td style=3D"width:24=2E55pt"></t=
+d><td style=3D"width:24=2E55pt"></td></tr></table></div><h1 style=3D"margin=
+-top:24pt; margin-bottom:0pt; text-align:center; page-break-before:always; =
+page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-siz=
+e:14pt"><a name=3D"_Toc359077857"><span style=3D"font-family:Ubuntu; color:=
+#365f91">Structural Elements</span></a></h1><p style=3D"margin-top:0pt; mar=
+gin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><sp=
+an style=3D"font-family:Ubuntu">Miscellaneous structural elements you can a=
+dd to your document, like footnotes, endnotes, dropcaps and the like=2E </s=
+pan></p><h2 style=3D"margin-top:10pt; margin-bottom:0pt; page-break-inside:=
+avoid; page-break-after:avoid; line-height:115%; font-size:13pt"><a name=3D"=
+_Toc359077858"><span style=3D"font-family:Ubuntu; color:#4f81bd">Footnotes =
+&amp; Endnotes</span></a></h2><p style=3D"margin-top:0pt; margin-bottom:0pt=
+; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=3D"fo=
+nt-family:Ubuntu">Footnotes</span><a name=3D"_ftnref1"></a><a href=3D"#_ftn=
+1" style=3D"text-decoration:none"><span style=3D"font-family:Ubuntu; font-s=
+ize:6=2E67pt; vertical-align:super; color:#000000">[1]</span></a><span styl=
+e=3D"font-family:Ubuntu"> and endnotes</span><a name=3D"_ednref1"></a><a hr=
+ef=3D"#_edn1" style=3D"text-decoration:none"><span style=3D"font-family:Ubu=
+ntu; font-size:6=2E67pt; vertical-align:super; color:#000000">[i]</span></a=
+><span style=3D"font-family:Ubuntu"> are automatically recognized and both =
+are converted to endnotes, with backlinks for maximum ease of use in ebook =
+devices=2E</span></p><h2 style=3D"margin-top:10pt; margin-bottom:0pt; page-=
+break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:13p=
+t"><a name=3D"_Toc359077859"><span style=3D"font-family:Ubuntu; color:#4f81=
+bd">Dropcaps</span></a></h2><p style=3D"margin-top:0pt; margin-bottom:0pt; =
+text-indent:21=2E6pt; page-break-after:avoid; line-height:58=2E5pt"><span s=
+tyle=3D"font-family:Ubuntu; font-size:58=2E5pt; vertical-align:-5pt">D</spa=
+n></p><p style=3D"margin-top:0pt; margin-bottom:0pt; line-height:115%; font=
+-size:12pt"><span style=3D"font-family:Ubuntu">rop caps are used to emphasi=
+ze the leading paragraph at the start of a section=2E In Word it is possibl=
+e to specify how many lines of text a drop-cap should use=2E Because of lim=
+itations in ebook technology, this is not possible when converting=2E</span=
+><span style=3D"font-family:Ubuntu">&#xa0;</span><span style=3D"font-family=
+:Ubuntu"> Instead, the converted drop cap will use font size and line heigh=
+t to simulate the effect as well as possible=2E While not as good as the or=
+iginal, the result is usually tolerable=2E This paragraph has a =E2=80=9CD=
+=E2=80=9D dropcap set to occupy three lines of text with a font size of 58=
+=2E5 pts=2E Depending on the screen width and capabilities of the device yo=
+u view the book on, this dropcap can look anything from perfect to ugly=2E<=
+/span></p><h2 style=3D"margin-top:10pt; margin-bottom:0pt; page-break-insid=
+e:avoid; page-break-after:avoid; line-height:115%; font-size:13pt"><a name=
+=3D"_Toc359077860"><span style=3D"font-family:Ubuntu; color:#4f81bd">Links<=
+/span></a></h2><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:2=
+1=2E6pt; line-height:115%; font-size:12pt"><span style=3D"font-family:Ubunt=
+u">Two kinds of links are possible, those that refer to an external website=
+ and those that refer to locations inside the document itself=2E Both are s=
+upported by calibre=2E For example, here is a link pointing to the </span><=
+a href=3D"http://calibre-ebook=2Ecom/download" style=3D"text-decoration:non=
+e"><span style=3D"font-family:Ubuntu; text-decoration:underline; color:#000=
+0ff">calibre download page</span></a><span style=3D"font-family:Ubuntu">=2E =
+Then we have a link that points back to the section on </span><a href=3D"#_=
+Paragraph_level_formatting" style=3D"text-decoration:none"><span style=3D"f=
+ont-family:Ubuntu; text-decoration:underline; color:#0000ff">paragraph leve=
+l formatting</span></a><span style=3D"font-family:Ubuntu"> in this document=
+=2E</span></p><h2 style=3D"margin-top:10pt; margin-bottom:0pt; page-break-i=
+nside:avoid; page-break-after:avoid; line-height:115%; font-size:13pt"><a n=
+ame=3D"_Toc359077861"><span style=3D"font-family:Ubuntu; color:#4f81bd">Tab=
+le of Contents</span></a></h2><p style=3D"margin-top:0pt; margin-bottom:0pt=
+; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=3D"fo=
+nt-family:Ubuntu">There are two approaches that calibre takes when generati=
+ng a Table of Contents=2E The first is if the Word document has a Table of =
+Contents itself=2E Provided that the Table of Contents uses hyperlinks, cal=
+ibre will automatically use it=2E The levels of the Table of Contents are i=
+dentified by their left indent, so if you want the ebook to have a multi-le=
+vel Table of Contents, make sure you create a properly indented Table of Co=
+ntents in Word=2E</span></p><p style=3D"margin-top:0pt; margin-bottom:0pt; =
+text-indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=3D"font=
+-family:Ubuntu">If no Table of Contents is found in the document, then a ta=
+ble of contents is automatically generated from the headings in the documen=
+t=2E A heading is identified as something that has the Heading 1 or Heading=
+ 2, etc=2E style applied to it=2E These headings are turned into a Table of=
+ Contents with Heading 1 being the topmost level, Heading 2 the second leve=
+l and so on=2E</span></p><p style=3D"margin-top:0pt; margin-bottom:0pt; tex=
+t-indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=3D"font-fa=
+mily:Ubuntu">You can see the Table of Contents created by calibre by clicki=
+ng the Table of Contents button in whatever viewer you are using to view th=
+e converted ebook=2E </span></p><p style=3D"margin-top:12pt; margin-bottom:=
+6pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><a href=3D"#_T=
+oc359077851" style=3D"text-decoration:none"><span style=3D"font-family:Ubun=
+tu; font-weight:bold; text-decoration:underline; color:#0000ff">Demonstrati=
+on of DOCX support in calibre</span></a></p><p style=3D"margin-top:12pt; ma=
+rgin-bottom:6pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><a=
+ href=3D"#_Toc359077852" style=3D"text-decoration:none"><span style=3D"font=
+-family:Ubuntu; font-weight:bold; text-decoration:underline; color:#0000ff"=
+>Text Formatting</span></a></p><p style=3D"margin-top:6pt; margin-left:12pt=
+; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt=
+"><a href=3D"#_Toc359077853" style=3D"text-decoration:none"><span style=3D"=
+font-family:Ubuntu; font-style:italic; text-decoration:underline; color:#00=
+00ff">Inline formatting</span></a></p><p style=3D"margin-top:6pt; margin-le=
+ft:12pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-si=
+ze:12pt"><a href=3D"#_Toc359077854" style=3D"text-decoration:none"><span st=
+yle=3D"font-family:Ubuntu; font-style:italic; text-decoration:underline; co=
+lor:#0000ff">Fun with fonts</span></a></p><p style=3D"margin-top:6pt; margi=
+n-left:12pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; fon=
+t-size:12pt"><a href=3D"#_Toc359077855" style=3D"text-decoration:none"><spa=
+n style=3D"font-family:Ubuntu; font-style:italic; text-decoration:underline=
+; color:#0000ff">Paragraph level formatting</span></a></p><p style=3D"margi=
+n-top:12pt; margin-bottom:6pt; text-indent:21=2E6pt; line-height:115%; font=
+-size:12pt"><a href=3D"#_Toc359077856" style=3D"text-decoration:none"><span=
+ style=3D"font-family:Ubuntu; font-weight:bold; text-decoration:underline; =
+color:#0000ff">Tables</span></a></p><p style=3D"margin-top:12pt; margin-bot=
+tom:6pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><a href=3D"=
+#_Toc359077857" style=3D"text-decoration:none"><span style=3D"font-family:U=
+buntu; font-weight:bold; text-decoration:underline; color:#0000ff">Structur=
+al Elements</span></a></p><p style=3D"margin-top:6pt; margin-left:12pt; mar=
+gin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><a =
+href=3D"#_Toc359077858" style=3D"text-decoration:none"><span style=3D"font-=
+family:Ubuntu; font-style:italic; text-decoration:underline; color:#0000ff"=
+>Footnotes &amp; Endnotes</span></a></p><p style=3D"margin-top:6pt; margin-=
+left:12pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-=
+size:12pt"><a href=3D"#_Toc359077859" style=3D"text-decoration:none"><span =
+style=3D"font-family:Ubuntu; font-style:italic; text-decoration:underline; =
+color:#0000ff">Dropcaps</span></a></p><p style=3D"margin-top:6pt; margin-le=
+ft:12pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-si=
+ze:12pt"><a href=3D"#_Toc359077860" style=3D"text-decoration:none"><span st=
+yle=3D"font-family:Ubuntu; font-style:italic; text-decoration:underline; co=
+lor:#0000ff">Links</span></a></p><p style=3D"margin-top:6pt; margin-left:12=
+pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; font-size:12=
+pt"><a href=3D"#_Toc359077861" style=3D"text-decoration:none"><span style=
+=3D"font-family:Ubuntu; font-style:italic; text-decoration:underline; color=
+:#0000ff">Table of Contents</span></a></p><p style=3D"margin-top:12pt; marg=
+in-bottom:6pt; text-indent:21=2E6pt; line-height:115%; font-size:12pt"><a h=
+ref=3D"#_Toc359077862" style=3D"text-decoration:none"><span style=3D"font-f=
+amily:Ubuntu; font-weight:bold; text-decoration:underline; color:#0000ff">I=
+mages</span></a></p><p style=3D"margin-top:12pt; margin-bottom:6pt; text-in=
+dent:21=2E6pt; line-height:115%; font-size:12pt"><a href=3D"#_Toc359077863"=
+ style=3D"text-decoration:none"><span style=3D"font-family:Ubuntu; font-wei=
+ght:bold; text-decoration:underline; color:#0000ff">Lists</span></a></p><p =
+style=3D"margin-top:6pt; margin-left:12pt; margin-bottom:0pt; text-indent:2=
+1=2E6pt; line-height:115%; font-size:12pt"><a href=3D"#_Toc359077864" style=
+=3D"text-decoration:none"><span style=3D"font-family:Ubuntu; font-style:ita=
+lic; text-decoration:underline; color:#0000ff">Bulleted List</span></a></p>=
+<p style=3D"margin-top:6pt; margin-left:12pt; margin-bottom:0pt; text-inden=
+t:21=2E6pt; line-height:115%; font-size:12pt"><a href=3D"#_Toc359077865" st=
+yle=3D"text-decoration:none"><span style=3D"font-family:Ubuntu; font-style:=
+italic; text-decoration:underline; color:#0000ff">Numbered List</span></a><=
+/p><p style=3D"margin-top:6pt; margin-left:12pt; margin-bottom:0pt; text-in=
+dent:21=2E6pt; line-height:115%; font-size:12pt"><a href=3D"#_Toc359077866"=
+ style=3D"text-decoration:none"><span style=3D"font-family:Ubuntu; font-sty=
+le:italic; text-decoration:underline; color:#0000ff">Multi-level Lists</spa=
+n></a></p><p style=3D"margin-top:6pt; margin-left:12pt; margin-bottom:0pt; =
+text-indent:21=2E6pt; line-height:115%; font-size:12pt"><a href=3D"#_Toc359=
+077867" style=3D"text-decoration:none"><span style=3D"font-family:Ubuntu; f=
+ont-style:italic; text-decoration:underline; color:#0000ff">Continued Lists=
+</span></a></p><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:2=
+1=2E6pt; line-height:115%; font-size:12pt"><span style=3D"font-family:Ubunt=
+u">&#xa0;</span></p><h1 style=3D"margin-top:24pt; margin-bottom:0pt; text-a=
+lign:center; page-break-before:always; page-break-inside:avoid; page-break-=
+after:avoid; line-height:115%; font-size:14pt"><a name=3D"_Toc359077862"><s=
+pan style=3D"font-family:Ubuntu; color:#365f91">Images</span></a></h1><p st=
+yle=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height=
+:115%; font-size:12pt"><span style=3D"font-family:Ubuntu">Images can be of =
+three main types=2E Inline images are images that are part of the normal te=
+xt flow, like this image of a green dot </span><img src=3D"image=2E001=2Epn=
+g" width=3D"15" height=3D"15" alt=3D"dot_green=2Epng" /><span style=3D"font=
+-family:Ubuntu">=2E Inline images do not cause breaks in the text and are u=
+sually small in size=2E</span><img src=3D"image=2E002=2Epng" width=3D"103" =
+height=3D"103" alt=3D"back=2Epng" style=3D"margin-right:9pt; margin-left:9p=
+t; float:left" /><span style=3D"font-family:Ubuntu"> The next category of i=
+mage is a floating image, one that =E2=80=9Cfloats =E2=80=9C on the page an=
+d is surrounded by text=2E Word supports more types of floating images than=
+ are possible with current ebook technology, so the conversion maps floatin=
+g images to simple left and right floats, as you can see with the left and =
+right arrow images on the sides of this paragraph=2E</span></p><p style=3D"=
+margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; =
+font-size:12pt"><span style=3D"font-family:Ubuntu">The final type of image =
+is a =E2=80=9Cblock=E2=80=9D image, one that becomes a paragraph on its own=
+ and has no text on either side=2E Below is a centered green dot=2E</span><=
+/p><p style=3D"margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; lin=
+e-height:115%; font-size:12pt"><img src=3D"image=2E003=2Epng" width=3D"27" =
+height=3D"26" alt=3D"dot_green=2Epng" /><br /><img src=3D"image=2E004=2Epng=
+" width=3D"103" height=3D"103" alt=3D"forward=2Epng" style=3D"margin-right:=
+9pt; margin-left:9pt; float:right" /><span style=3D"font-family:Ubuntu">Cen=
+tered images like this are useful for large pictures that should be a focus=
+ of attention=2E </span></p><p style=3D"margin-top:0pt; margin-bottom:0pt; =
+text-indent:21=2E6pt; line-height:115%; font-size:12pt"><span style=3D"font=
+-family:Ubuntu">Generally, it is not possible to translate the exact positi=
+oning of images from a Word document to an ebook=2E That is because in Word=
+, image positioning is specified in absolute units from the page boundaries=
+=2E</span><span style=3D"font-family:Ubuntu">&#xa0;</span><span style=3D"fo=
+nt-family:Ubuntu"> There is no analogous technology in ebooks, so the conve=
+rsion will usually end up placing the image either centered or floating clo=
+se to the point in the text where it was </span><span style=3D"font-family:=
+Ubuntu; font-style:italic; color:#808080">inserted</span><span style=3D"fon=
+t-family:Ubuntu">, not necessarily where it appears on the page in Word=2E<=
+/span></p><h1 style=3D"margin-top:24pt; margin-bottom:0pt; text-align:cente=
+r; page-break-before:always; page-break-inside:avoid; page-break-after:avoi=
+d; line-height:115%; font-size:14pt"><a name=3D"_Toc359077863"><span style=
+=3D"font-family:Ubuntu; color:#365f91">Lists</span></a></h1><p style=3D"mar=
+gin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; line-height:115%; fon=
+t-size:12pt"><span style=3D"font-family:Ubuntu">All types of lists are supp=
+orted by the conversion, with the exception of lists that use fancy bullets=
+, these get converted to regular bullets=2E</span></p><h2 style=3D"margin-t=
+op:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid=
+; line-height:115%; font-size:13pt"><a name=3D"_Toc359077864"><span style=
+=3D"font-family:Ubuntu; color:#4f81bd">Bulleted List</span></a></h2><ul typ=
+e=3D"disc" style=3D"margin:0pt; padding-left:0pt"><li style=3D"margin-left:=
+50=2E12pt; line-height:115%; padding-left:7=2E48pt; font-family:serif; font=
+-size:12pt"><span style=3D"font-family:Ubuntu">One</span></li><li style=3D"=
+margin-left:50=2E12pt; line-height:115%; padding-left:7=2E48pt; font-family=
+:serif; font-size:12pt"><span style=3D"font-family:Ubuntu">Two</span></li><=
+/ul><h2 style=3D"margin-top:10pt; margin-bottom:0pt; page-break-inside:avoi=
+d; page-break-after:avoid; line-height:115%; font-size:13pt"><a name=3D"_To=
+c359077865"><span style=3D"font-family:Ubuntu; color:#4f81bd">Numbered List=
+</span></a></h2><ol type=3D"1" style=3D"margin:0pt; padding-left:0pt"><li s=
+tyle=3D"margin-left:54=2E3pt; line-height:115%; padding-left:3=2E3pt; font-=
+family:Ubuntu; font-size:12pt"><span>One, with a very long line to demonstr=
+ate that the hanging indent for the list is working correctly</span></li><l=
+i style=3D"margin-left:54=2E3pt; line-height:115%; padding-left:3=2E3pt; fo=
+nt-family:Ubuntu; font-size:12pt"><span>Two</span></li></ol><h2 style=3D"ma=
+rgin-top:10pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after=
+:avoid; line-height:115%; font-size:13pt"><a name=3D"_Toc359077866"><span s=
+tyle=3D"font-family:Ubuntu; color:#4f81bd">Multi-level Lists</span></a></h2=
+><ol type=3D"1" style=3D"margin:0pt; padding-left:0pt"><li style=3D"margin-=
+left:32=2E7pt; line-height:115%; padding-left:3=2E3pt; font-family:Ubuntu; =
+font-size:12pt"><span>One</span><ol type=3D"1" class=3D"awlist1" style=3D"m=
+argin-right:0pt; margin-left:0pt; padding-left:0pt"><li style=3D"margin-lef=
+t:21=2E6pt; text-indent:-21=2E6pt; list-style-position:inside"><span>Two</s=
+pan><ol type=3D"1" class=3D"awlist2" style=3D"margin-right:0pt; margin-left=
+:0pt; padding-left:0pt"><li style=3D"margin-left:21=2E6pt; text-indent:-25=
+=2E2pt"><span style=3D"width:25=2E2pt; text-indent:0pt; display:inline-bloc=
+k">&#xa0;</span><span>Three</span></li><li style=3D"margin-left:21=2E6pt; t=
+ext-indent:-25=2E2pt"><span style=3D"width:25=2E2pt; text-indent:0pt; displ=
+ay:inline-block">&#xa0;</span><span>Four with a very long line to demonstra=
+te that the hanging indent for the list is working correctly=2E</span></li>=
+<li style=3D"margin-left:21=2E6pt; text-indent:-25=2E2pt"><span style=3D"wi=
+dth:25=2E2pt; text-indent:0pt; display:inline-block">&#xa0;</span><span>Fiv=
+e</span></li></ol></li></ol></li><li style=3D"margin-left:32=2E7pt; line-he=
+ight:115%; padding-left:3=2E3pt; font-family:Ubuntu; font-size:12pt"><span>=
+Six</span></li></ol><p style=3D"margin-top:0pt; margin-left:18pt; margin-bo=
+ttom:0pt; line-height:115%; font-size:12pt"><span style=3D"font-family:Ubun=
+tu">A Multi-level list with bullets:</span></p><ul type=3D"square" style=3D"=
+margin:0pt; padding-left:0pt"><li style=3D"margin-left:28=2E49pt; line-heig=
+ht:115%; padding-left:7=2E51pt; font-family:serif; font-size:12pt"><span st=
+yle=3D"font-family:Ubuntu">One</span><ul type=3D"disc" style=3D"margin-righ=
+t:0pt; margin-left:0pt; padding-left:0pt"><li style=3D"margin-left:10=2E52p=
+t; padding-left:7=2E48pt"><span style=3D"font-family:Ubuntu">Two</span><ul =
+style=3D"margin-right:0pt; margin-left:0pt; padding-left:0pt; list-style-im=
+age:url('image=2E005=2Epng')"><li style=3D"margin-left:17pt; line-height:11=
+5%; padding-left:1pt; font-size:14pt"><span style=3D"font-family:Ubuntu; fo=
+nt-size:12pt">This bullet uses an image as the bullet item</span><ul type=
+=3D"circle" style=3D"margin-right:0pt; margin-left:0pt; padding-left:0pt"><=
+li style=3D"margin-left:6=2E6pt; padding-left:11=2E4pt"><span style=3D"font=
+-family:Ubuntu; font-size:12pt">Four</span></li></ul></li></ul></li></ul></=
+li><li style=3D"margin-left:28=2E49pt; line-height:115%; padding-left:7=2E5=
+1pt; font-family:serif; font-size:12pt"><span style=3D"font-family:Ubuntu">=
+Five</span></li></ul><h2 style=3D"margin-top:10pt; margin-bottom:0pt; page-=
+break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:13p=
+t"><a name=3D"_Toc359077867"><span style=3D"font-family:Ubuntu; color:#4f81=
+bd">Continued Lists</span></a></h2><ol type=3D"i" style=3D"margin:0pt; padd=
+ing-left:0pt"><li style=3D"margin-left:44=2E58pt; line-height:115%; padding=
+-left:13=2E02pt; font-family:Ubuntu; font-size:12pt"><span>One</span></li><=
+li style=3D"margin-left:44=2E62pt; line-height:115%; padding-left:12=2E98pt=
+; font-family:Ubuntu; font-size:12pt"><span>Two</span></li></ol><p style=3D"=
+margin-top:0pt; margin-left:36pt; margin-bottom:0pt; line-height:115%; font=
+-size:12pt"><span style=3D"font-family:Ubuntu">An interruption in our regul=
+arly scheduled listing, for this essential and very relevant public service=
+ announcement=2E</span></p><ol start=3D"3" type=3D"i" style=3D"margin:0pt; =
+padding-left:0pt"><li style=3D"margin-left:44=2E6pt; line-height:115%; padd=
+ing-left:13pt; font-family:Ubuntu; font-size:12pt"><span>We now resume our =
+normal programming</span></li><li style=3D"margin-left:44=2E58pt; line-heig=
+ht:115%; padding-left:13=2E02pt; font-family:Ubuntu; font-size:12pt"><span>=
+Four</span></li></ol><p style=3D"margin-top:0pt; margin-left:72pt; margin-b=
+ottom:0pt; line-height:115%; font-size:12pt"><span style=3D"font-family:Ubu=
+ntu">&#xa0;</span></p><p style=3D"margin-top:0pt; margin-bottom:0pt; text-i=
+ndent:21=2E6pt; line-height:115%; font-size:12pt"><span style=3D"font-famil=
+y:Ubuntu; font-style:italic; color:#808080">&#xa0;</span></p></div><hr styl=
+e=3D"width:33%; height:1px; text-align:left" /><div id=3D"_ftn1"><p style=
+=3D"margin-top:0pt; margin-bottom:0pt; font-size:10pt"><a href=3D"#_ftnref1=
+" style=3D"text-decoration:none"><span style=3D"font-family:Ubuntu; font-si=
+ze:6=2E67pt; vertical-align:super; color:#000000">[1]</span></a><span style=
+=3D"font-family:Ubuntu"> In paged media, footnotes are usually displayed at=
+ the bottom of the text=2E However, in ebooks, a better paradigm is to make=
+ them clickable endnotes that the user can browse at her pleasure=2E This c=
+onversion is handled automatically by calibre=2E</span></p></div><hr style=
+=3D"width:33%; height:1px; text-align:left" /><div id=3D"_edn1"><p style=3D"=
+margin-top:0pt; margin-bottom:0pt; text-indent:21=2E6pt; font-size:10pt"><a=
+ href=3D"#_ednref1" style=3D"text-decoration:none"><span style=3D"font-fami=
+ly:Ubuntu; font-size:6=2E67pt; vertical-align:super; color:#000000">[i]</sp=
+an></a><span style=3D"font-family:Ubuntu"> Endnotes are typically used for =
+longer notes, they remain endnotes when converted into ebook form, except t=
+hat they have an additional backlink to make it easy to return to the curre=
+nt position after reading the note=2E</span></p></div><hr style=3D"width:33=
+%; height:1px; text-align:left" /><div id=3D"_cmnt1"><p style=3D"margin-top=
+:0pt; margin-bottom:0pt; font-size:8pt"><a href=3D"#_cmntref1" style=3D"tex=
+t-decoration:none"><span style=3D"font-family:'Times New Roman'">[AU1]</spa=
+n></a></p></div></body></html>
+
+----_=_NextPart0_679d5272-c96a-46e8-8f02-a32dda09989a
+Content-Disposition: inline; filename="image.001.png"
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: image.001.png
+
+iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGrSURBVDhPYxg8oH4Tg8jEvRKta8953t58KeTv
+2rOet3r3CjfUr2QQgirBDuq3MLscvJXx++6bxv83X+b+v/EiA0jn/b/3tun/3huJ3xo3sVhClaKC
+qnUsZodvp/2++jzj/5VnKRj46vPM/7uvxfyqWcemCdUCBf8ZGGfs07tw+Vnm/4tPk3Diy89y/k/c
+qXYMqgsC8uezK2y/5P///OMEgnjTec//+fMZBKBaGRhSZ3KaHr0b9f/0w1iC+MidyP/p0zmloVoZ
+GGInc5rsvR7yf9/NYIJ4D1Bd0mROKahWBoaQFk7phYcd/++85k8Qz95v8z+pk4EXqhUCCuYq7thx
+NfD/1ss+OPHOa0H/s2fKrYRqQQDfZnbF3s2W77dc9v2/4aInBt56xe9/+1qTV+5VXJJQLQgQGhrK
+7JOpZpo/S/PH3psR/zdf8vm/7oLH/81AG0H8nBkaH32ydY2MjY1ZoVoQoL6+ngVogFx4eLBtYLZR
+dkCt9FW/etFv/rUyV4KyzdPCooLsoqKilDw8PNihWjAAI9AQJpArQIalpaWxgjCUzwSShygDAQYG
+ACrCV2dQ1FTbAAAAAElFTkSuQmCC
+----_=_NextPart0_679d5272-c96a-46e8-8f02-a32dda09989a
+Content-Disposition: inline; filename="image.002.png"
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: image.002.png
+
+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
+9X9ActYjrFKJhwAAAABJRU5ErkJggg==
+----_=_NextPart0_679d5272-c96a-46e8-8f02-a32dda09989a
+Content-Disposition: inline; filename="image.003.png"
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: image.003.png
+
+iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ5SURBVEhL7ZVtTFNXGMcvtqwgKNjgkGQat25M
+piTb2BLZDJJ9kFYLLaW3tIVZClImjghzSlibdVJgmPGyEUVGnW5hU1DeitCCA0pwZjCRFgql5SVS
+obSgk2Vxy9xmnp2L1w+NCEKXfdo/+eWe25zn95x7TnMv9n/+sxS3YvR8racwv4VSmqel1uXrqB0F
+WkplgZaqLNBRw5V6zIucuvrk1WFBqmaqoqQ94PdmUzwM2j+DqflquHNPB1ZnOfROKqCqNxxOtK27
+qtJS9pBlKwtaKbWwZQOrsjtksNOSDLb5cpj8+VMYmzsG1tkMxCFEJkzcVoDtbikMzajgYt87UHIl
+sEre4LUZA8yDVC2fXI2P4HxPhNUwdRTGkHAEyc1O2RN4D6xzWTBxJx/01uQHp7tCahWXPLeTqqWj
+qPMUVuh3zJjsOWBxZsGwQwZDjgPLMuxATWdzoHtMdr+kbXOtvJ7GIJWLR1lLeyG3kW4zO+Uw4jwM
+ppmUFWOZPQqNBjZ8Ur8+J+MLjEaqXaNUYtTsmrXZmn72PbPjCAzYk1fFoD0Nem/KoOzKNoP8Ajq/
+xXL4Am1rYdOWzh8nUmBgOhWM09JVgppOp0PVtV2QXeOXTOpd8/5Xz7AqOl+1XZ9Mgf5bErcwTB0A
+nSkGsr/z15J618jUNOm5qzt/+8kmhb5b+91ECt3jQjhS5e8g9a5JPUVL/7r77Qc9NxPg3+DauAgy
+z9H/JPWukZTRUtX68PtdowLQj/LdomsUh04LDofO0H8h9a5J/Nw7rqw1bK7DwocOC88tOq18aDKy
+Ia2C3kfqXYMXrQ37uDq4XzcUC21mjlu0W+JArd8FKSf9C0m9a/hZmPe7xf5fVvdE/fX9SBzohmNW
+ReswB8EDxfmX74qLfUJJ/eOJUflGfHCW4WgfEYBuiAPNJvaKaTPz4Iw+ElJPBZXjSsyXVD8eJnq9
+cFXrS/IuvYa2QrBQ3DSw96nRogU23IiBzEqGmXvcd/dTvf2jlesqi5rCFxo2De6DBiNzSRqNLNSI
+i/4YYshUB9tZCm8uqVoyHjiOU3BZmB8vN/C0qubNX2uvxyyINGTTekPUQ4xR0DjAgsumaLg8yIVv
+f9gLKaVbp6M+3JgkkUi8CA/pXDxKpXINMTE2NjaIK43czc5ilKeV7jAV1O38+6x+D9Tf4ECLiYfO
+BQeNgQsXe6PhZGskyL954zauYHTvOxh6jM/nhwqFwkDCg5RP3kYA8MjIyKChZs+iolcEYl4EVxoh
+4GRu/0h0PFgjOfHSuLSIMZ9U/PwfSUUv2vcXBhtxeYiac/D1dF4SMzo+Pv4tkUi0DdVuZDKZxOdl
+yTPzIJ5OJpN5JiYm+qCt8EOFdCQIQONNaBHPoeuWRyQkJBD3m9hsdoBYLN6Axn5EHVGPXGseKpcP
+saKFxo9AIgq6UgkIGQExJn9fmEPsDFm7SDDsH3KdUCMoJ3PoAAAAAElFTkSuQmCC
+----_=_NextPart0_679d5272-c96a-46e8-8f02-a32dda09989a
+Content-Disposition: inline; filename="image.004.png"
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: image.004.png
+
+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
+----_=_NextPart0_679d5272-c96a-46e8-8f02-a32dda09989a
+Content-Disposition: inline; filename="image.005.png"
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: image.005.png
+
+iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVDhPxdQ7bsJAEAZgKoRQKuAAvFoMEsUW
+mANgDoDTYxSUDnMAkwNAiZBMtdoC6HlIPBqOkSvsEfafjBVLIXThofwH+LQzY/+JJwRvySSmmQxk
+Pg9ZqUA2GpCtFmSnA+l5kL4PGQSQ4zFkGEIul5CbDeThgP75jFIMRcE0lTKf2azR+YLRlmW0bRvt
+OEa7HaM9z2jfNzoIjB6PjQ5DoxcLo9dro/d7zI5HqsdQFEjGdC5HVCgQVatEtk3kOESuS9TziIY+
+0WhENJkQhSHRckm03RIxpo5HiBiK8iysyFiNsSZj7W/Mi7GPm7Crl3k9xoa3YNdjvv5gt+/scsxb
+sSKPWeOdNRlr37uzS+z6Zf+LRTv7hcUH8B9ygLuw64/2oVh8Tf8Pv1M/lcIsl4PKF6CsKpRtQzkO
+lOtCdbtQgwEUV5DiClJcQWqxgOIKUoy9n04ox1AUlNJpqnOfCe4zYVkQjAnGBGOC+0xwn4nRCGIy
+gZjPIVYriN0OYrtF+XSilxh6VBKJL81k71aBVzA5AAAAAElFTkSuQmCC
+----_=_NextPart0_679d5272-c96a-46e8-8f02-a32dda09989a--
+

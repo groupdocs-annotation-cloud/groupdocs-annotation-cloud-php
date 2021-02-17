@@ -2,7 +2,7 @@
 /*
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose" file="BaseApiTest.php">
-*   Copyright (c) 2003-2020 Aspose Pty Ltd
+*   Copyright (c) 2003-2021 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *   Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -49,12 +49,14 @@ abstract class BaseApiTest extends \PHPUnit_Framework_TestCase
     
     protected static $testFilesUploaded = false;
 
+    protected static $outputDir = "Output";
+
     /**
      * Cleanup after each test case
      */
     public function tearDown()
     {
-        #self::_deleteFolder("annotation");        
+        self::_deleteFolder(self::$outputDir);        
     }
 
     private static function _deleteFolder($folder)
@@ -96,7 +98,7 @@ abstract class BaseApiTest extends \PHPUnit_Framework_TestCase
         self::$fileApi = new FileApi(self::$apiConfig);
         self::$folderApi = new FolderApi(self::$apiConfig);
 
-        self::_uploadTestFiles();
+        //self::_uploadTestFiles();
     }
 
     protected static function getConfig()
