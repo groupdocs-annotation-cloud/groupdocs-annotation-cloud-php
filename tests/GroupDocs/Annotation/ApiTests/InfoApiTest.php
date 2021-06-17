@@ -61,5 +61,17 @@ class InfoApiTest extends BaseApiTest
             $response = self::$infoApi->getInfo($request);
             $this->assertEquals($path, $response->getPath());
         }
+    }   
+    
+    public function testGetInfoReturnsFileNotFound()
+    {
+        $this->setExpectedException(
+            \GroupDocs\Annotation\ApiException::class, "Specified file not found");
+
+        $fileInfo = new Model\FileInfo();
+        $fileInfo->setFilePath("some-folder\\NotExist.docx");
+
+        $request = new Requests\getInfoRequest($fileInfo);       
+        $response = self::$infoApi->getInfo($request);
     }    
 }

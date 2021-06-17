@@ -130,9 +130,9 @@ class InfoApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->error != null && $error->error->message != null
-                    ? $error->error->message
-                    : $e->getMessage();
+                $errorMessage = $error != null && $error->message != null
+                    ? $error->message
+                    : ($error != null && $error->error != null && $error->error->message != null ? $error->error->message : $e->getMessage());
                 
                 throw new ApiException($errorMessage, $errorCode);
             }
@@ -399,9 +399,9 @@ class InfoApi
                 $error = json_decode($content);
 
                 $errorCode = $e->getCode();
-                $errorMessage = $error->error != null && $error->error->message != null
-                    ? $error->error->message
-                    : $e->getMessage();
+                $errorMessage = $error != null && $error->message != null
+                    ? $error->message
+                    : ($error != null && $error->error != null && $error->error->message != null ? $error->error->message : $e->getMessage());
                 
                 throw new ApiException($errorMessage, $errorCode);
             }

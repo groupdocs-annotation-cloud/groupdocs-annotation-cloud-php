@@ -58,7 +58,8 @@ class AnnotateOptions implements ArrayAccess
         'firstPage' => 'int',
         'lastPage' => 'int',
         'onlyAnnotatedPages' => 'bool',
-        'outputPath' => 'string'
+        'outputPath' => 'string',
+        'fontsPath' => 'string'
     ];
 
     /*
@@ -72,7 +73,8 @@ class AnnotateOptions implements ArrayAccess
         'firstPage' => 'int32',
         'lastPage' => 'int32',
         'onlyAnnotatedPages' => null,
-        'outputPath' => null
+        'outputPath' => null,
+        'fontsPath' => null
     ];
 
     /*
@@ -107,7 +109,8 @@ class AnnotateOptions implements ArrayAccess
         'firstPage' => 'FirstPage',
         'lastPage' => 'LastPage',
         'onlyAnnotatedPages' => 'OnlyAnnotatedPages',
-        'outputPath' => 'OutputPath'
+        'outputPath' => 'OutputPath',
+        'fontsPath' => 'FontsPath'
     ];
 
     /*
@@ -121,7 +124,8 @@ class AnnotateOptions implements ArrayAccess
         'firstPage' => 'setFirstPage',
         'lastPage' => 'setLastPage',
         'onlyAnnotatedPages' => 'setOnlyAnnotatedPages',
-        'outputPath' => 'setOutputPath'
+        'outputPath' => 'setOutputPath',
+        'fontsPath' => 'setFontsPath'
     ];
 
     /*
@@ -135,7 +139,8 @@ class AnnotateOptions implements ArrayAccess
         'firstPage' => 'getFirstPage',
         'lastPage' => 'getLastPage',
         'onlyAnnotatedPages' => 'getOnlyAnnotatedPages',
-        'outputPath' => 'getOutputPath'
+        'outputPath' => 'getOutputPath',
+        'fontsPath' => 'getFontsPath'
     ];
 
     /*
@@ -204,6 +209,7 @@ class AnnotateOptions implements ArrayAccess
         $this->container['lastPage'] = isset($data['lastPage']) ? $data['lastPage'] : null;
         $this->container['onlyAnnotatedPages'] = isset($data['onlyAnnotatedPages']) ? $data['onlyAnnotatedPages'] : null;
         $this->container['outputPath'] = isset($data['outputPath']) ? $data['outputPath'] : null;
+        $this->container['fontsPath'] = isset($data['fontsPath']) ? $data['fontsPath'] : null;
     }
 
     /*
@@ -389,6 +395,30 @@ class AnnotateOptions implements ArrayAccess
     public function setOutputPath($outputPath)
     {
         $this->container['outputPath'] = $outputPath;
+
+        return $this;
+    }
+
+    /*
+     * Gets fontsPath
+     *
+     * @return string
+     */
+    public function getFontsPath()
+    {
+        return $this->container['fontsPath'];
+    }
+
+    /*
+     * Sets fontsPath
+     *
+     * @param string $fontsPath The path to directory containing custom fonts in storage
+     *
+     * @return $this
+     */
+    public function setFontsPath($fontsPath)
+    {
+        $this->container['fontsPath'] = $fontsPath;
 
         return $this;
     }

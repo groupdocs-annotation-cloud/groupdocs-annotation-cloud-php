@@ -78,6 +78,7 @@ class AnnotationInfo implements ArrayAccess
         'fontSize' => 'double',
         'opacity' => 'double',
         'angle' => 'double',
+        'zIndex' => 'int',
         'url' => 'string',
         'imagePath' => 'string'
     ];
@@ -113,6 +114,7 @@ class AnnotationInfo implements ArrayAccess
         'fontSize' => 'double',
         'opacity' => 'double',
         'angle' => 'double',
+        'zIndex' => 'int32',
         'url' => null,
         'imagePath' => null
     ];
@@ -169,6 +171,7 @@ class AnnotationInfo implements ArrayAccess
         'fontSize' => 'FontSize',
         'opacity' => 'Opacity',
         'angle' => 'Angle',
+        'zIndex' => 'ZIndex',
         'url' => 'Url',
         'imagePath' => 'ImagePath'
     ];
@@ -204,6 +207,7 @@ class AnnotationInfo implements ArrayAccess
         'fontSize' => 'setFontSize',
         'opacity' => 'setOpacity',
         'angle' => 'setAngle',
+        'zIndex' => 'setZIndex',
         'url' => 'setUrl',
         'imagePath' => 'setImagePath'
     ];
@@ -239,6 +243,7 @@ class AnnotationInfo implements ArrayAccess
         'fontSize' => 'getFontSize',
         'opacity' => 'getOpacity',
         'angle' => 'getAngle',
+        'zIndex' => 'getZIndex',
         'url' => 'getUrl',
         'imagePath' => 'getImagePath'
     ];
@@ -434,6 +439,7 @@ class AnnotationInfo implements ArrayAccess
         $this->container['fontSize'] = isset($data['fontSize']) ? $data['fontSize'] : null;
         $this->container['opacity'] = isset($data['opacity']) ? $data['opacity'] : null;
         $this->container['angle'] = isset($data['angle']) ? $data['angle'] : null;
+        $this->container['zIndex'] = isset($data['zIndex']) ? $data['zIndex'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['imagePath'] = isset($data['imagePath']) ? $data['imagePath'] : null;
     }
@@ -500,6 +506,9 @@ class AnnotationInfo implements ArrayAccess
             );
         }
 
+        if ($this->container['zIndex'] === null) {
+            $invalidProperties[] = "'zIndex' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -547,6 +556,9 @@ class AnnotationInfo implements ArrayAccess
         }
         $allowedValues = $this->getPenStyleAllowableValues();
         if (!in_array($this->container['penStyle'], $allowedValues)) {
+            return false;
+        }
+        if ($this->container['zIndex'] === null) {
             return false;
         }
         return true;
@@ -1169,6 +1181,30 @@ class AnnotationInfo implements ArrayAccess
     public function setAngle($angle)
     {
         $this->container['angle'] = $angle;
+
+        return $this;
+    }
+
+    /*
+     * Gets zIndex
+     *
+     * @return int
+     */
+    public function getZIndex()
+    {
+        return $this->container['zIndex'];
+    }
+
+    /*
+     * Sets zIndex
+     *
+     * @param int $zIndex Gets or sets z-index. Default value is 0 The z-index property specifies the stack order of an element.
+     *
+     * @return $this
+     */
+    public function setZIndex($zIndex)
+    {
+        $this->container['zIndex'] = $zIndex;
 
         return $this;
     }

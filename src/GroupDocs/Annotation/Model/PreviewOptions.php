@@ -58,7 +58,10 @@ class PreviewOptions implements ArrayAccess
         'pageNumbers' => 'int[]',
         'width' => 'int',
         'height' => 'int',
-        'renderComments' => 'bool'
+        'resolution' => 'int',
+        'renderComments' => 'bool',
+        'renderAnnotations' => 'bool',
+        'fontsPath' => 'string'
     ];
 
     /*
@@ -72,7 +75,10 @@ class PreviewOptions implements ArrayAccess
         'pageNumbers' => 'int32',
         'width' => 'int32',
         'height' => 'int32',
-        'renderComments' => null
+        'resolution' => 'int32',
+        'renderComments' => null,
+        'renderAnnotations' => null,
+        'fontsPath' => null
     ];
 
     /*
@@ -107,7 +113,10 @@ class PreviewOptions implements ArrayAccess
         'pageNumbers' => 'PageNumbers',
         'width' => 'Width',
         'height' => 'Height',
-        'renderComments' => 'RenderComments'
+        'resolution' => 'Resolution',
+        'renderComments' => 'RenderComments',
+        'renderAnnotations' => 'RenderAnnotations',
+        'fontsPath' => 'FontsPath'
     ];
 
     /*
@@ -121,7 +130,10 @@ class PreviewOptions implements ArrayAccess
         'pageNumbers' => 'setPageNumbers',
         'width' => 'setWidth',
         'height' => 'setHeight',
-        'renderComments' => 'setRenderComments'
+        'resolution' => 'setResolution',
+        'renderComments' => 'setRenderComments',
+        'renderAnnotations' => 'setRenderAnnotations',
+        'fontsPath' => 'setFontsPath'
     ];
 
     /*
@@ -135,7 +147,10 @@ class PreviewOptions implements ArrayAccess
         'pageNumbers' => 'getPageNumbers',
         'width' => 'getWidth',
         'height' => 'getHeight',
-        'renderComments' => 'getRenderComments'
+        'resolution' => 'getResolution',
+        'renderComments' => 'getRenderComments',
+        'renderAnnotations' => 'getRenderAnnotations',
+        'fontsPath' => 'getFontsPath'
     ];
 
     /*
@@ -220,7 +235,10 @@ class PreviewOptions implements ArrayAccess
         $this->container['pageNumbers'] = isset($data['pageNumbers']) ? $data['pageNumbers'] : null;
         $this->container['width'] = isset($data['width']) ? $data['width'] : null;
         $this->container['height'] = isset($data['height']) ? $data['height'] : null;
+        $this->container['resolution'] = isset($data['resolution']) ? $data['resolution'] : null;
         $this->container['renderComments'] = isset($data['renderComments']) ? $data['renderComments'] : null;
+        $this->container['renderAnnotations'] = isset($data['renderAnnotations']) ? $data['renderAnnotations'] : null;
+        $this->container['fontsPath'] = isset($data['fontsPath']) ? $data['fontsPath'] : null;
     }
 
     /*
@@ -249,8 +267,14 @@ class PreviewOptions implements ArrayAccess
         if ($this->container['height'] === null) {
             $invalidProperties[] = "'height' can't be null";
         }
+        if ($this->container['resolution'] === null) {
+            $invalidProperties[] = "'resolution' can't be null";
+        }
         if ($this->container['renderComments'] === null) {
             $invalidProperties[] = "'renderComments' can't be null";
+        }
+        if ($this->container['renderAnnotations'] === null) {
+            $invalidProperties[] = "'renderAnnotations' can't be null";
         }
         return $invalidProperties;
     }
@@ -277,7 +301,13 @@ class PreviewOptions implements ArrayAccess
         if ($this->container['height'] === null) {
             return false;
         }
+        if ($this->container['resolution'] === null) {
+            return false;
+        }
         if ($this->container['renderComments'] === null) {
+            return false;
+        }
+        if ($this->container['renderAnnotations'] === null) {
             return false;
         }
         return true;
@@ -410,6 +440,30 @@ class PreviewOptions implements ArrayAccess
     }
 
     /*
+     * Gets resolution
+     *
+     * @return int
+     */
+    public function getResolution()
+    {
+        return $this->container['resolution'];
+    }
+
+    /*
+     * Sets resolution
+     *
+     * @param int $resolution Gets or sets the resolution for generated images, in dots per inch. The default value is 96.
+     *
+     * @return $this
+     */
+    public function setResolution($resolution)
+    {
+        $this->container['resolution'] = $resolution;
+
+        return $this;
+    }
+
+    /*
      * Gets renderComments
      *
      * @return bool
@@ -429,6 +483,54 @@ class PreviewOptions implements ArrayAccess
     public function setRenderComments($renderComments)
     {
         $this->container['renderComments'] = $renderComments;
+
+        return $this;
+    }
+
+    /*
+     * Gets renderAnnotations
+     *
+     * @return bool
+     */
+    public function getRenderAnnotations()
+    {
+        return $this->container['renderAnnotations'];
+    }
+
+    /*
+     * Sets renderAnnotations
+     *
+     * @param bool $renderAnnotations The property that controls whether annotations will be generated on the preview. Default State - true.
+     *
+     * @return $this
+     */
+    public function setRenderAnnotations($renderAnnotations)
+    {
+        $this->container['renderAnnotations'] = $renderAnnotations;
+
+        return $this;
+    }
+
+    /*
+     * Gets fontsPath
+     *
+     * @return string
+     */
+    public function getFontsPath()
+    {
+        return $this->container['fontsPath'];
+    }
+
+    /*
+     * Sets fontsPath
+     *
+     * @param string $fontsPath The path to directory containing custom fonts in storage
+     *
+     * @return $this
+     */
+    public function setFontsPath($fontsPath)
+    {
+        $this->container['fontsPath'] = $fontsPath;
 
         return $this;
     }
