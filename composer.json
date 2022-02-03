@@ -1,7 +1,7 @@
 {
     "description": "This repository contains GroupDocs.Annotation Cloud SDK for PHP source code.",
     "name": "groupdocscloud/groupdocs-annotation-cloud",
-    "version": "21.6",
+    "version": "22.2",
     "license": "MIT",
     "type": "library",
     "keywords": [

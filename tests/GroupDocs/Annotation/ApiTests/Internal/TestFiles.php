@@ -282,8 +282,6 @@ class TestFiles
             self::TenPagesCells(),
             self::OnePageDiagram(),
             self::TenPagesDiagram(),
-            self::OnePageEmail(),
-            self::OnePageHtml(),
             self::OnePageBmp(),
             self::OnePagePng(),
             self::OnePagePdf(),

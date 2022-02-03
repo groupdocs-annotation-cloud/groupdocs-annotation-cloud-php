@@ -74,13 +74,15 @@ class AnnotationInfo implements ArrayAccess
         'penWidth' => 'int',
         'penStyle' => 'string',
         'backgroundColor' => 'int',
+        'squigglyColor' => 'int',
         'fontFamily' => 'string',
         'fontSize' => 'double',
         'opacity' => 'double',
         'angle' => 'double',
         'zIndex' => 'int',
         'url' => 'string',
-        'imagePath' => 'string'
+        'imagePath' => 'string',
+        'autoScale' => 'bool'
     ];
 
     /*
@@ -110,13 +112,15 @@ class AnnotationInfo implements ArrayAccess
         'penWidth' => 'byte',
         'penStyle' => null,
         'backgroundColor' => 'int32',
+        'squigglyColor' => 'int32',
         'fontFamily' => null,
         'fontSize' => 'double',
         'opacity' => 'double',
         'angle' => 'double',
         'zIndex' => 'int32',
         'url' => null,
-        'imagePath' => null
+        'imagePath' => null,
+        'autoScale' => null
     ];
 
     /*
@@ -167,13 +171,15 @@ class AnnotationInfo implements ArrayAccess
         'penWidth' => 'PenWidth',
         'penStyle' => 'PenStyle',
         'backgroundColor' => 'BackgroundColor',
+        'squigglyColor' => 'SquigglyColor',
         'fontFamily' => 'FontFamily',
         'fontSize' => 'FontSize',
         'opacity' => 'Opacity',
         'angle' => 'Angle',
         'zIndex' => 'ZIndex',
         'url' => 'Url',
-        'imagePath' => 'ImagePath'
+        'imagePath' => 'ImagePath',
+        'autoScale' => 'AutoScale'
     ];
 
     /*
@@ -203,13 +209,15 @@ class AnnotationInfo implements ArrayAccess
         'penWidth' => 'setPenWidth',
         'penStyle' => 'setPenStyle',
         'backgroundColor' => 'setBackgroundColor',
+        'squigglyColor' => 'setSquigglyColor',
         'fontFamily' => 'setFontFamily',
         'fontSize' => 'setFontSize',
         'opacity' => 'setOpacity',
         'angle' => 'setAngle',
         'zIndex' => 'setZIndex',
         'url' => 'setUrl',
-        'imagePath' => 'setImagePath'
+        'imagePath' => 'setImagePath',
+        'autoScale' => 'setAutoScale'
     ];
 
     /*
@@ -239,13 +247,15 @@ class AnnotationInfo implements ArrayAccess
         'penWidth' => 'getPenWidth',
         'penStyle' => 'getPenStyle',
         'backgroundColor' => 'getBackgroundColor',
+        'squigglyColor' => 'getSquigglyColor',
         'fontFamily' => 'getFontFamily',
         'fontSize' => 'getFontSize',
         'opacity' => 'getOpacity',
         'angle' => 'getAngle',
         'zIndex' => 'getZIndex',
         'url' => 'getUrl',
-        'imagePath' => 'getImagePath'
+        'imagePath' => 'getImagePath',
+        'autoScale' => 'getAutoScale'
     ];
 
     /*
@@ -314,6 +324,7 @@ class AnnotationInfo implements ArrayAccess
     const TYPE_TEXT_UNDERLINE = 'TextUnderline';
     const TYPE_WATERMARK = 'Watermark';
     const TYPE_IMAGE = 'Image';
+    const TYPE_TEXT_SQUIGGLY = 'TextSquiggly';
     const PEN_STYLE_SOLID = 'Solid';
     const PEN_STYLE_DASH = 'Dash';
     const PEN_STYLE_DASH_DOT = 'DashDot';
@@ -378,6 +389,7 @@ class AnnotationInfo implements ArrayAccess
             self::TYPE_TEXT_UNDERLINE,
             self::TYPE_WATERMARK,
             self::TYPE_IMAGE,
+            self::TYPE_TEXT_SQUIGGLY,
         ];
     }
     
@@ -435,6 +447,7 @@ class AnnotationInfo implements ArrayAccess
         $this->container['penWidth'] = isset($data['penWidth']) ? $data['penWidth'] : null;
         $this->container['penStyle'] = isset($data['penStyle']) ? $data['penStyle'] : null;
         $this->container['backgroundColor'] = isset($data['backgroundColor']) ? $data['backgroundColor'] : null;
+        $this->container['squigglyColor'] = isset($data['squigglyColor']) ? $data['squigglyColor'] : null;
         $this->container['fontFamily'] = isset($data['fontFamily']) ? $data['fontFamily'] : null;
         $this->container['fontSize'] = isset($data['fontSize']) ? $data['fontSize'] : null;
         $this->container['opacity'] = isset($data['opacity']) ? $data['opacity'] : null;
@@ -442,6 +455,7 @@ class AnnotationInfo implements ArrayAccess
         $this->container['zIndex'] = isset($data['zIndex']) ? $data['zIndex'] : null;
         $this->container['url'] = isset($data['url']) ? $data['url'] : null;
         $this->container['imagePath'] = isset($data['imagePath']) ? $data['imagePath'] : null;
+        $this->container['autoScale'] = isset($data['autoScale']) ? $data['autoScale'] : null;
     }
 
     /*
@@ -509,6 +523,9 @@ class AnnotationInfo implements ArrayAccess
         if ($this->container['zIndex'] === null) {
             $invalidProperties[] = "'zIndex' can't be null";
         }
+        if ($this->container['autoScale'] === null) {
+            $invalidProperties[] = "'autoScale' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -559,6 +576,9 @@ class AnnotationInfo implements ArrayAccess
             return false;
         }
         if ($this->container['zIndex'] === null) {
+            return false;
+        }
+        if ($this->container['autoScale'] === null) {
             return false;
         }
         return true;
@@ -1090,6 +1110,30 @@ class AnnotationInfo implements ArrayAccess
     }
 
     /*
+     * Gets squigglyColor
+     *
+     * @return int
+     */
+    public function getSquigglyColor()
+    {
+        return $this->container['squigglyColor'];
+    }
+
+    /*
+     * Sets squigglyColor
+     *
+     * @param int $squigglyColor Gets or sets annotation color
+     *
+     * @return $this
+     */
+    public function setSquigglyColor($squigglyColor)
+    {
+        $this->container['squigglyColor'] = $squigglyColor;
+
+        return $this;
+    }
+
+    /*
      * Gets fontFamily
      *
      * @return string
@@ -1253,6 +1297,30 @@ class AnnotationInfo implements ArrayAccess
     public function setImagePath($imagePath)
     {
         $this->container['imagePath'] = $imagePath;
+
+        return $this;
+    }
+
+    /*
+     * Gets autoScale
+     *
+     * @return bool
+     */
+    public function getAutoScale()
+    {
+        return $this->container['autoScale'];
+    }
+
+    /*
+     * Sets autoScale
+     *
+     * @param bool $autoScale Sets auto scale for watermark annotation
+     *
+     * @return $this
+     */
+    public function setAutoScale($autoScale)
+    {
+        $this->container['autoScale'] = $autoScale;
 
         return $this;
     }
