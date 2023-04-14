@@ -2,7 +2,7 @@
 /**
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose Pty Ltd" file="AuthApiTest.php">
-*   Copyright (c) 2003-2021 Aspose Pty Ltd
+*   Copyright (c) 2003-2023 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,15 +30,15 @@ namespace GroupDocs\Annotation\ApiTests;
 use GroupDocs\Annotation\Configuration;
 use GroupDocs\Annotation\InfoApi;
 
-class AuthApiTest extends \PHPUnit_Framework_TestCase
+class AuthApiTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * Throws error when AppSid not found
      */
     public function testErrorWhenAppSidNotFound()
     {
-        $this->setExpectedExceptionRegExp(
-            \GroupDocs\Annotation\ApiException::class, "/invalid_client/");
+        $this->expectException(\GroupDocs\Annotation\ApiException::class);
+        $this->expectExceptionMessageMatches("/invalid_client/");
 
         $config = self::getConfig();
         $apiBaseUrl = $config["ApiBaseUrl"];
@@ -58,8 +58,8 @@ class AuthApiTest extends \PHPUnit_Framework_TestCase
      */
     public function testErrorWhenAppKeyNotFound()
     {
-        $this->setExpectedExceptionRegExp(
-            \GroupDocs\Annotation\ApiException::class, "/invalid_client/");
+        $this->expectException(\GroupDocs\Annotation\ApiException::class);
+        $this->expectExceptionMessageMatches("/invalid_client/");
 
         $config = self::getConfig();
         $apiBaseUrl = $config["ApiBaseUrl"];

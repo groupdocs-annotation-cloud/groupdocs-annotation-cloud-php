@@ -2,7 +2,7 @@
 /**
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose Pty Ltd" >
-*   Copyright (c) 2003-2021 Aspose Pty Ltd
+*   Copyright (c) 2003-2023 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,9 +30,9 @@ namespace GroupDocs\Annotation\ApiTests;
 use GroupDocs\Annotation\Model;
 use GroupDocs\Annotation\Model\Requests;
 
-require_once "BaseApiTest.php";
+require_once "BaseApiTestCase.php";
 
-class InfoApiTest extends BaseApiTest
+class InfoApiTest extends BaseApiTestCase
 {
     public function testGetSupportedFileFormats()
     {
@@ -65,8 +65,8 @@ class InfoApiTest extends BaseApiTest
     
     public function testGetInfoReturnsFileNotFound()
     {
-        $this->setExpectedException(
-            \GroupDocs\Annotation\ApiException::class, "Specified file not found");
+        $this->expectException(\GroupDocs\Annotation\ApiException::class);
+        $this->expectExceptionMessage("Specified file not found");
 
         $fileInfo = new Model\FileInfo();
         $fileInfo->setFilePath("some-folder\\NotExist.docx");

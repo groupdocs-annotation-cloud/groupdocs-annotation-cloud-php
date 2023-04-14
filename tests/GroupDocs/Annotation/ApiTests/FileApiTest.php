@@ -2,7 +2,7 @@
 /**
 * --------------------------------------------------------------------------------------------------------------------
 * <copyright company="Aspose Pty Ltd" file="FileApiTest.php">
-*   Copyright (c) 2003-2021 Aspose Pty Ltd
+*   Copyright (c) 2003-2023 Aspose Pty Ltd
 * </copyright>
 * <summary>
 *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -29,9 +29,9 @@ namespace GroupDocs\Annotation\ApiTests;
 
 use GroupDocs\Annotation\Model\Requests;
 
-require_once "BaseApiTest.php";
+require_once "BaseApiTestCase.php";
 
-class FileApiTest extends BaseApiTest
+class FileApiTest extends BaseApiTestCase
 {
     public function testDeleteFile()
     {
